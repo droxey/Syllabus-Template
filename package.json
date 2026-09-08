@@ -1,0 +1,13 @@
+{
+  "name": "syllabus-template",
+  "private": true,
+  "description": "Docsify syllabus and lesson template for course repos.",
+  "scripts": {
+    "start": "docsify serve .",
+    "serve": "docsify serve .",
+    "check-links": "node scripts/check-links.js"
+  },
+  "devDependencies": {
+    "docsify-cli": "^4.4.4"
+  }
+}
