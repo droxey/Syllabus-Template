@@ -1,110 +1,89 @@
-<!-- .slide: data-background="./Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
-# Class - Lesson Title
+<!-- Run as a slideshow: reveal-md Lessons/Lesson1.md -w -->
+# Lesson 1 — LESSON_TITLE
 
-<!-- Put a link to the slides so that students can find them -->
+⭐️ **GOAL**: One sentence. What will students walk out able to do?
 
-➡️ [**Slides**](/Syllabus-Template/Slides/Lesson1.html ':ignore')
+> [!NOTE] Instructor
+>
+> <details>
+> <summary>Prep and direction (not student-facing)</summary>
+>
+> - Open any demo repo and slides before class.
+> - Warm-up is a Zoom variety beat: keep it short, memorable, and easy to explain.
+> - Breakouts of 3–4. Visit rooms; do not dump extra instructor direction into the body below.
+> - After the activity, debrief one failure mode in the main room.
+>
+> </details>
 
-<!-- > -->
+<!-- omit in toc -->
+## ⏱ Agenda
 
-## Minute-by-Minute [OPTIONAL]
-
-| **Elapsed** | **Time**  | **Activity**              |
-| ----------- | --------- | ------------------------- |
-| 0:00        | 0:05      | Objectives                |
-| 0:05        | 0:15      | Overview                  |
-| 0:20        | 0:30      | In Class Activity I       |
-| 0:50        | 0:10      | BREAK                     |
-| 1:00        | 0:45      | In Class Activity II      |
-| 1:45        | 0:05      | Wrap up review objectives |
-| TOTAL       | 1:50      | -                         |
-
-
-<!-- > -->
-
-## Why you should know this or industry application (optional) (5 min)
-
-Explain why students should care to learn the material presented in this class.
-
-<!-- > -->
-
-## Learning Objectives (5 min)
-
-1. Identify and describe
-1. Define
-1. Design
-1. Implement
+- [[**5m**] Attendance &amp; Announcements](#5m-attendance--announcements)
+- [[**15m**] ☀️ Warm Up](#15m-️-warm-up)
+- [[**25m**] 📚 TT: Overview](#25m--tt-overview)
+- [[**10m**] 🌴 Break](#10m--break)
+- [[**40m**] 💻 Activity](#40m--activity)
+- [[**5m**] Wrap Up](#5m-wrap-up)
 
 <!-- > -->
 
-## Initial Exercise (15 min)
+<!-- omit in toc -->
+## 🏆 Objectives
 
-- Funny comic
-- Prime the Pump (e.g. think and jot, think pair share, etc)
-- Productivity Tip/Tool
-- Review of current event (e.g. tech news relevant to your track/topic)
-- Quiz on homework or topic(s) of past class
-- Concept Test
+*By the end of this class, you'll be able to&hellip;*
+
+1. Identify and describe CONCEPT_1
+1. Explain CONCEPT_2
+1. Implement CONCEPT_3
 
 <!-- > -->
 
-# Topic 1
+## [**5m**] Attendance &amp; Announcements
 
-<!-- v -->
+<!-- > -->
 
-## Overview/TT I (20 min)
+## [**15m**] ☀️ Warm Up
 
-- Why learn this?
-- Industry examples of usage
-- Best practices
-- Personal anecdote
+Prime the room. Pick one easy-to-explain activity that is fun on Zoom:
+
+- Think and jot, then think-pair-share
+- A tiny scavenger hunt in public docs or a product page
+- A comic or current event tied to today's topic
+- A 3-question recap of last class
+
+<!-- > -->
+
+## [**25m**] 📚 TT: Overview
+
+Why this matters. One industry example. The few terms students must own today.
 
 <aside class="notes">
-Place more detailed information or speaker notes in "aside" elements - it will appear in GitHub Pages but not in the slides.
+Speaker notes belong here. They show on GitHub Pages and stay off the slides.
 </aside>
 
-<!-- v -->
+<!-- > -->
 
-## In Class Activity I (30 min)
-
-- I do, We do, You do
-- Reading & Discussion Questions in small groups
-- Draw a picture/diagram
-- Complete Challenges solo or in pair
-- Q&A about tutorials
-- Pair up and code review
-- Pair program
-- Formative assessment
-- Form into groups
-- etc (get creative :D)
+## [**10m**] 🌴 Break
 
 <!-- > -->
 
-<!-- .slide: data-background="#087CB8" -->
-## [**10m**] BREAK
+## [**40m**] 💻 Activity
+
+Active learning, not a lecture dump. I do → we do → you do, or a lab with a clear done state.
+
+If you finish early, help someone in your breakout who is stuck.
 
 <!-- > -->
 
-# Topic 2
+## [**5m**] Wrap Up
 
-<!-- v -->
-
-## Overview/TT II (optional) (20 min)
-
-<!-- v -->
-
-## In Class Activity II (optional) (30 min)
+- What to finish before next class
+- Where to submit
+- One thing to try if you get stuck
 
 <!-- > -->
 
-## Wrap Up (5 min)
+## 📚 Additional Resources
 
-- Continue working on your current tutorial
-- Complete reading
-- Complete challenges
-
-<!-- > -->
-
-## Additional Resources
-
-1. Links to additional readings and videos
+1. Link to a reading
+1. Link to a short video

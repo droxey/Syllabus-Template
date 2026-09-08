@@ -3,7 +3,7 @@
   "verticalSeparator": "^\n<!-- v -->\n",
   "theme": "black",
   "watch": true,
-  "title": "Syllabus Template Slides",
+  "title": "COURSE_TITLE Slides",
   "static": "Slides",
   "scripts": [
   ],
