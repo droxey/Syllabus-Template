@@ -84,7 +84,8 @@ section h1:first {
   vertical-align: top;
 }
 
-.sidebar ul li strong a {
+.sidebar ul li strong a,
+.sidebar ul li a strong {
   font-weight: 700;
 }
 

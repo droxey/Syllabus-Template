@@ -25,7 +25,7 @@ Same URL. `package.json` in this folder only exists so the sample can be served 
 1. Syllabus — SAMPLE callout, 7-week table, five Go module links
 2. Each module in the sidebar (search only sees sidebar links)
 3. Reading map, SAMPLE Project, and this guide
-4. Dark / light toggle — `Web/style.css` plus the darklight theme from the template shell
+4. Theme — vue.css plus docsify-themeable, same as the root template. No dark/light toggle.
 
 ## What this is not
 

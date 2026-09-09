@@ -1,6 +1,6 @@
 &nbsp;&nbsp;&nbsp;&nbsp;📚 **Modules**:
 
-- [Syllabus](README.md)
+- [**Syllabus**](README.md)
 - [Module 1: Toolchain](Lessons/Module1-Toolchain.md)
 - [Module 2: Familiar Go](Lessons/Module2-GoCode.md)
 - [Module 3: Type System](Lessons/Module3-TypeSystem.md)
