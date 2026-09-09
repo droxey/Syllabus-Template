@@ -40,7 +40,7 @@
         formatUpdated: '{MM}/{DD} {HH}:{mm}',
         executeScript: true,
         auto2top: true,
-        autoHeader: true,
+        autoHeader: false,
         loadSidebar: true,
         loadNavbar: true,
         // Sidebar depth. Do not set maxLevel twice — the second value wins and the first is dead config.
@@ -85,6 +85,20 @@
         requestHeaders: {
           'cache-control': 'max-age=600'
         },
+        plugins: [
+          function (hook) {
+            hook.ready(function () {
+              var root = document.querySelector('.search') || document.body
+              var strip = function () {
+                document.querySelectorAll('.matching-post p').forEach(function (p) {
+                  var text = p.textContent.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim()
+                  if (p.textContent !== text) p.textContent = text
+                })
+              }
+              new MutationObserver(strip).observe(root, { childList: true, subtree: true })
+            })
+          }
+        ],
         gifcontrol: {
           mode: 'hover',
           loadingWidth: '300px',

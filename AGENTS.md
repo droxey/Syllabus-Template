@@ -72,10 +72,10 @@ Never put instructor prep or direction in the lesson body.
 Put a `<details>` toggle in the **header**, inside a blockquote, with an instructor callout:
 
 ```markdown
-> [!NOTE] Instructor
+> [!NOTE] 💻 LESSON PREP
 >
 > <details>
-> <summary>Prep and direction (not student-facing)</summary>
+> <summary>💻 LESSON PREP</summary>
 >
 > - Open the demo before class.
 > - Breakouts of 3–4.

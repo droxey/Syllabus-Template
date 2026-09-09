@@ -3,10 +3,10 @@
 
 ⭐️ **GOAL**: One sentence. Lab-heavy day: students should leave with a working artifact.
 
-> [!NOTE] Instructor
+> [!NOTE] 💻 LESSON PREP
 >
 > <details>
-> <summary>Prep and direction (not student-facing)</summary>
+> <summary>💻 LESSON PREP</summary>
 >
 > - Paste the starter commands in chat before you open breakouts.
 > - Live-code the first 5 minutes only. Then get out of the way.

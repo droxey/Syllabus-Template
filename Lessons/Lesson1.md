@@ -3,10 +3,10 @@
 
 ⭐️ **GOAL**: One sentence. What will students walk out able to do?
 
-> [!NOTE] Instructor
+> [!NOTE] 💻 LESSON PREP
 >
 > <details>
-> <summary>Prep and direction (not student-facing)</summary>
+> <summary>💻 LESSON PREP</summary>
 >
 > - Open any demo repo and slides before class.
 > - Warm-up is a Zoom variety beat: keep it short, memorable, and easy to explain.

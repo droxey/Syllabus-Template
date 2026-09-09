@@ -2,7 +2,7 @@
 
 # COURSE_TITLE
 
-<span class="refresh-instructions">This syllabus is a living document. Hold down `SHIFT` and press Refresh to get the latest version.</span>
+_This syllabus is a living document. Hold down `SHIFT` and press Refresh to get the latest version._
 
 > [!NOTE] Instructor
 >

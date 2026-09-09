@@ -167,7 +167,7 @@ table>tbody>tr>td::before {
   font-size: 0.9rem;
 }
 
-.refresh-instructions {
+.markdown-section h1 + p {
   display: block;
   margin: 0 0 1.25rem;
   font-style: italic;
