@@ -96,5 +96,5 @@ Done means a classmate can say what to do next after reading your paragraph.
 
 ## 📚 Additional Resources
 
-1. [SAMPLE syllabus](../README.md)
+1. [SAMPLE syllabus](README.md)
 2. [Docsify sidebar](https://docsify.js.org/#/configuration?id=loadsidebar)

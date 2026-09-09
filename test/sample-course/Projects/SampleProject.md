@@ -63,4 +63,4 @@ _All SAMPLE submissions are due **Wednesday, April 15, 2026 at 11:59pm** unless 
 
 ## Rubric
 
-[SAMPLE Project Rubric](SampleRubric.md)
+[SAMPLE Project Rubric](Projects/SampleRubric.md)

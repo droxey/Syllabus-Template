@@ -140,7 +140,7 @@ Class recordings will be available at [Dani's SAMPLE recordings index](https://b
 
 - [SAMPLE glossary](Resources/SampleGlossary.md)
 - [Preview / serve guide](Guides/PreviewThisSite.md)
-- Root template clerk process: [`AGENTS.md`](../../AGENTS.md) in Syllabus-Template (not student-facing)
+- Root template clerk process: [`AGENTS.md`](https://github.com/droxey/Syllabus-Template/blob/master/AGENTS.md) in Syllabus-Template (not student-facing)
 
 ## Interview Topics
 

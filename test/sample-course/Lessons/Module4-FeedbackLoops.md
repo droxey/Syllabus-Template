@@ -44,7 +44,7 @@ Lab day. Gradescope is a demo target. The real loop is: checklist → preview �
 
 ## [**20m**] ⏺ Live Code
 
-Walk the [SAMPLE Project](../Projects/SampleProject.md) requirements table against *this* site.
+Walk the [SAMPLE Project](Projects/SampleProject.md) requirements table against *this* site.
 
 Narrate the failure I expect: a student checks "Preview" because Docsify started, but they ran it from the repo root and still see `COURSE_TITLE`.
 
@@ -62,7 +62,7 @@ Work the repo. Done means:
 2. You can explain what each checked row proved
 3. You drafted the Gradescope-style submit note (demo — no live roster)
 
-If you finish early, score a teammate's note with the [rubric](../Projects/SampleRubric.md).
+If you finish early, score a teammate's note with the [rubric](Projects/SampleRubric.md).
 
 <!-- > -->
 
@@ -74,5 +74,5 @@ Bring one unchecked row and the next action to Module 5.
 
 ## 📚 Additional Resources
 
-1. [SAMPLE Project](../Projects/SampleProject.md)
-2. [SAMPLE Rubric](../Projects/SampleRubric.md)
+1. [SAMPLE Project](Projects/SampleProject.md)
+2. [SAMPLE Rubric](Projects/SampleRubric.md)

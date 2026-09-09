@@ -87,7 +87,7 @@ Speaker notes belong here. They show on GitHub Pages and stay off the slides.
 
 ## [**40m**] 💻 Activity
 
-Follow [Preview this sample](../Guides/PreviewThisSite.md).
+Follow [Preview this sample](Guides/PreviewThisSite.md).
 
 Done means:
 
@@ -101,7 +101,7 @@ If you finish early, help someone in your breakout who is stuck.
 
 ## [**5m**] Wrap Up
 
-- Read the [syllabus](../README.md) before Wednesday
+- Read the [syllabus](README.md) before Wednesday
 - Bring one question about a file you still cannot explain
 - Next module: version control in the small
 
@@ -109,5 +109,5 @@ If you finish early, help someone in your breakout who is stuck.
 
 ## 📚 Additional Resources
 
-1. [Preview this sample](../Guides/PreviewThisSite.md)
-2. [SAMPLE glossary](../Resources/SampleGlossary.md)
+1. [Preview this sample](Guides/PreviewThisSite.md)
+2. [SAMPLE glossary](Resources/SampleGlossary.md)

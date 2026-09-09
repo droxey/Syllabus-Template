@@ -80,5 +80,5 @@ Continue the lab if needed. Bring one review comment you would leave on a teamma
 
 ## 📚 Additional Resources
 
-1. [SAMPLE Project — Challenge 2](../Projects/SampleProject.md#challenge-2-open-a-sample-pr)
+1. [SAMPLE Project — Challenge 2](Projects/SampleProject.md#challenge-2-open-a-sample-pr)
 2. [GitHub flow](https://docs.github.com/en/get-started/using-github/github-flow)

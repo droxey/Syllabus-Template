@@ -90,5 +90,5 @@ Done means you hit the three clicks and stopped talking.
 
 ## 📚 Additional Resources
 
-1. [SAMPLE Project](../Projects/SampleProject.md)
-2. [Preview this sample](../Guides/PreviewThisSite.md)
+1. [SAMPLE Project](Projects/SampleProject.md)
+2. [Preview this sample](Guides/PreviewThisSite.md)
