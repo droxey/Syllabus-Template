@@ -24,3 +24,4 @@ Missing curriculum spotted across the SAMPLE markdown. One row per gap. Do not i
 | No in-repo Go playground | Module 2 lab | Optional gist / go.dev/play links when a live course forks | Low |
 | Paid Optimizations chapters skipped | Module 5 | Keep SAMPLE on free pages only | n/a |
 | Generics not taught | Type system module | Fine for a 7-week slim sample | Low |
+| Gradescope links are demo-only | Syllabus evaluation | Keep SAMPLE labels if anyone clones this folder | n/a |
