@@ -37,7 +37,9 @@
         formatUpdated: '{MM}/{DD} {HH}:{mm}',
         executeScript: true,
         auto2top: true,
-        autoHeader: true,
+        // Lessons already have a markdown H1. autoHeader:true reprints the
+        // sidebar label above it (two titles). Leave it off.
+        autoHeader: false,
         loadSidebar: true,
         loadNavbar: true,
         maxLevel: 3,
