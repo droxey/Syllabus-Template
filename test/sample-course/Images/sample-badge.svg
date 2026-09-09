@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title">
+  <title id="title">ACS 9999 Sample Course</title>
+  <rect width="240" height="240" rx="28" fill="#091a28"/>
+  <rect x="12" y="12" width="216" height="216" rx="20" fill="none" stroke="#4BB1E4" stroke-width="4"/>
+  <text x="120" y="92" text-anchor="middle" fill="#4BB1E4" font-family="Source Sans Pro, Helvetica Neue, Arial, sans-serif" font-size="22" font-weight="700">ACS 9999</text>
+  <text x="120" y="138" text-anchor="middle" fill="#F5F6F8" font-family="Source Sans Pro, Helvetica Neue, Arial, sans-serif" font-size="36" font-weight="700">SAMPLE</text>
+  <text x="120" y="176" text-anchor="middle" fill="#b4b4b4" font-family="Source Sans Pro, Helvetica Neue, Arial, sans-serif" font-size="14">Not a live ACS offering</text>
+</svg>
