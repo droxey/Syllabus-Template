@@ -1,4 +1,4 @@
-<!-- <p align="center"><img src="Images/COURSE_LOGO.svg" height="200"></p> -->
+<!-- Optional centered logo: add Images/logo.svg yourself, then uncomment an <img> pointing at it. Path is manual — not a COURSE_* token. -->
 
 # COURSE_TITLE
 
@@ -41,8 +41,7 @@
 ## Course Description
 
 COURSE_DESCRIPTION
-
-Write a short elevator pitch. Use I/you/we. Get students excited to take the course.
+<!-- Write a short elevator pitch. Use I/you/we. Get students excited to take the course. -->
 
 ### Why you should know this
 
@@ -50,8 +49,8 @@ Explain why this material matters on the job — one concrete industry story bea
 
 ## Prerequisites
 
-- [PREREQUISITE_1]()
-- [PREREQUISITE_2]()
+- [PREREQUISITE_1](https://example.com/PREREQUISITE_1)
+- [PREREQUISITE_2](https://example.com/PREREQUISITE_2)
 
 ## Course Specifics
 
@@ -90,7 +89,7 @@ Your Gradescope login is your school email. Set or reset your password at [https
 
 | Name | Description |
 | ---- | ----------- |
-| **Tutorial 1**: [TUTORIAL_NAME]() | _One-line why._ |
+| **Tutorial 1**: [TUTORIAL_NAME](https://example.com/TUTORIAL_NAME) | _One-line why._ |
 
 ### Challenges
 
@@ -118,7 +117,7 @@ Your Gradescope login is your school email. Set or reset your password at [https
 
 ## Class Recordings
 
-Class recordings will be available at [RECORDINGS_URL]() no later than 24 hours after the session. Do not share recordings outside the course.
+Class recordings will be available at [RECORDINGS_URL](https://example.com/RECORDINGS_URL) no later than 24 hours after the session. Do not share recordings outside the course.
 
 ## Information Resources
 
