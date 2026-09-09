@@ -11,6 +11,8 @@
 >
 > Replace every `COURSE_*`, `GITHUB_ORG`, and `REPO_NAME` placeholder in `index.html`, this file, `_sidebar.md`, and `package.json` before you publish.
 >
+> Fill `COURSE_DESCRIPTION` and `COURSE_WHY` with student-facing copy. Do not leave setup sentences in the body.
+>
 > Pick one delivery format, credit line, and schedule table. Delete unused rows. Do not leave instructor direction in the student-facing body.
 >
 > **Delivery examples:** online or in-person | 7 or 9 weeks | 12–18 sessions
@@ -45,7 +47,7 @@ COURSE_DESCRIPTION
 
 ### Why you should know this
 
-Explain why this material matters on the job — one concrete industry story beats a generic promise.
+COURSE_WHY
 
 ## Prerequisites
 

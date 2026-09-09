@@ -142,8 +142,7 @@ Reviewed against ACS-3220 and docsify-course. Changes baked into `index.html`:
 - **Fixed duplicate `maxLevel`.** Both source repos set `maxLevel: 6` then `maxLevel: 3`. The second wins; the first is dead. This template sets `maxLevel: 3` and `subMaxLevel: 2` once.
 - **Pagination script is actually loaded.** The old template configured `pagination` and never included `docsify-pagination`. ACS-3220 does.
 - **GIF hover control from ACS-3220.** `docsify-gifcontrol` is in the dependency list for lesson GIFs.
-- **Dark/light theme from docsify-course.** Do not also load `docsify/lib/themes/vue.css` — it fights darklight.
-- **`docsify-themeable@0`** matches ACS-3220 (not the unpinned `unpkg.com/docsify-themeable` the old template used).
+- **Theme is ACS-3220 `vue.css` + pinned `docsify-themeable@0.9.0`.** Do not also load `docsify-darklight-theme` — the two stacks fight on CSS variables.
 - **`cache-control: max-age=600`** matches GitHub Pages, not 180s.
 - **No Make School chrome.** Favicons and `makeschool.com` service-worker entries are gone. SW whitelist includes `cdn.jsdelivr.net`.
 - **Logo starts empty.** ACS-3220 points at a missing `Web/logo-icononly.svg`. Empty `logo` avoids a broken image.

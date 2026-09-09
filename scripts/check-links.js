@@ -15,7 +15,7 @@ const SKIP_DIRS = new Set([
   "Reveal",
 ]);
 const TEXT_EXT = new Set([".md", ".html", ".css", ".js", ".json"]);
-const PLACEHOLDER = /\b(COURSE_[A-Z0-9_]+|REPO_NAME|GITHUB_ORG|INSTRUCTOR_EMAIL|GRADESCOPE_URL|RECORDINGS_URL|PREREQUISITE_[0-9]+|LESSON_TITLE|DATE_[A-Z0-9_]+|HOLIDAY_NAME|TUTORIAL_NAME|CHALLENGE_NAME|CONCEPT_[0-9]+)\b/g;
+const PLACEHOLDER = /\b(COURSE_[A-Z0-9_]+|REPO_NAME|GITHUB_ORG|INSTRUCTOR_EMAIL|GRADESCOPE_URL|RECORDINGS_URL|PREREQUISITE_[0-9]+(?:_URL)?|TUTORIAL_URL|LESSON_TITLE|DATE_[A-Z0-9_]+|HOLIDAY_NAME|TUTORIAL_NAME|CHALLENGE_NAME|CONCEPT_[0-9]+)\b/g;
 const MD_LINK = /\[(?:[^\]]*)\]\(([^)]+)\)/g;
 const HREF = /(?:href|src)=["']([^"']+)["']/g;
 
@@ -63,7 +63,13 @@ for (const file of walk(ROOT)) {
 
   for (const raw of urls) {
     const target = raw.trim().replace(/^<|>$/g, "").replace(/^['"]|['"]$/g, "");
-    if (isIgnored(target) || target.includes("COURSE_") || target.includes("REPO_NAME") || target.includes("GITHUB_ORG")) {
+    if (
+      isIgnored(target) ||
+      target.includes("COURSE_") ||
+      target.includes("REPO_NAME") ||
+      target.includes("GITHUB_ORG") ||
+      /^(PREREQUISITE_\d+_URL|TUTORIAL_URL|RECORDINGS_URL)$/.test(target)
+    ) {
       continue;
     }
     if (isExternal(target)) {
