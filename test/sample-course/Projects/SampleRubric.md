@@ -4,7 +4,8 @@ Use this table when you score the [SAMPLE Project](Projects/SampleProject.md). D
 
 | Expectation | Does not meet | Meets | Exceeds |
 | ----------- | ------------- | ----- | ------- |
-| **Shell map** | Missing files or still talking about Docker lessons | Names `index.html`, sidebar, syllabus, five modules, `Web/` | Also explains why search misses pages that are not in `_sidebar.md` |
-| **SAMPLE PR** | No branch, or the PR edits the root starter | Small PR that only touches this sample folder | PR description tells a reviewer what to click after `docsify serve` |
-| **Teaching voice** | Academic or leftover `COURSE_*` tokens | One heading / paragraph rewritten I/you/we | Reader can tell what to *do* next without a second doc |
-| **Done state** | Cannot preview locally | `docsify serve` from this folder shows ACS 9999 | Sidebar, syllabus links, and project page all resolve |
+| **Toolchain** | Cannot build or test | `go test ./...` is green | Also shows `go test -race` or a module-aware `go run` |
+| **Types** | Accidental containers, cannot explain them | Names the slice or map and why it is there | Ties the choice to the [type-system overview](https://go101.org/article/type-system-overview.html) |
+| **Concurrency (if used)** | Data race or unexplained goroutine | One clear sync story, or an honest “no concurrency needed” | Explains channel vs `sync` for that job |
+| **Optimization note** | Pastes book text or “make it faster” | One allocation, keep-or-cut, with a reason | Shows a `gcflags=-m` line and what it means |
+| **SAMPLE / cite** | Uploads a book PDF | Links go101.org | README tells a reviewer what to click after `docsify serve` |

@@ -1,4 +1,4 @@
-# SAMPLE Project: Ship one module
+# SAMPLE Project: Ship a small Go tool
 
 <!-- omit in toc -->
 ## Contents
@@ -9,16 +9,16 @@
 1. [Deliverables](#deliverables)
 1. [Rubric](#rubric)
 
-This is a **SAMPLE** spec. You are not dockerizing a codebase. You are proving you can customize Syllabus-Template the way this folder already does.
+This is a **SAMPLE** spec. You are not dockerizing a codebase. You are shipping a one-package Go tool and talking about it like a gopher who read Go 101.
 
 ## Project Goals
 
 | Goal | Description |
 | ---- | ----------- |
-| `map` | Point at every file the Docsify shell needs and say what it does. |
-| `review` | Open a small PR a teammate can merge without fear. |
-| `voice` | Rewrite one student-facing heading so it sounds like a builder teaching, not a template. |
-| `demo` | Serve this folder and walk the room through what shipped. |
+| `toolchain` | `go test` and `go build` succeed on a clean machine. |
+| `types` | The tool uses at least one slice or map on purpose, not by accident. |
+| `voice` | README says how to run it in I/you/we, not in academic passive. |
+| `opt` | You name one allocation you would keep or cut, with a reason from Optimizations 101 — not a paste from the book. |
 
 ## Project Requirements
 
@@ -26,39 +26,32 @@ Copy this table into your notes. Check a row only after you can show it.
 
 | Category | Requirement | ✅ |
 | -------- | ----------- | :-: |
-| **Shell** | You can name `index.html`, `_sidebar.md`, `_navbar.md`, `Web/style.css`, `Web/sw.js` | |
-| **Modules** | Sidebar lists the same five modules as the syllabus | |
-| **SAMPLE** | No `COURSE_*`, `REPO_NAME`, or `GITHUB_ORG` tokens remain in *this* folder | |
-| **Preview** | `docsify serve` from `test/sample-course` loads ACS 9999 | |
-| **Docs** | README still says this is not a live ACS offering | |
+| **Go** | Module path set; `go test ./...` passes | |
+| **Go** | A `main` that does one useful job (count, filter, or format stdin/args) | |
+| **SAMPLE** | README still says this is not a live ACS offering if you forked the syllabus | |
+| **Preview** | Course site still serves ACS 9999 from `test/sample-course` | |
+| **Cite** | Reading list points at go101.org, not a PDF in git | |
 
 ## Challenges
 
-### Challenge 1: Map the shell
+### Challenge 1: `go test`
 
-Write a short note (comment, gist, or PR description) that maps:
+Put a `_test.go` next to the code. One table-driven test is enough. Done means a classmate can run `go test` without asking you which folder.
 
-- Docsify entry: `index.html`
-- Nav: `_sidebar.md`, `_navbar.md`
-- Student home: `README.md`
-- Assets: `Web/`, `Images/sample-badge.svg`
+### Challenge 2: Slice header
 
-Do not list ACS-3220 Docker lessons. Those files were not copied here.
+On paper or in the README, draw the header (`ptr`, `len`, `cap`) and the backing array for one slice your tool uses. If you do not have a slice, add one for a reason.
 
-### Challenge 2: Open a SAMPLE PR
+### Challenge 3: One allocation
 
-Branch from the template default. Change only files under `test/sample-course/`. The root starter stays full of placeholders.
-
-### Challenge 3: One heading pass
-
-Pick one heading in a module. Rewrite it so a student knows the next action. Leave instructor prep inside the header `<details>` callout.
+After [Module 5](Lessons/Module5-Optimizations.md), write three sentences: what allocated, whether you would change it, and why *not* to optimize the rest. Link [Go Optimizations 101](https://go101.org/optimizations/101.html) — do not quote pages of it.
 
 ## Deliverables
 
 _All SAMPLE submissions are due **Wednesday, April 15, 2026 at 11:59pm** unless we say otherwise._
 
-1. **Repository or PR** — the filled module plus this folder still serving
-2. **Three-minute demo** — syllabus, one module, project page
+1. **Repository** — Go module + tests
+2. **Three-minute demo** — run it, show the test, name the allocation
 3. **Gradescope submit** — demo link only; there is no live ACS 9999 roster
 
 ## Rubric
