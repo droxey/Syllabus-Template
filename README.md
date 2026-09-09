@@ -45,7 +45,7 @@ _This syllabus is a living document. Hold down `SHIFT` and press Refresh to get 
 COURSE_DESCRIPTION
 <!-- Write a short elevator pitch. Use I/you/we. Get students excited to take the course. -->
 
-### Why you should know this
+### Why You Should Know This
 
 COURSE_WHY
 

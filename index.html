@@ -52,7 +52,7 @@
           responsiveTables: true
         },
         search: {
-          maxAge: 86400000,
+          maxAge: 0,
           paths: "auto",
           placeholder: 'Search class content...',
           noData: 'No Results!',
@@ -90,9 +90,11 @@
             hook.ready(function () {
               var root = document.querySelector('.search') || document.body
               var strip = function () {
-                document.querySelectorAll('.matching-post p').forEach(function (p) {
-                  var text = p.textContent.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim()
-                  if (p.textContent !== text) p.textContent = text
+                document.querySelectorAll('.matching-post').forEach(function (post) {
+                  post.querySelectorAll('h2, p').forEach(function (el) {
+                    var text = el.textContent.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim()
+                    if (el.textContent !== text) el.textContent = text
+                  })
                 })
               }
               new MutationObserver(strip).observe(root, { childList: true, subtree: true })

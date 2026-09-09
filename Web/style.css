@@ -62,12 +62,9 @@ section h1:first {
   display: block;
 }
 
-#main>h1:nth-child(1) {
+/* Hide Docsify's injected page title when the markdown already has an H1. */
+#main > h1:first-of-type:has(+ h1) {
   display: none;
-}
-
-#main>h1:nth-child(1)[id] {
-  display: block;
 }
 
 .sidebar ul li a {
