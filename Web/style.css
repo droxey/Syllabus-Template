@@ -62,12 +62,9 @@ section h1:first {
   display: block;
 }
 
-#main>h1:nth-child(1) {
+/* Hide Docsify's injected page title when the markdown already has an H1. */
+#main > h1:first-of-type:has(+ h1) {
   display: none;
-}
-
-#main>h1:nth-child(1)[id] {
-  display: block;
 }
 
 .sidebar ul li a {
@@ -84,7 +81,8 @@ section h1:first {
   vertical-align: top;
 }
 
-.sidebar ul li strong a {
+.sidebar ul li strong a,
+.sidebar ul li a strong {
   font-weight: 700;
 }
 
@@ -167,7 +165,7 @@ table>tbody>tr>td::before {
   font-size: 0.9rem;
 }
 
-.refresh-instructions {
+.markdown-section h1 + p {
   display: block;
   margin: 0 0 1.25rem;
   font-style: italic;

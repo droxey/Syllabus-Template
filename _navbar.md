@@ -1,1 +1,1 @@
-* [Syllabus](README.md)
+* [Schedule](README.md)

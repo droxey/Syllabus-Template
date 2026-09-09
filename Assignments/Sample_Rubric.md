@@ -1,4 +1,4 @@
-# Class - Assignment - Rubric 
+# Class Assignment Rubric
 
 | Expectations | Does not meet | Meets                       | Exceeds                           |
 |:-------------|:--------------|:----------------------------|:----------------------------------|

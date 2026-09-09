@@ -2,7 +2,7 @@
 
 # COURSE_TITLE
 
-<span class="refresh-instructions">This syllabus is a living document. Hold down `SHIFT` and press Refresh to get the latest version.</span>
+_This syllabus is a living document. Hold down `SHIFT` and press Refresh to get the latest version._
 
 > [!NOTE] Instructor
 >
@@ -10,6 +10,8 @@
 > <summary>Course Clerk / instructor setup (not student-facing)</summary>
 >
 > Replace every `COURSE_*`, `GITHUB_ORG`, and `REPO_NAME` placeholder in `index.html`, this file, `_sidebar.md`, and `package.json` before you publish.
+>
+> Fill `COURSE_DESCRIPTION` and `COURSE_WHY` with student-facing copy. Do not leave setup sentences in the body.
 >
 > Pick one delivery format, credit line, and schedule table. Delete unused rows. Do not leave instructor direction in the student-facing body.
 >
@@ -43,9 +45,9 @@
 COURSE_DESCRIPTION
 <!-- Write a short elevator pitch. Use I/you/we. Get students excited to take the course. -->
 
-### Why you should know this
+### Why You Should Know This
 
-Explain why this material matters on the job — one concrete industry story beats a generic promise.
+COURSE_WHY
 
 ## Prerequisites
 
