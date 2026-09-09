@@ -9,6 +9,8 @@
 > This folder is the **filled sample** that proves [Syllabus-Template](https://github.com/droxey/Syllabus-Template) customization. Course Clerk tokens (`COURSE_*`, `REPO_NAME`, `GITHUB_ORG`) are replaced with concrete SAMPLE values.
 >
 > **This is not a live ACS offering.** Do not enroll, advertise, or treat ACS 9999 as a real Dominican / Tech-at-DU class. The blank starter stays at the **repo root**. Serve *this* folder to preview the filled site.
+>
+> **Reading spine:** [Go 101](https://go101.org/article/101.html) and [Go Optimizations 101](https://go101.org/optimizations/101.html) on go101.org (Tapir Liu). We link the public site. We do **not** ship book PDFs in this repo.
 
 > [!NOTE] Instructor
 >
@@ -18,6 +20,7 @@
 > - Instructor: Dani Roxberry (`danielle.roxberry@dominican.edu`)
 > - Org / repo convention: `droxey` / `sample-course`
 > - Preview: `npx docsify-cli serve test/sample-course` from the Syllabus-Template root, or `npm install && npm run serve` inside this folder.
+> - Assign go101.org chapters. Do not paste book text into lessons.
 > - Root `AGENTS.md` placeholders stay empty on purpose. Only this SAMPLE is filled.
 >
 > </details>
@@ -38,18 +41,18 @@
 
 ## Course Description
 
-In this **SAMPLE** course we ship a student-facing course site together. You will take a blank Docsify syllabus, fill it with real schedule and evaluation copy, then keep the site honest with reviews, checklists, and a short demo.
+In this **SAMPLE** course we learn Go the way a builder actually uses it: toolchain first, then values and types, then concurrency, then the few optimizations that matter.
 
-We are not studying Docker. ACS-3220 is the *layout* we copied. The modules here are course-ops: how a builder-teacher writes, reviews, and ships classroom docs.
+The layout is ACS-3220's Docsify shell. The curriculum is a slim cut of [Go 101](https://go101.org/article/101.html) plus one week from [Go Optimizations 101](https://go101.org/optimizations/101.html). You read the official pages. Class time is I do → we do → you do, then a lab with a done state.
 
 ### Why you should know this
 
-Every class you take already *is* a product. If the syllabus is stale, the sidebar is a graveyard of leftover `Lesson 1` links, and nobody can preview the site locally, students pay for it. You will leave able to stand up a course repo you would actually send to a room.
+Go shows up in interviews and in production services. If you only memorize syntax, channels and escape analysis will surprise you. If you can run `go test`, explain a slice header, and say why a value escaped, you can ship.
 
 ## Prerequisites
 
-- A GitHub account you can push to
-- Comfort with a text editor and a terminal
+- A programming language you have already written in (any)
+- [The Go toolchain](https://go.dev/dl/) installed so `go version` prints a stable release
 - **SAMPLE prerequisite:** [ACS 1000: Intro to Building in Public](Resources/SampleGlossary.md) — fictional; linked so the sample syllabus has a real local target
 
 ## Course Specifics
@@ -61,10 +64,10 @@ Every class you take already *is* a product. If the syllabus is stale, the sideb
 
 _By the end of this SAMPLE course, you will be able to&hellip;_
 
-1. Identify and describe how a Docsify course site is structured (`index.html`, sidebar, syllabus, modules)
-1. Explain how small PRs and reviews keep a course repo honest
-1. Compare and contrast a blank Syllabus-Template clone with a filled course
-1. Design and implement one student-facing module, then demo what shipped
+1. Identify and describe how the Go toolchain builds, tests, and modules a small program
+1. Explain Go values: typed vs untyped, slice headers, and interface boxes
+1. Compare and contrast channels vs `sync` for a given concurrency job
+1. Design and implement a small Go tool, then name one allocation you would change and why
 
 ## Schedule
 
@@ -73,21 +76,21 @@ _By the end of this SAMPLE course, you will be able to&hellip;_
 
 | Class | Date | Topic |
 |:-----:|:----:|-------|
-| 1 | Mon, Mar 2 | [Module 1: Course Orientation] |
-| 2 | Wed, Mar 4 | Module 1 lab — walk the repo and preview the site |
-| 3 | Mon, Mar 9 | [Module 2: Version Control in the Small] |
-| 4 | Wed, Mar 11 | Module 2 lab — branch, review, merge |
-| 5 | Mon, Mar 16 | [Module 3: Docs as Product] |
-| 6 | Wed, Mar 18 | Module 3 lab — rewrite one syllabus section |
+| 1 | Mon, Mar 2 | [Module 1: Toolchain] |
+| 2 | Wed, Mar 4 | Module 1 lab — `go run` / `go test` |
+| 3 | Mon, Mar 9 | [Module 2: Familiar Go] |
+| 4 | Wed, Mar 11 | Module 2 lab — functions, control flow, a tiny CLI |
+| 5 | Mon, Mar 16 | [Module 3: Type System] |
+| 6 | Wed, Mar 18 | Module 3 lab — slices, maps, one interface |
 | — | Mon, Mar 23 | **No Class — SAMPLE holiday (spring-break placeholder)** |
-| 7 | Wed, Mar 25 | [Module 4: Feedback Loops] |
-| 8 | Mon, Mar 30 | Module 4 lab — checklist + Gradescope-style submit |
-| 9 | Wed, Apr 1 | [Module 5: Ship & Demo] |
+| 7 | Wed, Mar 25 | [Module 4: Concurrency] |
+| 8 | Mon, Mar 30 | Module 4 lab — one channel pipeline |
+| 9 | Wed, Apr 1 | [Module 5: Optimizations] |
 | 10 | Mon, Apr 6 | [SAMPLE Project] studio |
 | 11 | Wed, Apr 8 | [SAMPLE Project] studio |
 | 12 | Wed, Apr 15 | Final presentations |
 
-Five published lesson files cover the five modules. Lab days reuse the same module page — we do not invent empty `Lesson 12.md` stubs.
+Five published lesson files cover the five modules. Lab days reuse the same module page.
 
 ## Class Assignments
 
@@ -102,19 +105,19 @@ Your Gradescope login is your school email. Set or reset your password at [https
 | Name | Description |
 | ---- | ----------- |
 | **Tutorial 1**: [Preview this sample locally](Guides/PreviewThisSite.md) | _Serve the filled site and confirm the sidebar matches the syllabus._ |
-| **Tutorial 2**: [Docsify home](https://docsify.js.org/#/) | _Official Docsify docs — how the shell you copied actually works._ |
+| **Tutorial 2**: [Go 101 home](https://go101.org/article/101.html) | _Official book index — this is the reading spine, not a PDF in the repo._ |
 
 ### Challenges
 
 | Name | More info |
 | ---- | --------- |
-| **Challenge 1**: Name every Docsify file in this folder | [Instructions](Projects/SampleProject.md#challenge-1-map-the-shell) |
-| **Challenge 2**: Open a SAMPLE pull request | [Instructions](Projects/SampleProject.md#challenge-2-open-a-sample-pr) |
-| **Challenge 3**: Rewrite one module heading in teaching voice | [Instructions](Projects/SampleProject.md#challenge-3-one-heading-pass) |
+| **Challenge 1**: Run `go test` on a one-package repo | [Instructions](Projects/SampleProject.md#challenge-1-go-test) |
+| **Challenge 2**: Draw a slice header vs its backing array | [Instructions](Projects/SampleProject.md#challenge-2-slice-header) |
+| **Challenge 3**: Name one allocation you would keep or cut | [Instructions](Projects/SampleProject.md#challenge-3-one-allocation) |
 
 ### Projects
 
-- [SAMPLE Project: Ship one module](Projects/SampleProject.md)
+- [SAMPLE Project: Ship a small Go tool](Projects/SampleProject.md)
 
 | Assignment | Date assigned | Due date | Submission |
 |:----------:|:-------------:|:--------:|:----------:|
@@ -138,19 +141,21 @@ Class recordings will be available at [Dani's SAMPLE recordings index](https://b
 
 ## Information Resources
 
+- [Go 101 reading map](Resources/Go101.md)
 - [SAMPLE glossary](Resources/SampleGlossary.md)
 - [Preview / serve guide](Guides/PreviewThisSite.md)
+- [Go 101](https://go101.org/article/101.html) and [Go Optimizations 101](https://go101.org/optimizations/101.html) — official site, Tapir Liu
 - Root template clerk process: [`AGENTS.md`](https://github.com/droxey/Syllabus-Template/blob/master/AGENTS.md) in Syllabus-Template (not student-facing)
 
 ## Interview Topics
 
-- Explain a Docsify course repo to someone who has only used Google Docs
-- Describe a review you would refuse to merge (broken sidebar, leftover `COURSE_TITLE`)
-- Walk through how you would preview a GitHub Pages syllabus before class
+- Explain a slice header to someone who only knows arrays
+- When you would pick a channel vs a mutex
+- What “this value escaped to the heap” means in a `go build -gcflags=-m` line
 
-[Module 1: Course Orientation]: Lessons/Module1-Orientation.md
-[Module 2: Version Control in the Small]: Lessons/Module2-VersionControl.md
-[Module 3: Docs as Product]: Lessons/Module3-DocsAsProduct.md
-[Module 4: Feedback Loops]: Lessons/Module4-FeedbackLoops.md
-[Module 5: Ship & Demo]: Lessons/Module5-ShipAndDemo.md
+[Module 1: Toolchain]: Lessons/Module1-Toolchain.md
+[Module 2: Familiar Go]: Lessons/Module2-GoCode.md
+[Module 3: Type System]: Lessons/Module3-TypeSystem.md
+[Module 4: Concurrency]: Lessons/Module4-Concurrency.md
+[Module 5: Optimizations]: Lessons/Module5-Optimizations.md
 [SAMPLE Project]: Projects/SampleProject.md
