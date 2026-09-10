@@ -33,19 +33,48 @@ Open with `# Title`, then `⭐️ **GOAL:**`, then the elapsed agenda table only
 
 Instructor, facilitator, and curriculum-author directives go at the **bottom** of every ACS lesson — after Additional Resources — under `## For curriculum authors`.
 
+Wrap the contents in a `<details>` block so students can ignore it:
+
+```markdown
+## Additional Resources
+
+- Official docs first…
+
+## For curriculum authors
+
+<details>
+<summary>For curriculum authors</summary>
+
+### ADHD run-of-show
+- …
+
+### Facilitator notes
+- …
+
+</details>
+```
+
 Never put them in:
 
 - the header
 - a top `<details>` / LESSON PREP callout
 - the mid-body (warm-up, TT, activity, lab, wrap)
 
-Optional subsections (bottom only):
+Optional subsections (bottom only, inside the `<details>`):
 
 - `### ADHD run-of-show`
 - `### Facilitator notes`
 - `### Expert follow-ups`
 
 ADHD run-of-show is **not** at the top after the agenda. If you write one, it belongs under `## For curriculum authors`.
+
+## Additional Resources heading (hard)
+
+The section title is always exactly `## Additional Resources`.
+
+Never rename it. Never add parentheticals in the heading (no `## Additional Resources (official first)`).
+
+“Official first” is link-ordering guidance **inside** the section only.
 
 ## Activity labels (hard)
 
@@ -62,7 +91,7 @@ Never use Roman numerals (`Lab I`, `Lab II`).
 
 ## Structure
 
-- Syllabus-Template / Lesson09 shape: Elapsed / Time / Activity table, Why, Learning Objectives, Overview/TT, Activities, BREAK, Lab/Wrap, Additional Resources, then `## For curriculum authors` (bottom only).
+- Syllabus-Template / Lesson09 shape: Elapsed / Time / Activity table, Why, Learning Objectives, Overview/TT, Activities, BREAK, Lab/Wrap, `## Additional Resources` (exact heading), then `## For curriculum authors` (bottom only, contents in `<details>`).
 - Teacher talk **30–40m** with **3–4 mid-TT active-learning audience questions** (pulse checks ≤60s, expected answer named).
 - ADHD structure on the overall plan and each activity block: next action, numbered steps, done state, time, ≤2m next.
 - Skills: [dani-roxberrys-teaching-voice](sand-workflow:dani-roxberrys-teaching-voice), [write-like-you-talk](sand-workflow:write-like-you-talk), [dani-roxberry-s-social-learning](sand-workflow:dani-roxberry-s-social-learning), [i-have-adhd](sand-workflow:i-have-adhd).
