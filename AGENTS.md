@@ -8,7 +8,7 @@ Student-facing pages live in Docsify. The layout comes from [Tech-at-DU/ACS-3220
 
 1. Read this file.
 2. Do the smallest change that finishes the request.
-3. Keep instructor prep out of the student-facing mid-body. Put it in a bottom `<details>` with `## For curriculum authors` after `## Additional Resources`.
+3. Keep instructor prep out of the student-facing mid-body. Put `## For curriculum authors` inside a bottom `<details><summary>For curriculum authors</summary>…</details>` after `## Additional Resources`.
 4. Gate finished student-facing markdown through the Technical Writer pass.
 
 ## Voice and output
@@ -69,7 +69,7 @@ Do not invent a new assignment unless the request says so.
 
 Never put instructor prep or direction in the student-facing mid-body (warm-up, TT, activity, lab, wrap), and never in a header LESSON PREP toggle.
 
-Put instructor, facilitator, and curriculum-author directives after `## Additional Resources`, wrapped in a bottom `<details>` that contains `## For curriculum authors`:
+`## For curriculum authors` lives inside a bottom `<details><summary>For curriculum authors</summary>…</details>` after `## Additional Resources`. Mirror the skill example:
 
 ```markdown
 <details>
@@ -79,21 +79,14 @@ Put instructor, facilitator, and curriculum-author directives after `## Addition
 
 ### Run-of-show
 
-- Open the demo before class.
-- Breakouts of 3–4.
-
 ### Facilitator notes
 
-- Visit rooms. Debrief one failure mode in the main room.
-
 ### Expert follow-ups
-
-- Optional stretch after the lab.
 
 </details>
 ```
 
-Never put ADHD or diagnosis labels in lesson Markdown. Use `### Run-of-show`. Run-of-show is not at the top after the agenda. The student-facing body stays student-facing. The resources H2 is always exactly `## Additional Resources` — official-first is list order, not H2 text.
+Never put ADHD or diagnosis labels in lesson Markdown. Use `### Run-of-show`. Run-of-show is not at the top after the agenda. The student-facing body stays student-facing. The resources H2 must be exactly `## Additional Resources`. Official sources go first inside the section — never `(official first)` in the H2.
 
 `Lessons/Lesson1.md` and `Lessons/Lesson2.md` starters may still show an old header LESSON PREP shape until those templates are refreshed. Follow this section and [`agents/skills/acs-lesson-plan/SKILL.md`](agents/skills/acs-lesson-plan/SKILL.md) when writing new lessons.
 
@@ -182,7 +175,7 @@ Copy the starter shape from `Lessons/Lesson1.md` (overview day) or `Lessons/Less
 - **Objectives** with action verbs
 - Timed blocks: warm-up, TT, break, activity or lab, wrap up
 - `<!-- > -->` / `<!-- v -->` for `reveal-md` slides
-- `## Additional Resources` (exact H2), then a bottom `<details>` with `## For curriculum authors`
+- `## Additional Resources` (exact H2; official sources first inside the section), then a bottom `<details><summary>For curriculum authors</summary>…</details>` with `## For curriculum authors`
 
 `reveal-md Lessons/` still builds `Slides/` if you want a deck. See `Reveal/README.md`.
 
@@ -205,7 +198,7 @@ Copy the starter shape from `Lessons/Lesson1.md` (overview day) or `Lessons/Less
 Before you call student-facing markdown done:
 
 1. Headings match the template. Objectives use action verbs.
-2. Instructor direction is only in a bottom `<details>` with `## For curriculum authors` (after `## Additional Resources`) — never in the header or mid-body.
+2. Instructor direction is only inside a bottom `<details><summary>For curriculum authors</summary>…</details>` with `## For curriculum authors` (after `## Additional Resources`) — never in the header or mid-body.
 3. Placeholders that should have been replaced are gone.
 4. Local links resolve (`npm run check-links`).
 5. Prose sounds like Dani teaching, not like a template.
@@ -218,8 +211,8 @@ Standing bars for lesson Markdown live in [`agents/skills/acs-lesson-plan/SKILL.
 
 - File naming: `topic_name.md` (never `LessonNN.md` as canonical content)
 - Header: no Author / Session / Bars / Accuracy / MVP meta stack — open with `# Title` → `GOAL:` → agenda
-- Author directives: bottom `<details>` wrapping `## For curriculum authors` after `## Additional Resources` (`### Run-of-show` / facilitator / Expert follow-ups — never header or mid-body). Never put ADHD or diagnosis labels in lesson Markdown.
-- Additional Resources: H2 is always exactly `## Additional Resources` (official-first is list order, not H2 text)
+- Author directives: `## For curriculum authors` lives inside a bottom `<details><summary>For curriculum authors</summary>…</details>` after `## Additional Resources` (`### Run-of-show` / facilitator / Expert follow-ups — never header or mid-body). Never put ADHD or diagnosis labels in lesson Markdown.
+- Additional Resources: H2 must be exactly `## Additional Resources`. Official sources first inside the section — never `(official first)` in the H2.
 - Activity labels: `Activity 1` / `Activity 2` (never Hands-on); labs `Lab 1` / `Lab 2` Arabic numerals only (never `Lab I`)
 - Heading names: TT/activity/lab headings are topic-based (`Send Emails Async`), never process jargon (`JS competence densified`)
 - Voice: job-sim; `GOAL:`; rookie/beginner on-the-job tips (never hire-bar in the plan)

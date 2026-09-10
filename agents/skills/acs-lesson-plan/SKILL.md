@@ -31,13 +31,13 @@ Open with `# Title`, then `⭐️ **GOAL:**`, then the elapsed agenda table only
 
 ## Additional Resources (hard)
 
-The heading is always exactly `## Additional Resources`.
+The heading must be exactly `## Additional Resources`.
 
-Official-first is **list order** inside that section — never rewrite the H2 (no `## Additional Resources (official first)`, no `## Official resources`).
+Official sources go first **inside** the section. Never put `(official first)` in the H2.
 
 ## Author directives (hard)
 
-Instructor, facilitator, and curriculum-author directives go at the **bottom** of every ACS lesson — after `## Additional Resources` — wrapped in a `<details>` block that contains `## For curriculum authors`.
+`## For curriculum authors` lives inside a bottom `<details><summary>For curriculum authors</summary>…</details>` after `## Additional Resources`.
 
 Never put them in:
 
@@ -45,7 +45,7 @@ Never put them in:
 - a top `<details>` / LESSON PREP callout
 - the mid-body (warm-up, TT, activity, lab, wrap)
 
-Shape (bottom only):
+Shape (bottom only — copy this block):
 
 ```markdown
 <details>
@@ -87,7 +87,7 @@ Never use process jargon — e.g. `JS competence densified`.
 
 ## Structure
 
-- Syllabus-Template / Lesson09 shape: Elapsed / Time / Activity table, Why, Learning Objectives, Overview/TT, Activities, BREAK, Lab/Wrap, `## Additional Resources`, then a bottom `<details>` with `## For curriculum authors`.
+- Syllabus-Template / Lesson09 shape: Elapsed / Time / Activity table, Why, Learning Objectives, Overview/TT, Activities, BREAK, Lab/Wrap, `## Additional Resources`, then a bottom `<details><summary>For curriculum authors</summary>…</details>` containing `## For curriculum authors`.
 - Teacher talk **30–40m** with **3–4 mid-TT active-learning audience questions** (pulse checks ≤60s, expected answer named).
 - Action-first structure on the overall plan and each activity block: next action, numbered steps, done state, time, ≤2m next.
 - Skills: [dani-roxberrys-teaching-voice](sand-workflow:dani-roxberrys-teaching-voice), [write-like-you-talk](sand-workflow:write-like-you-talk), [dani-roxberry-s-social-learning](sand-workflow:dani-roxberry-s-social-learning), [i-have-adhd](sand-workflow:i-have-adhd).
