@@ -74,7 +74,7 @@ Put instructor, facilitator, and curriculum-author directives after Additional R
 ```markdown
 ## For curriculum authors
 
-### ADHD run-of-show
+### Run-of-show
 
 - Open the demo before class.
 - Breakouts of 3–4.
@@ -88,7 +88,7 @@ Put instructor, facilitator, and curriculum-author directives after Additional R
 - Optional stretch after the lab.
 ```
 
-ADHD run-of-show is not at the top after the agenda. The student-facing body stays student-facing.
+Never put ADHD or diagnosis labels in lesson Markdown. Use `### Run-of-show`. Run-of-show is not at the top after the agenda. The student-facing body stays student-facing.
 
 `Lessons/Lesson1.md` and `Lessons/Lesson2.md` starters may still show an old header LESSON PREP shape until those templates are refreshed. Follow this section and [`agents/skills/acs-lesson-plan/SKILL.md`](agents/skills/acs-lesson-plan/SKILL.md) when writing new lessons.
 
@@ -170,7 +170,7 @@ npm run check-links
 
 ## Lesson template
 
-Copy the starter shape from `Lessons/Lesson1.md` (overview day) or `Lessons/Lesson2.md` (lab day), then rename to `topic_name.md`. Those files are templates, not published canonical names. For naming, header, Author directives, Activity labels (Arabic numerals), and GOAL bars, follow [`agents/skills/acs-lesson-plan/SKILL.md`](agents/skills/acs-lesson-plan/SKILL.md). Structure matches ACS-3220:
+Copy the starter shape from `Lessons/Lesson1.md` (overview day) or `Lessons/Lesson2.md` (lab day), then rename to `topic_name.md`. Those files are templates, not published canonical names. For naming, header, Author directives, Activity labels (`Activity 1` / `Lab 1`), topic-based headings, and GOAL bars, follow [`agents/skills/acs-lesson-plan/SKILL.md`](agents/skills/acs-lesson-plan/SKILL.md). Structure matches ACS-3220:
 
 - Title + one-line **GOAL**
 - Timed **Agenda** with jump links
@@ -213,7 +213,8 @@ Standing bars for lesson Markdown live in [`agents/skills/acs-lesson-plan/SKILL.
 
 - File naming: `topic_name.md` (never `LessonNN.md` as canonical content)
 - Header: no Author / Session / Bars / Accuracy / MVP meta stack — open with `# Title` → `GOAL:` → agenda
-- Author directives: `## For curriculum authors` at the bottom after Additional Resources (ADHD run-of-show / facilitator / Expert follow-ups — never header or mid-body)
-- Activity labels: Arabic numerals (`Lab 1`, `Hands-on 1`) — never Roman (`Lab I`)
+- Author directives: `## For curriculum authors` at the bottom after Additional Resources (`### Run-of-show` / facilitator / Expert follow-ups — never header or mid-body). Never put ADHD or diagnosis labels in lesson Markdown.
+- Activity labels: `Activity 1` / `Activity 2` (never Hands-on); labs `Lab 1` / `Lab 2` Arabic numerals only (never `Lab I`)
+- Heading names: TT/activity/lab headings are topic-based (`Send Emails Async`), never process jargon (`JS competence densified`)
 - Voice: job-sim; `GOAL:`; rookie/beginner on-the-job tips (never hire-bar in the plan)
 - TT: 30–40m with 3–4 mid-talk pulse checks

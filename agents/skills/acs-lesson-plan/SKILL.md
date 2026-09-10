@@ -27,7 +27,7 @@ Standing rules for every ACS course lesson plan (ACS-4210, ACS-3210, ACS-2951, e
 - Accuracy check
 - MVP (≤15m) as a header field
 
-Open with `# Title`, then `⭐️ **GOAL:**`, then the elapsed agenda table only. No ADHD run-of-show at the top after the agenda. Put MVP into Why/Objectives or activity “Done when” — not a top meta stack.
+Open with `# Title`, then `⭐️ **GOAL:**`, then the elapsed agenda table only. No run-of-show at the top after the agenda. Put MVP into Why/Objectives or activity “Done when” — not a top meta stack.
 
 ## Author directives (hard)
 
@@ -41,17 +41,25 @@ Never put them in:
 
 Optional subsections (bottom only):
 
-- `### ADHD run-of-show`
+- `### Run-of-show`
 - `### Facilitator notes`
 - `### Expert follow-ups`
 
-ADHD run-of-show is **not** at the top after the agenda. If you write one, it belongs under `## For curriculum authors`.
+Never put ADHD or diagnosis labels in lesson Markdown. Use `### Run-of-show` — never `### ADHD run-of-show`.
+
+Run-of-show is **not** at the top after the agenda. If you write one, it belongs under `## For curriculum authors`.
 
 ## Activity labels (hard)
 
-Number labs and hands-ons with Arabic numerals — `Lab 1`, `Lab 2`, `Hands-on 1`.
+Use **Activity 1** / **Activity 2**. Never **Hands-on**.
 
-Never use Roman numerals (`Lab I`, `Lab II`).
+Number labs with Arabic numerals only — `Lab 1`, `Lab 2`. Never Roman (`Lab I`, `Lab II`).
+
+## Heading names (hard)
+
+TT, activity, and lab headings must be **topic-based** — e.g. `Send Emails Async`.
+
+Never use process jargon — e.g. `JS competence densified`.
 
 ## Voice and labels
 
@@ -64,7 +72,7 @@ Never use Roman numerals (`Lab I`, `Lab II`).
 
 - Syllabus-Template / Lesson09 shape: Elapsed / Time / Activity table, Why, Learning Objectives, Overview/TT, Activities, BREAK, Lab/Wrap, Additional Resources, then `## For curriculum authors` (bottom only).
 - Teacher talk **30–40m** with **3–4 mid-TT active-learning audience questions** (pulse checks ≤60s, expected answer named).
-- ADHD structure on the overall plan and each activity block: next action, numbered steps, done state, time, ≤2m next.
+- Action-first structure on the overall plan and each activity block: next action, numbered steps, done state, time, ≤2m next.
 - Skills: [dani-roxberrys-teaching-voice](sand-workflow:dani-roxberrys-teaching-voice), [write-like-you-talk](sand-workflow:write-like-you-talk), [dani-roxberry-s-social-learning](sand-workflow:dani-roxberry-s-social-learning), [i-have-adhd](sand-workflow:i-have-adhd).
 
 ## Accuracy and ship
