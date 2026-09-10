@@ -31,7 +31,7 @@ ADHD-friendly replies stay in the agent conversation. They do not leak into stud
 2. Replace every `ALL_CAPS` placeholder. Search for `COURSE_`, `REPO_NAME`, `GITHUB_ORG`, `INSTRUCTOR_EMAIL`.
 3. Set `index.html` title, description, author, `repo`, `name`, `search.namespace`, and OG URLs.
 4. Rewrite `README.md` as this course's syllabus. Keep the ACS-3220 section order.
-5. Create each session as `Lessons/<topic_name.md>` (kebab or TopicCase as used in the repo). Use `Lessons/Lesson1.md` (overview) and `Lessons/Lesson2.md` (lab) only as **templates to copy-from-and-rename** — not as published canonical filenames. Update `_sidebar.md` so every published lesson is linked (search only sees sidebar links).
+5. Create each session as `Lessons/<topic_name.md>` (kebab or TopicCase as used in the repo). Copy-from-and-rename **`Lessons/Lesson1.md` only** — it is the sole lesson template. Never author from `Lesson2`. Update `_sidebar.md` so every published lesson is linked (search only sees sidebar links).
 6. Add course-specific Prism languages in `index.html` if you need them (`prism-docker`, `prism-go`, …).
 7. Run `npm install` and `npm run serve`. Open `http://localhost:3000`.
 8. Enable GitHub Pages from the default branch.
@@ -99,9 +99,9 @@ Put instructor, facilitator, and curriculum-author directives after Additional R
 </details>
 ```
 
-`### In Class` is not at the top after the agenda. The student-facing body stays student-facing.
+`### In Class` is not at the top after the agenda. Author notes stay in that bottom `<details>` block. The student-facing body stays student-facing.
 
-`Lessons/Lesson1.md` and `Lessons/Lesson2.md` starters may still show an old header LESSON PREP shape until those templates are refreshed. Follow this section and [`agents/skills/acs-lesson-plan/SKILL.md`](agents/skills/acs-lesson-plan/SKILL.md) when writing new lessons.
+`Lessons/Lesson1.md` is the **only** starter. Copy it, rename to `topic_name.md`, and never author from `Lesson2`. Follow this section, [`agents/skills/acs-lesson1-only-template/SKILL.md`](agents/skills/acs-lesson1-only-template/SKILL.md), and [`agents/skills/acs-lesson-plan/SKILL.md`](agents/skills/acs-lesson-plan/SKILL.md) when writing new lessons.
 
 ### 6. Tech Trends → `updates.md`
 
@@ -181,14 +181,14 @@ npm run check-links
 
 ## Lesson template
 
-Copy the starter shape from `Lessons/Lesson1.md` (overview day) or `Lessons/Lesson2.md` (lab day), then rename to `topic_name.md`. Those files are templates, not published canonical names. For naming, header, Author directives, Activity labels (Arabic numerals), and GOAL bars, follow [`agents/skills/acs-lesson-plan/SKILL.md`](agents/skills/acs-lesson-plan/SKILL.md). Structure matches ACS-3220:
+Copy the starter shape from `Lessons/Lesson1.md` only, then rename to `topic_name.md`. There is no Lesson2 template. For naming, header, Author directives, Activity labels (`Activity 1` / `Activity 2`), and GOAL bars, follow [`agents/skills/acs-lesson1-only-template/SKILL.md`](agents/skills/acs-lesson1-only-template/SKILL.md) and [`agents/skills/acs-lesson-plan/SKILL.md`](agents/skills/acs-lesson-plan/SKILL.md). Structure matches ACS-3220:
 
 - Title + one-line **GOAL**
 - Timed **Agenda** with jump links
 - **Objectives** with action verbs
 - Timed blocks: warm-up, TT, break, activity or lab, wrap up
 - `<!-- > -->` / `<!-- v -->` for `reveal-md` slides
-- `## Additional Resources` (exact heading), then `## For curriculum authors` in a `<details>` wrap at the bottom
+- `## Additional Resources` (exact heading), then `## For curriculum authors` in a `<details>` wrap at the bottom (`### In Class`)
 
 `reveal-md Lessons/` still builds `Slides/` if you want a deck. See `Reveal/README.md`.
 
@@ -200,11 +200,13 @@ Copy the starter shape from `Lessons/Lesson1.md` (overview day) or `Lessons/Less
 | `README.md` | Student syllabus (Docsify home) |
 | `_sidebar.md` | Searchable nav — link every published lesson |
 | `_navbar.md` | Top nav |
-| `Lessons/` | Session pages |
+| `Lessons/` | Session pages — starter is `Lessons/Lesson1.md` only |
 | `Assignments/` | Project specs |
 | `updates.md` | Tech Trends + Add to Course |
 | `Web/` | Theme + service worker |
 | `AGENTS.md` | This file |
+| `agents/skills/acs-lesson1-only-template/` | Lesson1-only starter pin |
+| `agents/skills/acs-lesson-plan/` | Standing lesson-plan bars |
 
 ## Technical Writer gate
 
@@ -222,10 +224,14 @@ Before you call student-facing markdown done:
 
 Standing bars for lesson Markdown live in [`agents/skills/acs-lesson-plan/SKILL.md`](agents/skills/acs-lesson-plan/SKILL.md):
 
+- Sole template: copy `Lessons/Lesson1.md` only — never author from Lesson2
 - File naming: `topic_name.md` (never `LessonNN.md` as canonical content)
 - Header: no Author / Session / Bars / Accuracy / MVP meta stack — open with `# Title` → `GOAL:` → agenda
+- H1 is topic + optional day only — never a course code
 - Additional Resources: heading is exactly `## Additional Resources` — never rename or add parentheticals (“official first” is link order inside the section)
 - Author directives: `## For curriculum authors` at the bottom after Additional Resources, contents in `<details>` (`### In Class` / facilitator / Expert follow-ups — never header or mid-body)
 - Activity labels: `Activity 1` / `Activity 2` (never Hands-on); labs stay `Lab 1` / `Lab 2` — never Roman (`Lab I`)
+- TT pulses: `> **ASK AUDIENCE:** <question ≤60s>` plus `<details><summary>Answer</summary>` — never open-body Question/Expected paragraphs
 - Voice: job-sim; `GOAL:`; rookie/beginner on-the-job tips (never hire-bar in the plan)
 - TT: 30–40m with 3–4 mid-talk pulse checks
+- Never put the word ADHD (or other diagnosis labels) in a lesson file

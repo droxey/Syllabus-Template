@@ -9,6 +9,12 @@ description: >-
 
 Standing rules for every ACS course lesson plan (ACS-4210, ACS-3210, ACS-2951, etc.). Apply before draft, Expert review, Writer TW-final, and PR.
 
+## Sole template (hard)
+
+- In Syllabus-Template, **`Lessons/Lesson1.md` is the only lesson starter.** Copy it, then rename to `topic_name.md`.
+- **Never** author from `Lesson2` / `Lessons/Lesson2.md` / `Slides/Lesson2.html`. Those files are gone.
+- See [`acs-lesson1-only-template`](../acs-lesson1-only-template/SKILL.md).
+
 ## File naming (hard)
 
 - Always name lesson files **`topic_name.md`** (kebab or short TopicCase as used in the repo — e.g. `middleware.md`, `Emails.md`, `3rdPartyLibs.md`).
@@ -66,8 +72,19 @@ Never rename them. Never add parentheticals. Official-first is list order under 
 
 ## Structure
 
-- Syllabus-Template / Lesson09 shape: Elapsed / Time / Activity table, Why, Learning Objectives, Overview/TT, Activities, BREAK, Lab/Wrap, then exactly `## Additional Resources` (official sources first), then **For curriculum authors** (bottom only, `<details>`-wrapped).
-- Teacher talk **30–40m** with **3–4 mid-TT active-learning audience questions** (pulse checks ≤60s, expected answer named).
+- Copy **`Lessons/Lesson1.md` only** (never Lesson2). Shape: Elapsed / Time / Activity table, Why, Learning Objectives, Overview/TT, Activities, BREAK, Lab/Wrap, then exactly `## Additional Resources` (official sources first), then **For curriculum authors** (bottom only, `<details>`-wrapped).
+- Teacher talk **30–40m** with **3–4 mid-TT ASK AUDIENCE pulse checks** (≤60s). Use this shape only — never open-body `**ASK AUDIENCE**` plus Question/Expected paragraphs:
+
+```markdown
+> **ASK AUDIENCE:** <question ≤60s>
+
+<details>
+<summary>Answer</summary>
+
+<expected answer>
+
+</details>
+```
 - Scannable structure on the overall plan and each activity block: next action, numbered steps, done state, time, ≤2m next — **without naming ADHD or any diagnosis in the lesson file**.
 - Skills (for authors drafting — do **not** cite these skill names in the lesson Markdown): [dani-roxberrys-teaching-voice](sand-workflow:dani-roxberrys-teaching-voice), [write-like-you-talk](sand-workflow:write-like-you-talk), [dani-roxberry-s-social-learning](sand-workflow:dani-roxberry-s-social-learning).
 

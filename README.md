@@ -76,8 +76,8 @@ _By the end of this course, you will be able to&hellip;_
 | Class | Date | Topic |
 |:-----:|:----:|-------|
 | 1 | DATE_1 | [Lesson 1] |
-| 2 | DATE_2 | [Lesson 2] |
-| 3 | DATE_3 | Lesson 3 — add `Lessons/Lesson3.md` and link it here |
+| 2 | DATE_2 | Next session — add `Lessons/topic_name.md` and link it here |
+| 3 | DATE_3 | Later session — add `Lessons/topic_name.md` and link it here |
 | — | DATE_HOLIDAY | **No Class — HOLIDAY_NAME** |
 | n | DATE_FINAL | Final exam / presentations |
 
@@ -130,4 +130,3 @@ Any extra books, docs, or tools you need can live here.
 List topics from this course that show up in technical interviews.
 
 [Lesson 1]: Lessons/Lesson1.md
-[Lesson 2]: Lessons/Lesson2.md
