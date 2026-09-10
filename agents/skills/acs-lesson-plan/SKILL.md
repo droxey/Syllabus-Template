@@ -16,6 +16,12 @@ Standing rules for every ACS course lesson plan (ACS-4210, ACS-3210, ACS-2951, e
 - If an old `LessonNN.md` exists, turn it into a short **pointer** to `topic_name.md`, or update README/schedule Day `NN` to link `Lessons/topic_name.md`.
 - Vault / box drafts: `YYYY-MM-DD-<topic>.md` or pack-flattened `topic_name.md` — still topic-named, not LessonNN.
 
+## Lesson titles (hard)
+
+- H1 is **topic + optional day only** — never include the course code.
+- Good: `# Sending Emails (Transactional) — Day 5`
+- Bad: `# Sending Emails (Transactional) — ACS-3210 Day 5`
+- Course lives in the repo / Docsify site name, not the lesson H1.
 
 ## Header (hard)
 
