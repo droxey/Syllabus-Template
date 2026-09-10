@@ -73,14 +73,17 @@ Never rename them. Never add parentheticals. Official-first is list order under 
 ## Structure
 
 - Copy **`Lessons/Lesson1.md` only** (never Lesson2). Shape: Elapsed / Time / Activity table, Why, Learning Objectives, Overview/TT, Activities, BREAK, Lab/Wrap, then exactly `## Additional Resources` (official sources first), then **For curriculum authors** (bottom only, `<details>`-wrapped).
-- Teacher talk **30–40m** with **3–4 mid-TT ASK AUDIENCE pulse checks** (≤60s, expected answer named). Use this shape:
+- Teacher talk **30–40m** with **3–4 mid-TT ASK AUDIENCE pulse checks** (≤60s). Use this shape only — never open-body `**ASK AUDIENCE**` plus Question/Expected paragraphs:
 
 ```markdown
-**ASK AUDIENCE** (≤60s)
+> **ASK AUDIENCE:** <question ≤60s>
 
-Question: …
+<details>
+<summary>Answer</summary>
 
-Expected: …
+<expected answer>
+
+</details>
 ```
 - Scannable structure on the overall plan and each activity block: next action, numbered steps, done state, time, ≤2m next — **without naming ADHD or any diagnosis in the lesson file**.
 - Skills (for authors drafting — do **not** cite these skill names in the lesson Markdown): [dani-roxberrys-teaching-voice](sand-workflow:dani-roxberrys-teaching-voice), [write-like-you-talk](sand-workflow:write-like-you-talk), [dani-roxberry-s-social-learning](sand-workflow:dani-roxberry-s-social-learning).

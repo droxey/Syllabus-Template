@@ -46,33 +46,45 @@ Prime the room. Pick one easy-to-explain activity that is fun on Zoom:
 
 Why this matters. One industry example. The few terms you must own today.
 
-**ASK AUDIENCE** (≤60s)
+> **ASK AUDIENCE:** What breaks first if CONCEPT_1 is wrong?
 
-Question: What breaks first if CONCEPT_1 is wrong?
+<details>
+<summary>Answer</summary>
 
-Expected: Name the failure mode, not a definition recap.
+Name the failure mode, not a definition recap.
+
+</details>
 
 Walk the smallest path that works. Narrate the failure you expect the room to hit.
 
-**ASK AUDIENCE** (≤60s)
+> **ASK AUDIENCE:** Which command or API call proves CONCEPT_2 is actually in play?
 
-Question: Which command or API call proves CONCEPT_2 is actually in play?
+<details>
+<summary>Answer</summary>
 
-Expected: A concrete check, not "it works."
+A concrete check, not "it works."
+
+</details>
 
 Show the tradeoff. What you gain. What you give up.
 
-**ASK AUDIENCE** (≤60s)
+> **ASK AUDIENCE:** When would you *not* use CONCEPT_3?
 
-Question: When would you *not* use CONCEPT_3?
+<details>
+<summary>Answer</summary>
 
-Expected: One constraint (cost, latency, ownership, or failure mode).
+One constraint (cost, latency, ownership, or failure mode).
 
-**ASK AUDIENCE** (≤60s)
+</details>
 
-Question: What is the done-state for Activity 1?
+> **ASK AUDIENCE:** What is the done-state for Activity 1?
 
-Expected: The artifact or check listed under Activity 1.
+<details>
+<summary>Answer</summary>
+
+The artifact or check listed under Activity 1.
+
+</details>
 
 <aside class="notes">
 Speaker notes belong here. They show on GitHub Pages and stay off the slides.

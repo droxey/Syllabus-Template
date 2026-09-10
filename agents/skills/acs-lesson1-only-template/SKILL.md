@@ -31,7 +31,7 @@ These must appear in every lesson copied from Lesson1:
 | Resources heading | Exactly `## Additional Resources` |
 | Author notes | After Additional Resources, `<details>` wrapping `## For curriculum authors` |
 | In-class prep | `### In Class` inside that `<details>` (not a header LESSON PREP toggle) |
-| TT pulses | **ASK AUDIENCE** (≤60s) with a named **Expected:** answer — 3–4 mid-talk |
+| TT pulses | Blockquote `> **ASK AUDIENCE:** <question ≤60s>` plus `<details><summary>Answer</summary>` — 3–4 mid-talk. Never open-body Question/Expected paragraphs. |
 | Practice labels | `Activity 1` / `Activity 2` (labs: `Lab 1`, `Lab 2`) — never Roman, never `Hands-on` |
 | Diagnosis labels | Never put ADHD (or other diagnosis/neurotype words) in the lesson file |
 | H1 | Topic + optional day only — never a course code |
@@ -39,11 +39,14 @@ These must appear in every lesson copied from Lesson1:
 ASK AUDIENCE pulse shape:
 
 ```markdown
-**ASK AUDIENCE** (≤60s)
+> **ASK AUDIENCE:** <question ≤60s>
 
-Question: …
+<details>
+<summary>Answer</summary>
 
-Expected: …
+<expected answer>
+
+</details>
 ```
 
 Author-notes shape:
