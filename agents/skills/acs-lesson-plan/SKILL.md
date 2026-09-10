@@ -27,7 +27,7 @@ Standing rules for every ACS course lesson plan (ACS-4210, ACS-3210, ACS-2951, e
 - Accuracy check
 - MVP (≤15m) as a header field
 
-Open with `# Title`, then `⭐️ **GOAL:**`, then the elapsed agenda table only. No ADHD run-of-show at the top after the agenda. Put MVP into Why/Objectives or activity “Done when” — not a top meta stack.
+Open with `# Title`, then `⭐️ **GOAL:**`, then the elapsed agenda table only. No run-of-show at the top after the agenda. Put MVP into Why/Objectives or activity “Done when” — not a top meta stack.
 
 ## Author directives (hard)
 
@@ -41,11 +41,15 @@ Never put them in:
 
 Optional subsections (bottom only):
 
-- `### ADHD run-of-show`
+- `### Run-of-show (optional)`
 - `### Facilitator notes`
 - `### Expert follow-ups`
 
-ADHD run-of-show is **not** at the top after the agenda. If you write one, it belongs under `## For curriculum authors`.
+Run-of-show is **not** at the top after the agenda. If you write one, it belongs under `## For curriculum authors`.
+
+## No diagnosis labels in the plan (hard)
+
+Never put the word ADHD (or other diagnosis/neurotype labels) in a lesson plan — headings, body, facilitator notes, or resources. Prefer neutral `### Run-of-show`, next-action / done-when, pulse checks. Authors may use scannable habits when drafting but must not name ADHD in shipped Markdown.
 
 ## Activity labels (hard)
 
@@ -64,8 +68,8 @@ Never use Roman numerals (`Lab I`, `Lab II`).
 
 - Syllabus-Template / Lesson09 shape: Elapsed / Time / Activity table, Why, Learning Objectives, Overview/TT, Activities, BREAK, Lab/Wrap, Additional Resources, then `## For curriculum authors` (bottom only).
 - Teacher talk **30–40m** with **3–4 mid-TT active-learning audience questions** (pulse checks ≤60s, expected answer named).
-- ADHD structure on the overall plan and each activity block: next action, numbered steps, done state, time, ≤2m next.
-- Skills: [dani-roxberrys-teaching-voice](sand-workflow:dani-roxberrys-teaching-voice), [write-like-you-talk](sand-workflow:write-like-you-talk), [dani-roxberry-s-social-learning](sand-workflow:dani-roxberry-s-social-learning), [i-have-adhd](sand-workflow:i-have-adhd).
+- Scannable structure on the overall plan and each activity block: next action, numbered steps, done state, time, ≤2m next — without naming ADHD in the lesson file.
+- Skills: [dani-roxberrys-teaching-voice](sand-workflow:dani-roxberrys-teaching-voice), [write-like-you-talk](sand-workflow:write-like-you-talk), [dani-roxberry-s-social-learning](sand-workflow:dani-roxberry-s-social-learning).
 
 ## Accuracy and ship
 
