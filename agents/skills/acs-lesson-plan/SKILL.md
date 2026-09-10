@@ -2,8 +2,8 @@
 name: acs-lesson-plan
 description: >-
   Use when drafting or revising ACS / Tech-at-DU course lesson plans
-  (Syllabus-Template Days): naming, voice, TT structure, and ship bars for Dani
-  Roxberry’s ACS courses.
+  (Syllabus-Template Days): naming, voice, TT structure, author-directive
+  placement, and ship bars for Dani Roxberry’s ACS courses.
 ---
 # ACS lesson plan bars (Tech-at-DU / Dominican)
 
@@ -27,9 +27,67 @@ Standing rules for every ACS course lesson plan (ACS-4210, ACS-3210, ACS-2951, e
 - Accuracy check
 - MVP (≤15m) as a header field
 
-Open with `# Title`, then `⭐️ **GOAL:**`, then the elapsed agenda table. Put MVP into Why/Objectives or activity “Done when” — not a top meta stack.
+Open with `# Title`, then `⭐️ **GOAL:**`, then the elapsed agenda table only. No run-of-show at the top after the agenda. Put MVP into Why/Objectives or activity “Done when” — not a top meta stack.
 
 **Never** put instructor / facilitator / curriculum-author directives near the top or mid-body. See **Author directives (hard)** below.
+
+## Additional Resources (hard)
+
+The heading must be exactly `## Additional Resources`.
+
+Official sources go first **inside** the section. Never put `(official first)` in the H2.
+
+## Author directives (hard)
+
+`## For curriculum authors` lives inside a bottom `<details><summary>For curriculum authors</summary>…</details>` after `## Additional Resources`.
+
+Never put them in:
+
+- the header
+- a top `<details>` / LESSON PREP callout
+- the mid-body (warm-up, TT, activity, lab, wrap)
+
+Shape (bottom only — copy this block):
+
+```markdown
+<details>
+<summary>For curriculum authors</summary>
+
+## For curriculum authors
+
+### Run-of-show
+
+### Facilitator notes
+
+### Expert follow-ups
+
+</details>
+```
+
+Never put ADHD or diagnosis labels in lesson Markdown. Use `### Run-of-show` — never `### ADHD run-of-show`. `### In Class` is also fine (neutral).
+
+Run-of-show is **not** at the top after the agenda. If you write one, it belongs inside that bottom `<details>`.
+
+- Learner-facing body stays topic-only (GOAL, agenda, Why, TT, activities, wrap, resources).
+- Internal Expert accuracy notes may live under Reviews/ instead of the lesson body; if they must ship in-file, nest them under **For curriculum authors**.
+
+## Activity labels (hard)
+
+- Use **`Activity 1` / `Activity 2`** for primary practice blocks — **never** `Hands-on` / `Hands-on I`.
+- Number labs with **Arabic numerals**: `Lab 1`, `Lab 2` — **never** Roman (`Lab I`, `Lab II`).
+- Keep the same numeral style in the agenda table, headings, and in-body cross-references.
+
+## Heading names (hard)
+
+TT, activity, and lab headings must be **topic-based** — e.g. `Send Emails Async`.
+
+Never use process jargon — e.g. `JS competence densified`.
+
+## No diagnosis labels in the plan (hard)
+
+- **Never** put the word **ADHD** (or other diagnosis/neurotype labels) in a lesson plan — not in headings, body, facilitator notes, or resources.
+- Prefer neutral labels: `### Run-of-show` or `### In Class`, next-action / done-when blocks, pulse checks.
+- Authors may still *use* scannable / write-like-you-talk habits when drafting; just don’t name the habit or diagnosis in the shipped Markdown.
 
 ## Voice and labels
 
@@ -40,47 +98,10 @@ Open with `# Title`, then `⭐️ **GOAL:**`, then the elapsed agenda table. Put
 
 ## Structure
 
-- Syllabus-Template / Lesson09 shape: Elapsed / Time / Activity table, Why, Learning Objectives, Overview/TT, Activities, BREAK, Lab/Wrap, then exactly `## Additional Resources` (official sources first), then **For curriculum authors** (bottom only, `<details>`-wrapped).
+- Syllabus-Template / Lesson09 shape: Elapsed / Time / Activity table, Why, Learning Objectives, Overview/TT, Activities, BREAK, Lab/Wrap, `## Additional Resources`, then a bottom `<details><summary>For curriculum authors</summary>…</details>` containing `## For curriculum authors`.
 - Teacher talk **30–40m** with **3–4 mid-TT active-learning audience questions** (pulse checks ≤60s, expected answer named).
 - Scannable structure on the overall plan and each activity block: next action, numbered steps, done state, time, ≤2m next — **without naming ADHD or any diagnosis in the lesson file**.
 - Skills (for authors drafting — do **not** cite these skill names in the lesson Markdown): [dani-roxberrys-teaching-voice](sand-workflow:dani-roxberrys-teaching-voice), [write-like-you-talk](sand-workflow:write-like-you-talk), [dani-roxberry-s-social-learning](sand-workflow:dani-roxberry-s-social-learning).
-
-
-
-## Activity labels (hard)
-
-- Use **`Activity 1` / `Activity 2`** for primary practice blocks — **never** `Hands-on` / `Hands-on I`.
-- Number labs with **Arabic numerals**: `Lab 1`, `Lab 2` — **never** Roman (`Lab I`, `Lab II`).
-- Keep the same numeral style in the agenda table, headings, and in-body cross-references.
-
-
-## No diagnosis labels in the plan (hard)
-
-- **Never** put the word **ADHD** (or other diagnosis/neurotype labels) in a lesson plan — not in headings, body, facilitator notes, or resources.
-- Prefer neutral labels: `### In Class`, next-action / done-when blocks, pulse checks.
-- Authors may still *use* scannable / write-like-you-talk habits when drafting; just don’t name the habit or diagnosis in the shipped Markdown.
-
-## Author directives (hard)
-
-Any directive for **instructors**, **facilitators**, or **curriculum authors** belongs at the **bottom** of the lesson — after Additional Resources — under:
-
-```markdown
-## For curriculum authors
-
-<details>
-<summary>For curriculum authors</summary>
-
-### In Class (optional)
-### Facilitator notes
-### Expert / stack follow-ups (optional)
-
-</details>
-```
-
-- Wrap the body of **For curriculum authors** in a `<details>` block (heading stays outside).
-- Do **not** put these in the header, in a top callout, or mid-body.
-- Learner-facing body stays topic-only (GOAL, agenda, Why, TT, activities, wrap, resources).
-- Internal Expert accuracy notes may live under Reviews/ instead of the lesson body; if they must ship in-file, nest them under **For curriculum authors**.
 
 ## Accuracy and ship
 
