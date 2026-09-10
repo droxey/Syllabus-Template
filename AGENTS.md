@@ -199,3 +199,13 @@ Before you call student-facing markdown done:
 4. Local links resolve (`npm run check-links`).
 5. Prose sounds like Dani teaching, not like a template.
 6. You changed the fewest lines that finish the job.
+
+
+## ACS lesson plan bars
+
+Standing bars for lesson Markdown live in [`agents/skills/acs-lesson-plan/SKILL.md`](agents/skills/acs-lesson-plan/SKILL.md):
+
+- File naming: `topic_name.md` (never `LessonNN.md` as canonical content)
+- Header: no Author / Session / Bars / Accuracy / MVP meta stack — open with `# Title` → `GOAL:` → agenda
+- Voice: job-sim; `GOAL:`; rookie/beginner on-the-job tips (never hire-bar in the plan)
+- TT: 30–40m with 3–4 mid-talk pulse checks
