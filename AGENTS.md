@@ -74,7 +74,10 @@ Put instructor, facilitator, and curriculum-author directives after Additional R
 ```markdown
 ## For curriculum authors
 
-### ADHD run-of-show
+<details>
+<summary>For curriculum authors</summary>
+
+### Run-of-show
 
 - Open the demo before class.
 - Breakouts of 3–4.
@@ -86,9 +89,11 @@ Put instructor, facilitator, and curriculum-author directives after Additional R
 ### Expert follow-ups
 
 - Optional stretch after the lab.
+
+</details>
 ```
 
-ADHD run-of-show is not at the top after the agenda. The student-facing body stays student-facing.
+Run-of-show is not at the top after the agenda. The student-facing body stays student-facing.
 
 `Lessons/Lesson1.md` and `Lessons/Lesson2.md` starters may still show an old header LESSON PREP shape until those templates are refreshed. Follow this section and [`agents/skills/acs-lesson-plan/SKILL.md`](agents/skills/acs-lesson-plan/SKILL.md) when writing new lessons.
 
@@ -213,7 +218,7 @@ Standing bars for lesson Markdown live in [`agents/skills/acs-lesson-plan/SKILL.
 
 - File naming: `topic_name.md` (never `LessonNN.md` as canonical content)
 - Header: no Author / Session / Bars / Accuracy / MVP meta stack — open with `# Title` → `GOAL:` → agenda
-- Author directives: `## For curriculum authors` at the bottom after Additional Resources (ADHD run-of-show / facilitator / Expert follow-ups — never header or mid-body)
+- Author directives: `## For curriculum authors` at the bottom after Additional Resources (Run-of-show / facilitator / Expert follow-ups — never header or mid-body)
 - Activity labels: Arabic numerals (`Lab 1`, `Hands-on 1`) — never Roman (`Lab I`)
 - Voice: job-sim; `GOAL:`; rookie/beginner on-the-job tips (never hire-bar in the plan)
 - TT: 30–40m with 3–4 mid-talk pulse checks

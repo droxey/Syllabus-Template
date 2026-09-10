@@ -57,7 +57,8 @@ Open with `# Title`, then `⭐️ **GOAL:**`, then the elapsed agenda table. Put
 ## No diagnosis labels in the plan (hard)
 
 - **Never** put the word **ADHD** (or other diagnosis/neurotype labels) in a lesson plan — not in headings, body, facilitator notes, or resources.
-- Prefer neutral labels: `### In Class`, next-action / done-when blocks, pulse checks.
+- Prefer neutral labels: `### Run-of-show`, next-action / done-when blocks, pulse checks.
+- Never use `ADHD` or `In Class` as the author-notes heading — the pacing heading is `### Run-of-show`.
 - Authors may still *use* scannable / write-like-you-talk habits when drafting; just don’t name the habit or diagnosis in the shipped Markdown.
 
 ## Author directives (hard)
@@ -70,7 +71,7 @@ Any directive for **instructors**, **facilitators**, or **curriculum authors** b
 <details>
 <summary>For curriculum authors</summary>
 
-### In Class (optional)
+### Run-of-show (optional)
 ### Facilitator notes
 ### Expert / stack follow-ups (optional)
 
