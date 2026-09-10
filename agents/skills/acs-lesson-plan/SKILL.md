@@ -47,6 +47,12 @@ Optional subsections (bottom only):
 
 ADHD run-of-show is **not** at the top after the agenda. If you write one, it belongs under `## For curriculum authors`.
 
+## Activity labels (hard)
+
+Number labs and hands-ons with Arabic numerals — `Lab 1`, `Lab 2`, `Hands-on 1`.
+
+Never use Roman numerals (`Lab I`, `Lab II`).
+
 ## Voice and labels
 
 - **Job-simulation voice only** — never students / classroom / academic framing in the plan body.
