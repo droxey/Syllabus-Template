@@ -31,7 +31,7 @@ ADHD-friendly replies stay in the agent conversation. They do not leak into stud
 2. Replace every `ALL_CAPS` placeholder. Search for `COURSE_`, `REPO_NAME`, `GITHUB_ORG`, `INSTRUCTOR_EMAIL`.
 3. Set `index.html` title, description, author, `repo`, `name`, `search.namespace`, and OG URLs.
 4. Rewrite `README.md` as this course's syllabus. Keep the ACS-3220 section order.
-5. Copy `Lessons/Lesson1.md` for each session. Update `_sidebar.md` so every published lesson is linked (search only sees sidebar links).
+5. Create each session as `Lessons/<topic_name.md>` (kebab or TopicCase as used in the repo). Use `Lessons/Lesson1.md` (overview) and `Lessons/Lesson2.md` (lab) only as **templates to copy-from-and-rename** — not as published canonical filenames. Update `_sidebar.md` so every published lesson is linked (search only sees sidebar links).
 6. Add course-specific Prism languages in `index.html` if you need them (`prism-docker`, `prism-go`, …).
 7. Run `npm install` and `npm run serve`. Open `http://localhost:3000`.
 8. Enable GitHub Pages from the default branch.
@@ -163,7 +163,7 @@ npm run check-links
 
 ## Lesson template
 
-Follow `Lessons/Lesson1.md` (overview day) or `Lessons/Lesson2.md` (lab day). Both match ACS-3220:
+Copy the starter shape from `Lessons/Lesson1.md` (overview day) or `Lessons/Lesson2.md` (lab day), then rename to `topic_name.md`. Those files are templates, not published canonical names. For naming, header, and GOAL bars, follow [`agents/skills/acs-lesson-plan/SKILL.md`](agents/skills/acs-lesson-plan/SKILL.md). Structure matches ACS-3220:
 
 - Title + one-line **GOAL**
 - Instructor `<details>` in a header blockquote
