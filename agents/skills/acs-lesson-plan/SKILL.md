@@ -29,9 +29,15 @@ Standing rules for every ACS course lesson plan (ACS-4210, ACS-3210, ACS-2951, e
 
 Open with `# Title`, then `⭐️ **GOAL:**`, then the elapsed agenda table only. No run-of-show at the top after the agenda. Put MVP into Why/Objectives or activity “Done when” — not a top meta stack.
 
+## Additional Resources (hard)
+
+The heading is always exactly `## Additional Resources`.
+
+Official-first is **list order** inside that section — never rewrite the H2 (no `## Additional Resources (official first)`, no `## Official resources`).
+
 ## Author directives (hard)
 
-Instructor, facilitator, and curriculum-author directives go at the **bottom** of every ACS lesson — after Additional Resources — under `## For curriculum authors`.
+Instructor, facilitator, and curriculum-author directives go at the **bottom** of every ACS lesson — after `## Additional Resources` — wrapped in a `<details>` block that contains `## For curriculum authors`.
 
 Never put them in:
 
@@ -39,15 +45,26 @@ Never put them in:
 - a top `<details>` / LESSON PREP callout
 - the mid-body (warm-up, TT, activity, lab, wrap)
 
-Optional subsections (bottom only):
+Shape (bottom only):
 
-- `### Run-of-show`
-- `### Facilitator notes`
-- `### Expert follow-ups`
+```markdown
+<details>
+<summary>For curriculum authors</summary>
+
+## For curriculum authors
+
+### Run-of-show
+
+### Facilitator notes
+
+### Expert follow-ups
+
+</details>
+```
 
 Never put ADHD or diagnosis labels in lesson Markdown. Use `### Run-of-show` — never `### ADHD run-of-show`.
 
-Run-of-show is **not** at the top after the agenda. If you write one, it belongs under `## For curriculum authors`.
+Run-of-show is **not** at the top after the agenda. If you write one, it belongs inside that bottom `<details>`.
 
 ## Activity labels (hard)
 
@@ -70,7 +87,7 @@ Never use process jargon — e.g. `JS competence densified`.
 
 ## Structure
 
-- Syllabus-Template / Lesson09 shape: Elapsed / Time / Activity table, Why, Learning Objectives, Overview/TT, Activities, BREAK, Lab/Wrap, Additional Resources, then `## For curriculum authors` (bottom only).
+- Syllabus-Template / Lesson09 shape: Elapsed / Time / Activity table, Why, Learning Objectives, Overview/TT, Activities, BREAK, Lab/Wrap, `## Additional Resources`, then a bottom `<details>` with `## For curriculum authors`.
 - Teacher talk **30–40m** with **3–4 mid-TT active-learning audience questions** (pulse checks ≤60s, expected answer named).
 - Action-first structure on the overall plan and each activity block: next action, numbered steps, done state, time, ≤2m next.
 - Skills: [dani-roxberrys-teaching-voice](sand-workflow:dani-roxberrys-teaching-voice), [write-like-you-talk](sand-workflow:write-like-you-talk), [dani-roxberry-s-social-learning](sand-workflow:dani-roxberry-s-social-learning), [i-have-adhd](sand-workflow:i-have-adhd).
