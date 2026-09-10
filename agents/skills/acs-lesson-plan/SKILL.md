@@ -2,8 +2,8 @@
 name: acs-lesson-plan
 description: >-
   Use when drafting or revising ACS / Tech-at-DU course lesson plans
-  (Syllabus-Template Days): naming, voice, TT structure, author-directive
-  placement, and ship bars for Dani Roxberry’s ACS courses.
+  (Syllabus-Template Days): naming, voice, TT structure, and ship bars for Dani
+  Roxberry’s ACS courses.
 ---
 # ACS lesson plan bars (Tech-at-DU / Dominican)
 
@@ -27,31 +27,9 @@ Standing rules for every ACS course lesson plan (ACS-4210, ACS-3210, ACS-2951, e
 - Accuracy check
 - MVP (≤15m) as a header field
 
-Open with `# Title`, then `⭐️ **GOAL:**`, then the elapsed agenda table only. No ADHD run-of-show at the top after the agenda. Put MVP into Why/Objectives or activity “Done when” — not a top meta stack.
+Open with `# Title`, then `⭐️ **GOAL:**`, then the elapsed agenda table. Put MVP into Why/Objectives or activity “Done when” — not a top meta stack.
 
-## Author directives (hard)
-
-Instructor, facilitator, and curriculum-author directives go at the **bottom** of every ACS lesson — after Additional Resources — under `## For curriculum authors`.
-
-Never put them in:
-
-- the header
-- a top `<details>` / LESSON PREP callout
-- the mid-body (warm-up, TT, activity, lab, wrap)
-
-Optional subsections (bottom only):
-
-- `### ADHD run-of-show`
-- `### Facilitator notes`
-- `### Expert follow-ups`
-
-ADHD run-of-show is **not** at the top after the agenda. If you write one, it belongs under `## For curriculum authors`.
-
-## Activity labels (hard)
-
-Number labs and hands-ons with Arabic numerals — `Lab 1`, `Lab 2`, `Hands-on 1`.
-
-Never use Roman numerals (`Lab I`, `Lab II`).
+**Never** put instructor / facilitator / curriculum-author directives near the top or mid-body. See **Author directives (hard)** below.
 
 ## Voice and labels
 
@@ -62,10 +40,47 @@ Never use Roman numerals (`Lab I`, `Lab II`).
 
 ## Structure
 
-- Syllabus-Template / Lesson09 shape: Elapsed / Time / Activity table, Why, Learning Objectives, Overview/TT, Activities, BREAK, Lab/Wrap, Additional Resources, then `## For curriculum authors` (bottom only).
+- Syllabus-Template / Lesson09 shape: Elapsed / Time / Activity table, Why, Learning Objectives, Overview/TT, Activities, BREAK, Lab/Wrap, then exactly `## Additional Resources` (official sources first), then **For curriculum authors** (bottom only, `<details>`-wrapped).
 - Teacher talk **30–40m** with **3–4 mid-TT active-learning audience questions** (pulse checks ≤60s, expected answer named).
-- ADHD structure on the overall plan and each activity block: next action, numbered steps, done state, time, ≤2m next.
-- Skills: [dani-roxberrys-teaching-voice](sand-workflow:dani-roxberrys-teaching-voice), [write-like-you-talk](sand-workflow:write-like-you-talk), [dani-roxberry-s-social-learning](sand-workflow:dani-roxberry-s-social-learning), [i-have-adhd](sand-workflow:i-have-adhd).
+- Scannable structure on the overall plan and each activity block: next action, numbered steps, done state, time, ≤2m next — **without naming ADHD or any diagnosis in the lesson file**.
+- Skills (for authors drafting — do **not** cite these skill names in the lesson Markdown): [dani-roxberrys-teaching-voice](sand-workflow:dani-roxberrys-teaching-voice), [write-like-you-talk](sand-workflow:write-like-you-talk), [dani-roxberry-s-social-learning](sand-workflow:dani-roxberry-s-social-learning).
+
+
+
+## Activity labels (hard)
+
+- Use **`Activity 1` / `Activity 2`** for primary practice blocks — **never** `Hands-on` / `Hands-on I`.
+- Number labs with **Arabic numerals**: `Lab 1`, `Lab 2` — **never** Roman (`Lab I`, `Lab II`).
+- Keep the same numeral style in the agenda table, headings, and in-body cross-references.
+
+
+## No diagnosis labels in the plan (hard)
+
+- **Never** put the word **ADHD** (or other diagnosis/neurotype labels) in a lesson plan — not in headings, body, facilitator notes, or resources.
+- Prefer neutral labels: `### Run-of-show`, next-action / done-when blocks, pulse checks.
+- Authors may still *use* scannable / write-like-you-talk habits when drafting; just don’t name the habit or diagnosis in the shipped Markdown.
+
+## Author directives (hard)
+
+Any directive for **instructors**, **facilitators**, or **curriculum authors** belongs at the **bottom** of the lesson — after Additional Resources — under:
+
+```markdown
+## For curriculum authors
+
+<details>
+<summary>For curriculum authors</summary>
+
+### Run-of-show (optional)
+### Facilitator notes
+### Expert / stack follow-ups (optional)
+
+</details>
+```
+
+- Wrap the body of **For curriculum authors** in a `<details>` block (heading stays outside).
+- Do **not** put these in the header, in a top callout, or mid-body.
+- Learner-facing body stays topic-only (GOAL, agenda, Why, TT, activities, wrap, resources).
+- Internal Expert accuracy notes may live under Reviews/ instead of the lesson body; if they must ship in-file, nest them under **For curriculum authors**.
 
 ## Accuracy and ship
 
