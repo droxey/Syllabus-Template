@@ -226,6 +226,6 @@ Standing bars for lesson Markdown live in [`agents/skills/acs-lesson-plan/SKILL.
 - Header: no Author / Session / Bars / Accuracy / MVP meta stack — open with `# Title` → `GOAL:` → agenda
 - Additional Resources: heading is exactly `## Additional Resources` — never rename or add parentheticals (“official first” is link order inside the section)
 - Author directives: `## For curriculum authors` at the bottom after Additional Resources, contents in `<details>` (`### In Class` / facilitator / Expert follow-ups — never header or mid-body)
-- Activity labels: Arabic numerals (`Lab 1`, `Hands-on 1`) — never Roman (`Lab I`)
+- Activity labels: `Activity 1` / `Activity 2` (never Hands-on); labs stay `Lab 1` / `Lab 2` — never Roman (`Lab I`)
 - Voice: job-sim; `GOAL:`; rookie/beginner on-the-job tips (never hire-bar in the plan)
 - TT: 30–40m with 3–4 mid-talk pulse checks
