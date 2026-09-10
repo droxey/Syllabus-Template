@@ -37,6 +37,26 @@ Open with `# Title`, then `⭐️ **GOAL:**`, then the elapsed agenda table. Put
 
 **Never** put instructor / facilitator / curriculum-author directives near the top or mid-body. See **Author directives (hard)** below.
 
+## Additional Resources (hard)
+
+The section title is always exactly `## Additional Resources`.
+
+Never rename it. Never add parentheticals in the heading (no `## Additional Resources (official first)`).
+
+“Official first” is link-ordering guidance **inside** the section only.
+
+## Heading names (hard)
+
+Use these headings exactly:
+
+- `## Additional Resources`
+- `## For curriculum authors`
+- `### In Class`
+- `### Facilitator notes`
+- `### Expert follow-ups`
+
+Never rename them. Never add parentheticals. Official-first is list order under Additional Resources only.
+
 ## Voice and labels
 
 - **Job-simulation voice only** — never students / classroom / academic framing in the plan body.
@@ -71,19 +91,23 @@ Open with `# Title`, then `⭐️ **GOAL:**`, then the elapsed agenda table. Put
 Any directive for **instructors**, **facilitators**, or **curriculum authors** belongs at the **bottom** of the lesson — after Additional Resources — under:
 
 ```markdown
-## For curriculum authors
+## Additional Resources
+
+- Official docs first…
 
 <details>
 <summary>For curriculum authors</summary>
 
-### In Class (optional)
+## For curriculum authors
+
+### In Class
 ### Facilitator notes
-### Expert / stack follow-ups (optional)
+### Expert follow-ups
 
 </details>
 ```
 
-- Wrap the body of **For curriculum authors** in a `<details>` block (heading stays outside).
+- Wrap `## For curriculum authors` and its subsections in a `<details>` block after Additional Resources.
 - Do **not** put these in the header, in a top callout, or mid-body.
 - Learner-facing body stays topic-only (GOAL, agenda, Why, TT, activities, wrap, resources).
 - Internal Expert accuracy notes may live under Reviews/ instead of the lesson body; if they must ship in-file, nest them under **For curriculum authors**.

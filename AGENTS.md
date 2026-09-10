@@ -8,7 +8,7 @@ Student-facing pages live in Docsify. The layout comes from [Tech-at-DU/ACS-3220
 
 1. Read this file.
 2. Do the smallest change that finishes the request.
-3. Keep instructor prep out of the student-facing mid-body. Put it under `## For curriculum authors` at the bottom.
+3. Keep instructor prep out of the student-facing mid-body. Put it under `## For curriculum authors` at the bottom, wrapped in `<details>`.
 4. Gate finished student-facing markdown through the Technical Writer pass.
 
 ## Voice and output
@@ -69,12 +69,21 @@ Do not invent a new assignment unless the request says so.
 
 Never put instructor prep or direction in the student-facing mid-body (warm-up, TT, activity, lab, wrap), and never in a header LESSON PREP toggle.
 
-Put instructor, facilitator, and curriculum-author directives after Additional Resources, under `## For curriculum authors`:
+The resources heading is always exactly `## Additional Resources` — never rename it, and never add parentheticals in the heading. “Official first” is link-ordering guidance inside the section only.
+
+Put instructor, facilitator, and curriculum-author directives after Additional Resources. Wrap `## For curriculum authors` and its subsections in a `<details>` block so students can ignore it:
 
 ```markdown
+## Additional Resources
+
+- Official docs first…
+
+<details>
+<summary>For curriculum authors</summary>
+
 ## For curriculum authors
 
-### ADHD run-of-show
+### In Class
 
 - Open the demo before class.
 - Breakouts of 3–4.
@@ -86,9 +95,11 @@ Put instructor, facilitator, and curriculum-author directives after Additional R
 ### Expert follow-ups
 
 - Optional stretch after the lab.
+
+</details>
 ```
 
-ADHD run-of-show is not at the top after the agenda. The student-facing body stays student-facing.
+`### In Class` is not at the top after the agenda. The student-facing body stays student-facing.
 
 `Lessons/Lesson1.md` and `Lessons/Lesson2.md` starters may still show an old header LESSON PREP shape until those templates are refreshed. Follow this section and [`agents/skills/acs-lesson-plan/SKILL.md`](agents/skills/acs-lesson-plan/SKILL.md) when writing new lessons.
 
@@ -177,7 +188,7 @@ Copy the starter shape from `Lessons/Lesson1.md` (overview day) or `Lessons/Less
 - **Objectives** with action verbs
 - Timed blocks: warm-up, TT, break, activity or lab, wrap up
 - `<!-- > -->` / `<!-- v -->` for `reveal-md` slides
-- Additional Resources, then `## For curriculum authors` at the bottom
+- `## Additional Resources` (exact heading), then `## For curriculum authors` in a `<details>` wrap at the bottom
 
 `reveal-md Lessons/` still builds `Slides/` if you want a deck. See `Reveal/README.md`.
 
@@ -200,7 +211,7 @@ Copy the starter shape from `Lessons/Lesson1.md` (overview day) or `Lessons/Less
 Before you call student-facing markdown done:
 
 1. Headings match the template. Objectives use action verbs.
-2. Instructor direction is only under `## For curriculum authors` at the bottom (after Additional Resources) — never in the header or mid-body.
+2. Instructor direction is only under `## For curriculum authors` at the bottom (after `## Additional Resources`) — wrap it in `<details>`, never in the header or mid-body.
 3. Placeholders that should have been replaced are gone.
 4. Local links resolve (`npm run check-links`).
 5. Prose sounds like Dani teaching, not like a template.
@@ -213,7 +224,8 @@ Standing bars for lesson Markdown live in [`agents/skills/acs-lesson-plan/SKILL.
 
 - File naming: `topic_name.md` (never `LessonNN.md` as canonical content)
 - Header: no Author / Session / Bars / Accuracy / MVP meta stack — open with `# Title` → `GOAL:` → agenda
-- Author directives: `## For curriculum authors` at the bottom after Additional Resources (ADHD run-of-show / facilitator / Expert follow-ups — never header or mid-body)
-- Activity labels: Arabic numerals (`Lab 1`, `Hands-on 1`) — never Roman (`Lab I`)
+- Additional Resources: heading is exactly `## Additional Resources` — never rename or add parentheticals (“official first” is link order inside the section)
+- Author directives: `## For curriculum authors` at the bottom after Additional Resources, contents in `<details>` (`### In Class` / facilitator / Expert follow-ups — never header or mid-body)
+- Activity labels: `Activity 1` / `Activity 2` (never Hands-on); labs stay `Lab 1` / `Lab 2` — never Roman (`Lab I`)
 - Voice: job-sim; `GOAL:`; rookie/beginner on-the-job tips (never hire-bar in the plan)
 - TT: 30–40m with 3–4 mid-talk pulse checks
