@@ -14,11 +14,13 @@ Standing rules for every ACS course lesson plan (ACS-4210, ACS-3210, ACS-2951, e
 - Instructors and agents drafting or revising ACS lesson plans.
 - Authoring ops only. Do not cite this skill (or any skill name) in `Lessons/*.md`.
 
-## Course vs lesson ops (hard)
+## SETUP (hard)
 
-- **Course-level ops** (clone, placeholders, Docsify serve/Pages, agent jobs) live in [`SETUP.md`](../../../SETUP.md). Agent jobs are in [`AGENTS.md`](../../../AGENTS.md).
-- **Lesson-level instructor notes** live only in the Lesson1 author `<details>`: `## For curriculum authors` at the bottom after Additional Resources.
+Follow [`SETUP.md`](../../../SETUP.md) for course-level ops (clone, placeholders, Docsify serve / GitHub Pages). Agent jobs live in [`AGENTS.md`](../../../AGENTS.md). This skill does not own those ops.
+
+- **Lesson-level instructor notes** live only under `## For curriculum authors` in a bottom `<details>` after `## Additional Resources`.
 - Never put skill names or generation techniques in `Lessons/*.md`.
+- Do not put SETUP / clone / Pages instructions in a lesson file.
 
 ## Sole template (hard)
 
@@ -62,6 +64,8 @@ Never rename it. Never add parentheticals in the heading (no `## Additional Reso
 
 “Official first” is link-ordering guidance **inside** the section only.
 
+This section is **topic sources only**: official docs, APIs, specs, and short topic references. Do **not** put pedagogy or how-to-teach links here. Teaching notes belong under `## For curriculum authors`.
+
 ## Heading names (hard)
 
 Use these headings exactly:
@@ -72,18 +76,24 @@ Use these headings exactly:
 - `### Facilitator notes`
 - `### Expert follow-ups`
 
-Never rename them. Never add parentheticals. Official-first is list order under Additional Resources only.
+Never rename them. Never add parentheticals. Official-first is list order under Additional Resources only. Topic sources only — no pedagogy / how-to-teach links.
 
 ## Voice and labels
 
-- **Job-simulation voice only** — never students / classroom / academic framing in the plan body.
+- **On-the-job / builder voice only** — never students / classroom / academic framing in the plan body.
 - Use **`GOAL:`** — never “destination for today” / destination-first section labels.
 - Tips language: **rookie** or **beginner tips for on-the-job success** — **never** “hire-bar” in the plan (Experts may use a hiring lens in *internal* review notes only).
-- Topic content only — no classroom-management directives, no roster / student-identifying info, no entrance/exit ticket wording (standup / check-in / wrap OK if job-sim phrased).
+- Topic content only — no classroom-management directives, no roster / identifying info, no entrance/exit ticket wording (standup / check-in / wrap OK if on-the-job phrased).
+- Never write `jobsim`, `JOBSIM`, or `job simulator` in a lesson file.
+- Never cite skill names in the lesson Markdown.
+
+## Never those labels (hard)
+
+Never write `jobsim`, `JOBSIM`, or `job simulator` in a lesson file. Use on-the-job / builder voice instead. Never cite skill names in published course Markdown.
 
 ## Structure
 
-- Copy **`Lessons/Lesson1.md` only** (never Lesson2). Shape: Elapsed / Time / Activity table, Why, Learning Objectives, Overview/TT, Activities, BREAK, Lab/Wrap, then exactly `## Additional Resources` (official sources first), then **For curriculum authors** (bottom only, `<details>`-wrapped).
+- Copy **`Lessons/Lesson1.md` only** (never Lesson2). Shape: Elapsed / Time / Activity table, Why, Learning Objectives, Overview/TT, Activities, BREAK, Lab/Wrap, then exactly `## Additional Resources` (topic sources only; official first), then **For curriculum authors** (bottom only, `<details>`-wrapped).
 - Teacher talk **30–40m** with **3–4 mid-TT ASK AUDIENCE pulse checks** (≤60s). Use this shape only — never open-body `**ASK AUDIENCE**` plus Question/Expected paragraphs:
 
 ```markdown

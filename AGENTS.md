@@ -74,7 +74,7 @@ Do not invent a new assignment unless the request says so.
 
 Never put instructor prep or direction in the student-facing mid-body (warm-up, TT, activity, lab, wrap), and never in a header LESSON PREP toggle.
 
-The resources heading is always exactly `## Additional Resources` — never rename it, and never add parentheticals in the heading. “Official first” is link-ordering guidance inside the section only.
+The resources heading is always exactly `## Additional Resources` — never rename it, and never add parentheticals in the heading. “Official first” is link-ordering guidance inside the section only. That section is **topic sources only** — no pedagogy or how-to-teach links. See [`SETUP.md`](SETUP.md).
 
 Put instructor, facilitator, and curriculum-author directives after Additional Resources. Wrap `## For curriculum authors` and its subsections in a `<details>` block so students can ignore it:
 
@@ -145,18 +145,7 @@ How to create this process in another repo:
 
 ## Docsify placeholders
 
-| Token | Where | Example |
-| ----- | ----- | ------- |
-| `COURSE_TITLE` | `index.html` title + OG, `README.md` H1 | `ACS 3220: Docker, DevOps, & Deployments` |
-| `COURSE_NAME` | Docsify sidebar name | `ACS 3220` |
-| `COURSE_DESCRIPTION` | meta description, syllabus pitch | one paragraph |
-| `COURSE_INSTRUCTOR` | author meta | `Dani Roxberry` |
-| `INSTRUCTOR_EMAIL` | author meta | `dani@musexmachine.com` |
-| `COURSE_KEYWORDS` | meta keywords | `docker, devops, deployment` |
-| `GITHUB_ORG` | OG URLs, `repo` | `droxey` or `Tech-at-DU` |
-| `REPO_NAME` | OG URLs, `repo`, search namespace | `ACS-3220-Docker-DevOps-Deployments` |
-
-After you add `Web/logo-icononly.svg`, set `logo: 'Web/logo-icononly.svg'`.
+Token table and course-level placeholder ops live in [`SETUP.md`](SETUP.md).
 
 ## Docsify config review
 
@@ -236,11 +225,13 @@ Standing bars for lesson Markdown live in [`agents/skills/acs-lesson-plan/SKILL.
 - File naming: `topic_name.md` (never `LessonNN.md` as canonical content)
 - Header: no Author / Session / Bars / Accuracy / MVP meta stack — open with `# Title` → `GOAL:` → agenda
 - H1 is topic + optional day only — never a course code
-- Additional Resources: heading is exactly `## Additional Resources` — never rename or add parentheticals (“official first” is link order inside the section)
+- Additional Resources: heading is exactly `## Additional Resources` — topic sources only; never pedagogy / how-to-teach links; never rename or add parentheticals (“official first” is link order inside the section)
 - Author directives: `## For curriculum authors` at the bottom after Additional Resources, contents in `<details>` (`### In Class` / facilitator / Expert follow-ups — never header or mid-body)
 - Activity labels: `Activity 1` / `Activity 2` (never Hands-on); labs stay `Lab 1` / `Lab 2` — never Roman (`Lab I`)
 - TT pulses: `> **ASK AUDIENCE:** <question ≤60s>` plus `<details><summary>Answer</summary>` — never open-body Question/Expected paragraphs
-- Voice: job-sim; `GOAL:`; rookie/beginner on-the-job tips (never hire-bar in the plan)
+- Voice: on-the-job / builder; `GOAL:`; rookie/beginner on-the-job tips (never hire-bar in the plan)
+- Never write `jobsim`, `JOBSIM`, or `job simulator`
+- Never cite skill names in lesson Markdown
 - TT: 30–40m with 3–4 mid-talk pulse checks
 - Never put the word ADHD (or other diagnosis labels) in a lesson file
 - Course-level ops → SETUP.md; lesson-level instructor notes → Lesson1 author details only; never put skill names in `Lessons/*.md`
