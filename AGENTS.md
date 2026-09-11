@@ -33,7 +33,7 @@ ADHD-friendly replies stay in the agent conversation. They do not leak into stud
 Course-level ops for this job live in [SETUP.md](SETUP.md).
 
 1. Clone or use this repo as the template.
-2. Replace every `ALL_CAPS` placeholder. Search for `COURSE_`, `REPO_NAME`, `GITHUB_ORG`, `INSTRUCTOR_EMAIL`.
+2. Replace every `ALL_CAPS` placeholder. Search for `COURSE_`, `REPO_NAME`, `GITHUB_ORG`, `INSTRUCTOR_EMAIL`. If you use Nebula, also fill `grain/course.yaml` (`COURSE_SLUG`, `COURSE_PVC_VOICE_ID`).
 3. Set `index.html` title, description, author, `repo`, `name`, `search.namespace`, and OG URLs.
 4. Rewrite `README.md` as this course's syllabus. Keep the ACS-3220 section order.
 5. Create each session as `Lessons/<topic_name.md>` (kebab or TopicCase as used in the repo). Copy-from-and-rename **`Lessons/Lesson1.md` only** — it is the sole lesson template. Never author from `Lesson2`. Update `_sidebar.md` so every published lesson is linked (search only sees sidebar links).
@@ -204,6 +204,7 @@ Copy the starter shape from `Lessons/Lesson1.md` only, then rename to `topic_nam
 | `AGENTS.md` | Agent jobs (this file) |
 | `agents/skills/acs-lesson1-only-template/` | Lesson1-only starter pin |
 | `agents/skills/acs-lesson-plan/` | Standing lesson-plan bars |
+| `grain/` | video-pipeline `CourseConfig` template (`course.yaml`) — see `grain/README.md` |
 
 ## Technical Writer gate
 
