@@ -9,6 +9,17 @@ description: >-
 
 Standing rules for every ACS course lesson plan (ACS-4210, ACS-3210, ACS-2951, etc.). Apply before draft, Expert review, Writer TW-final, and PR.
 
+## Consumer
+
+- Instructors and agents drafting or revising ACS lesson plans.
+- Authoring ops only. Do not cite this skill (or any skill name) in `Lessons/*.md`.
+
+## Course vs lesson ops (hard)
+
+- **Course-level ops** (clone, placeholders, Docsify serve/Pages, agent jobs) live in [`SETUP.md`](../../../SETUP.md). Agent jobs are in [`AGENTS.md`](../../../AGENTS.md).
+- **Lesson-level instructor notes** live only in the Lesson1 author `<details>`: `## For curriculum authors` at the bottom after Additional Resources.
+- Never put skill names or generation techniques in `Lessons/*.md`.
+
 ## Sole template (hard)
 
 - In Syllabus-Template, **`Lessons/Lesson1.md` is the only lesson starter.** Copy it, then rename to `topic_name.md`.
