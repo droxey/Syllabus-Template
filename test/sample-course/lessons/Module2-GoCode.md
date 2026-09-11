@@ -1,4 +1,4 @@
-<!-- Run as a slideshow: reveal-md Lessons/Module2-GoCode.md -w -->
+<!-- Run as a slideshow: reveal-md lessons/Module2-GoCode.md -w -->
 # Module 2 — Familiar Go
 
 ⭐️ **GOAL**: Leave with a tiny CLI that uses functions, control flow, and typed values you can explain.
@@ -76,5 +76,5 @@ Bring one type-deduction surprise to Module 3.
 
 ## 📚 Additional Resources
 
-1. [SAMPLE Project — Challenge 1](Projects/SampleProject.md#challenge-1-go-test)
-2. [Go 101 reading map](Resources/Go101.md)
+1. [SAMPLE Project — Challenge 1](../projects/sample_project.md#challenge-1-go-test)
+2. [Go 101 reading map](../resources/Go101.md)

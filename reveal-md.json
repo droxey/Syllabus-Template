@@ -4,12 +4,12 @@
   "theme": "black",
   "watch": true,
   "title": "COURSE_TITLE Slides",
-  "static": "Slides",
+  "static": "slides",
   "scripts": [
   ],
   "assetsDir": "assets",
-  "staticDirs": "Lessons/Images",
+  "staticDirs": "lessons/images",
   "css": [
-      "Reveal/makeschool.css"
+      "reveal/makeschool.css"
   ]
 }

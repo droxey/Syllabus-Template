@@ -1,4 +1,4 @@
-<!-- Run as a slideshow: reveal-md Lessons/Module1-Toolchain.md -w -->
+<!-- Run as a slideshow: reveal-md lessons/Module1-Toolchain.md -w -->
 # Module 1 — The Go Toolchain
 
 ⭐️ **GOAL**: Walk out able to run, test, and explain a one-file Go program with the official toolchain.
@@ -111,4 +111,4 @@ If you finish early, help someone in your breakout who is stuck on `GOROOT` or P
 ## 📚 Additional Resources
 
 1. [The Go Toolchain](https://go101.org/article/go-toolchain.html)
-2. [SAMPLE reading map](Resources/Go101.md)
+2. [SAMPLE reading map](../resources/Go101.md)

@@ -1,4 +1,4 @@
-<!-- Run as a slideshow: reveal-md Lessons/Lesson1.md -w -->
+<!-- Run as a slideshow: reveal-md lessons/<topic_name>.md -w -->
 # Lesson 1 — LESSON_TITLE
 
 ⭐️ **GOAL:** One sentence. What will you walk out able to do?

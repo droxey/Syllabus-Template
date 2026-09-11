@@ -1,6 +1,6 @@
 # SAMPLE Project Rubric
 
-Use this table when you score the [SAMPLE Project](Projects/SampleProject.md). Demo only — not a live ACS rubric.
+Use this table when you score the [SAMPLE Project](./sample_project.md). Demo only — not a live ACS rubric.
 
 | Expectation | Does not meet | Meets | Exceeds |
 | ----------- | ------------- | ----- | ------- |

@@ -1,4 +1,4 @@
-<!-- Run as a slideshow: reveal-md Lessons/Module3-TypeSystem.md -w -->
+<!-- Run as a slideshow: reveal-md lessons/Module3-TypeSystem.md -w -->
 # Module 3 — Type System
 
 ⭐️ **GOAL**: Treat slices, maps, and interfaces as products you can draw, not slogans.
@@ -95,5 +95,5 @@ Done means a classmate can say what the backing array is after your append.
 
 ## 📚 Additional Resources
 
-1. [SAMPLE Project — Challenge 2](Projects/SampleProject.md#challenge-2-slice-header)
+1. [SAMPLE Project — Challenge 2](../projects/sample_project.md#challenge-2-slice-header)
 2. [Go Type System Overview](https://go101.org/article/type-system-overview.html)

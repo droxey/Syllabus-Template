@@ -16,8 +16,8 @@
     <meta property="og:type" content="website">
     <!-- UPDATE: Replace GITHUB_ORG and REPO_NAME. -->
     <meta property="og:url" content="https://GITHUB_ORG.github.io/REPO_NAME">
-    <meta property="og:image" content="https://GITHUB_ORG.github.io/REPO_NAME/Web/logo-icononly.svg">
-    <meta property="og:image:secure_url" content="https://GITHUB_ORG.github.io/REPO_NAME/Web/logo-icononly.svg">
+    <meta property="og:image" content="https://GITHUB_ORG.github.io/REPO_NAME/web/logo-icononly.svg">
+    <meta property="og:image:secure_url" content="https://GITHUB_ORG.github.io/REPO_NAME/web/logo-icononly.svg">
     <meta property="og:image:type" content="image/svg+xml">
     <meta property="og:image:width" content="250">
     <meta property="og:image:height" content="250">
@@ -25,14 +25,14 @@
     <!-- ACS-3220 stack: vue.css + themeable. Do not load a second theme. -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4.13.1/lib/themes/vue.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-gifcontrol@0.2.1/dist/docsify-gifcontrol.css">
-    <link rel="stylesheet" href="Web/style.css">
+    <link rel="stylesheet" href="web/style.css">
   </head>
   <body>
     <div id="app"></div>
     <!-- UPDATE: name, repo, search.namespace, and logo. -->
     <script>
       window.$docsify = {
-        // Leave empty until you add Web/logo-icononly.svg, then set: 'Web/logo-icononly.svg'
+        // Leave empty until you add web/logo-icononly.svg, then set: 'web/logo-icononly.svg'
         logo: '',
         name: 'COURSE_NAME',
         repo: 'GITHUB_ORG/REPO_NAME',
@@ -135,7 +135,7 @@
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/components/prism-yaml.min.js"></script>
     <script>
       if (typeof navigator.serviceWorker !== 'undefined') {
-        navigator.serviceWorker.register('Web/sw.js')
+        navigator.serviceWorker.register('web/sw.js')
       }
     </script>
   </body>

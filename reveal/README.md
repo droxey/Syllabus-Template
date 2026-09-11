@@ -13,7 +13,7 @@ npm install -g reveal-md
 **Slide styling:**
 
 ```
-<!-- .slide: data-background="./Images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
+<!-- .slide: data-background="./images/header.svg" data-background-repeat="none" data-background-size="40% 40%" data-background-position="center 10%" class="header" -->
 ```
 
 **Change background color:**
@@ -39,7 +39,7 @@ npm install -g reveal-md
 This starts a local server and opens any Markdown file as a reveal.js presentation in the default browser.
 
 ```bash
-$ reveal-md Lessons/
+$ reveal-md lessons/
 ```
 
 ### Generate Slides
@@ -47,7 +47,7 @@ $ reveal-md Lessons/
 Generate static HTML (for GitHub Pages):
 
 ```bash
-$ reveal-md Lessons/ --static Slides
+$ reveal-md lessons/ --static slides
 ```
 
 ## Resources

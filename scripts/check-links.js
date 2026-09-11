@@ -11,8 +11,8 @@ const ROOT = path.resolve(__dirname, "..");
 const SKIP_DIRS = new Set([
   ".git",
   "node_modules",
-  "Slides",
-  "Reveal",
+  "slides",
+  "reveal",
 ]);
 const TEXT_EXT = new Set([".md", ".html", ".css", ".js", ".json"]);
 const PLACEHOLDER = /\b(COURSE_[A-Z0-9_]+|REPO_NAME|GITHUB_ORG|INSTRUCTOR_EMAIL|GRADESCOPE_URL|RECORDINGS_URL|PREREQUISITE_[0-9]+(?:_URL)?|TUTORIAL_URL|LESSON_TITLE|DATE_[A-Z0-9_]+|HOLIDAY_NAME|TUTORIAL_NAME|CHALLENGE_NAME|CONCEPT_[0-9]+)\b/g;

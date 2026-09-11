@@ -76,8 +76,8 @@ _By the end of this course, you will be able to&hellip;_
 | Class | Date | Topic |
 |:-----:|:----:|-------|
 | 1 | DATE_1 | [Lesson 1] |
-| 2 | DATE_2 | Next session — add `Lessons/topic_name.md` and link it here |
-| 3 | DATE_3 | Later session — add `Lessons/topic_name.md` and link it here |
+| 2 | DATE_2 | Next session — copy `templates/LESSON_TEMPLATE.md` to `lessons/topic_name.md` and link it here |
+| 3 | DATE_3 | Later session — copy `templates/LESSON_TEMPLATE.md` to `lessons/topic_name.md` and link it here |
 | — | DATE_HOLIDAY | **No Class — HOLIDAY_NAME** |
 | n | DATE_FINAL | Final exam / presentations |
 
@@ -97,15 +97,15 @@ Your Gradescope login is your school email. Set or reset your password at [https
 
 | Name | More info |
 | ---- | --------- |
-| **Challenge 1**: CHALLENGE_NAME | [Instructions](Assignments/Sample_Project.md) |
+| **Challenge 1**: CHALLENGE_NAME | [Instructions](assignments/sample_project.md) |
 
 ### Projects
 
-- [Sample Project](Assignments/Sample_Project.md)
+- [Sample Project](assignments/sample_project.md)
 
 | Assignment | Date assigned | Due date | Submission |
 |:----------:|:-------------:|:--------:|:----------:|
-| [Sample Project](Assignments/Sample_Project.md) | DATE_ASSIGNED | DATE_DUE | [Submit](GRADESCOPE_URL) |
+| [Sample Project](assignments/sample_project.md) | DATE_ASSIGNED | DATE_DUE | [Submit](GRADESCOPE_URL) |
 
 ## Evaluation
 
@@ -129,4 +129,4 @@ Any extra books, docs, or tools you need can live here.
 
 List topics from this course that show up in technical interviews.
 
-[Lesson 1]: Lessons/Lesson1.md
+[Lesson 1]: lessons/topic_name.md

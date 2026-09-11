@@ -26,4 +26,4 @@ Detailed description...
 
 ## Assessing The Assignment
 
-[Assignment Name Rubric](./Sample_Rubric.md)
+[Assignment Name Rubric](./sample_rubric.md)
