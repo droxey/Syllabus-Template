@@ -2,14 +2,17 @@
 
 This repo is Dani Roxberry's course-ops template. Clone it to start a new course. Agents following this file operate the template.
 
+Course-level ops (clone, placeholders, Docsify serve/Pages) live in [SETUP.md](SETUP.md). This file is agent jobs. Lesson-level instructor notes go only in the Lesson1 author `<details>`. Never put skill names in `Lessons/*.md`.
+
 Student-facing pages live in Docsify. The layout comes from [Tech-at-DU/ACS-3220-Docker-DevOps-Deployments](https://github.com/Tech-at-DU/ACS-3220-Docker-DevOps-Deployments), with placeholders and dark/light theme from [droxey/docsify-course](https://github.com/droxey/docsify-course).
 
 ## Next action
 
-1. Read this file.
+1. Read this file and [SETUP.md](SETUP.md). Course-level ops → SETUP.md.
 2. Do the smallest change that finishes the request.
-3. Keep instructor prep out of the student-facing mid-body. Put it under `## For curriculum authors` at the bottom, wrapped in `<details>`.
-4. Gate finished student-facing markdown through the Technical Writer pass.
+3. Lesson-level instructor notes → Lesson1 author `<details>` only (`## For curriculum authors` at the bottom). Never put skill names in `Lessons/*.md`.
+4. Keep instructor prep out of the student-facing mid-body.
+5. Gate finished student-facing markdown through the Technical Writer pass.
 
 ## Voice and output
 
@@ -26,6 +29,8 @@ ADHD-friendly replies stay in the agent conversation. They do not leak into stud
 ## Agent jobs
 
 ### 1. Create a new course from this repo
+
+Course-level ops for this job live in [SETUP.md](SETUP.md).
 
 1. Clone or use this repo as the template.
 2. Replace every `ALL_CAPS` placeholder. Search for `COURSE_`, `REPO_NAME`, `GITHUB_ORG`, `INSTRUCTOR_EMAIL`.
@@ -181,6 +186,8 @@ npm run check-links
 
 ## Lesson template
 
+Course-level ops → [SETUP.md](SETUP.md). Lesson-level instructor notes → Lesson1 author `<details>` only (`## For curriculum authors` at the bottom). Never put skill names in `Lessons/*.md`.
+
 Copy the starter shape from `Lessons/Lesson1.md` only, then rename to `topic_name.md`. There is no Lesson2 template. For naming, header, Author directives, Activity labels (`Activity 1` / `Activity 2`), and GOAL bars, follow [`agents/skills/acs-lesson1-only-template/SKILL.md`](agents/skills/acs-lesson1-only-template/SKILL.md) and [`agents/skills/acs-lesson-plan/SKILL.md`](agents/skills/acs-lesson-plan/SKILL.md). Structure matches ACS-3220:
 
 - Title + one-line **GOAL**
@@ -204,7 +211,8 @@ Copy the starter shape from `Lessons/Lesson1.md` only, then rename to `topic_nam
 | `Assignments/` | Project specs |
 | `updates.md` | Tech Trends + Add to Course |
 | `Web/` | Theme + service worker |
-| `AGENTS.md` | This file |
+| `SETUP.md` | Course-level setup + instructor/agent ops |
+| `AGENTS.md` | Agent jobs (this file) |
 | `agents/skills/acs-lesson1-only-template/` | Lesson1-only starter pin |
 | `agents/skills/acs-lesson-plan/` | Standing lesson-plan bars |
 
@@ -235,3 +243,4 @@ Standing bars for lesson Markdown live in [`agents/skills/acs-lesson-plan/SKILL.
 - Voice: job-sim; `GOAL:`; rookie/beginner on-the-job tips (never hire-bar in the plan)
 - TT: 30–40m with 3–4 mid-talk pulse checks
 - Never put the word ADHD (or other diagnosis labels) in a lesson file
+- Course-level ops → SETUP.md; lesson-level instructor notes → Lesson1 author details only; never put skill names in `Lessons/*.md`
