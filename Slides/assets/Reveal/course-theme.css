@@ -1,4 +1,4 @@
-/** MakeSchool theme for Reveal.js. */
+/** Course theme for Reveal.js. */
 
 @import url('https://use.typekit.net/zyr1voy.css');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700&display=swap');
@@ -27,8 +27,6 @@ section.has-dark-background a {
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #F3F3F3 url('https://res.cloudinary.com/makeschool/image/upload/v1/BrandGuidelines/logo_white_background.svg') no-repeat left 8px bottom 10px;
-  background-size: 116px 32px;
   background-clip: border-box;
   color: #303030;
 }

@@ -39,7 +39,7 @@
 
 ## [**5m**] Attendance &amp; Announcements
 
-This is **ACS 9999: Sample Course**. SAMPLE Go track. Not a live ACS section.
+This is **SAMPLE 9999: Sample Course**. SAMPLE Go track. Not a live section.
 
 Reading lives at go101.org. There is no book PDF in this repo.
 

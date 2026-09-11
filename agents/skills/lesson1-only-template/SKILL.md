@@ -1,5 +1,5 @@
 ---
-name: acs-lesson1-only-template
+name: lesson1-only-template
 description: >-
   Use when drafting or copying a Syllabus-Template lesson. Lesson1.md is the
   only starter. Never author from Lesson2.
@@ -13,7 +13,7 @@ Syllabus-Template ships **one** lesson file to copy-from-and-rename: [`Lessons/L
 - **Copy `Lessons/Lesson1.md` only.** Rename the copy to `topic_name.md` (kebab or short TopicCase).
 - **Never** author from `Lesson2`, `Lessons/Lesson2.md`, or `Slides/Lesson2.html`. Those files are removed.
 - **Never** treat `LessonNN.md` as published canonical content. Lesson1.md is a starter, not a Day 1 filename you keep after you fill the course.
-- Ship bars for naming, voice, TT, and labels live in [`acs-lesson-plan`](../acs-lesson-plan/SKILL.md). This skill only pins the starter file.
+- Ship bars for naming, voice, TT, and labels live in [`lesson-plan`](../lesson-plan/SKILL.md). This skill only pins the starter file.
 
 ## How to start a session
 
@@ -70,5 +70,5 @@ Author-notes shape:
 
 ## Out of scope
 
-- Do not rewrite other ACS course repos from this skill. This pin is Syllabus-Template only.
+- Do not rewrite other course repos from this skill. This pin is Syllabus-Template only.
 - Do not restore Lesson2 as a "lab day" twin. Lab-heavy days still start from Lesson1 and keep Activity 1 / Activity 2.

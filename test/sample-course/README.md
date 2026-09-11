@@ -1,6 +1,6 @@
-<p align="center"><img src="Images/sample-badge.svg" height="200" alt="ACS 9999 Sample Course badge"></p>
+<p align="center"><img src="Images/sample-badge.svg" height="200" alt="SAMPLE 9999 Sample Course badge"></p>
 
-# ACS 9999: Sample Course
+# SAMPLE 9999: Sample Course
 
 <span class="refresh-instructions">This syllabus is a living document. Hold down `SHIFT` and press Refresh to get the latest version.</span>
 
@@ -8,7 +8,7 @@
 >
 > This folder is the **filled sample** that proves [Syllabus-Template](https://github.com/droxey/Syllabus-Template) customization. Course Clerk tokens (`COURSE_*`, `REPO_NAME`, `GITHUB_ORG`) are replaced with concrete SAMPLE values.
 >
-> **This is not a live ACS offering.** Do not enroll, advertise, or treat ACS 9999 as a real Dominican / Tech-at-DU class. The blank starter stays at the **repo root**. Serve *this* folder to preview the filled site.
+> **This is not a live offering.** Do not enroll or advertise SAMPLE 9999. The blank starter stays at the **repo root**. Serve *this* folder to preview the filled site.
 >
 > **Reading spine:** [Go 101](https://go101.org/article/101.html) and [Go Optimizations 101](https://go101.org/optimizations/101.html) on go101.org (Tapir Liu). We link the public site. We do **not** ship book PDFs in this repo.
 
@@ -17,7 +17,7 @@
 > <details>
 > <summary>Course Clerk / instructor setup (not student-facing)</summary>
 >
-> - Instructor: Dani Roxberry (`danielle.roxberry@dominican.edu`)
+> - Instructor: Dani Roxberry
 > - Org / repo convention: `droxey` / `sample-course`
 > - Preview: `npx docsify-cli serve test/sample-course` from the Syllabus-Template root, or `npm install && npm run serve` inside this folder.
 > - Assign go101.org chapters. Do not paste book text into lessons.
@@ -43,7 +43,7 @@
 
 In this **SAMPLE** course we learn Go the way a builder actually uses it: toolchain first, then values and types, then concurrency, then the few optimizations that matter.
 
-The layout is ACS-3220's Docsify shell. The curriculum is a slim cut of [Go 101](https://go101.org/article/101.html) plus one week from [Go Optimizations 101](https://go101.org/optimizations/101.html). You read the official pages. Class time is I do → we do → you do, then a lab with a done state.
+The layout uses the template's Docsify shell. The curriculum is a slim cut of [Go 101](https://go101.org/article/101.html) plus one week from [Go Optimizations 101](https://go101.org/optimizations/101.html). You read the official pages. Class time is I do → we do → you do, then a lab with a done state.
 
 ### Why you should know this
 
@@ -53,7 +53,7 @@ Go shows up in interviews and in production services. If you only memorize synta
 
 - A programming language you have already written in (any)
 - [The Go toolchain](https://go.dev/dl/) installed so `go version` prints a stable release
-- **SAMPLE prerequisite:** [ACS 1000: Intro to Building in Public](Resources/SampleGlossary.md) — fictional; linked so the sample syllabus has a real local target
+- **SAMPLE prerequisite:** [SAMPLE 1000: Intro to Building in Public](Resources/SampleGlossary.md) — fictional; linked so the sample syllabus has a real local target
 
 ## Course Specifics
 
@@ -133,7 +133,7 @@ Your Gradescope login is your school email. Set or reset your password at [https
 - Participate in class and follow the attendance policy
 - Make up classwork from every absence
 
-None of these gates enroll you in a real ACS section. They exist so the filled template shows a complete evaluation block.
+None of these gates enroll you in a real section. They exist so the filled template shows a complete evaluation block.
 
 ## Class Recordings
 

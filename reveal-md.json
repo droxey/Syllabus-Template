@@ -10,6 +10,6 @@
   "assetsDir": "assets",
   "staticDirs": "Lessons/Images",
   "css": [
-      "Reveal/makeschool.css"
+      "Reveal/course-theme.css"
   ]
 }

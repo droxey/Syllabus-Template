@@ -1,11 +1,11 @@
 # SAMPLE Glossary
 
-Short definitions for this demo course. Not a live ACS dictionary.
+Short definitions for this demo course.
 
 | Term | Meaning here |
 | ---- | ------------ |
-| **ACS 9999** | Fictional course number. Reserved for Syllabus-Template demos. |
-| **ACS 1000** | Fictional prerequisite. Exists so the sample syllabus can link a local page. |
+| **SAMPLE 9999** | Fictional course number. Reserved for Syllabus-Template demos. |
+| **SAMPLE 1000** | Fictional prerequisite. Exists so the sample syllabus can link a local page. |
 | **Go 101** | Tapir Liu's fundamentals book. Read it at [go101.org](https://go101.org/article/101.html). |
 | **Go Optimizations 101** | The performance companion. Index at [go101.org/optimizations/101.html](https://go101.org/optimizations/101.html). |
 | **Course Clerk** | Agent job defined in the root `AGENTS.md`. Fills `COURSE_*` tokens. This folder is the worked example. |

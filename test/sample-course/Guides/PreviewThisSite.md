@@ -8,7 +8,7 @@ This folder is a **filled sample**, not the blank Syllabus-Template starter. Ser
 npx docsify-cli serve test/sample-course
 ```
 
-Open [http://localhost:3000](http://localhost:3000). You should see **ACS 9999** in the sidebar, a SAMPLE warning on the syllabus, and five **Go** modules — not leftover `COURSE_TITLE` tokens and not Docker lessons.
+Open [http://localhost:3000](http://localhost:3000). You should see **SAMPLE 9999** in the sidebar, a SAMPLE warning on the syllabus, and five **Go** modules — not leftover `COURSE_TITLE` tokens and not Docker lessons.
 
 ## From this folder
 
@@ -30,5 +30,5 @@ Same URL. `package.json` in this folder only exists so the sample can be served 
 ## What this is not
 
 - Not GitHub Pages for a live `droxey/sample-course` repo. `index.html` uses that `REPO_NAME` / `GITHUB_ORG` pair to show the filled convention.
-- Not ACS-3220 Docker content. We copied that course's folder shape and filled a SAMPLE Go track.
+- Not Docker course content. We used the template's folder shape and filled a SAMPLE Go track.
 - Not a copy of the Go 101 / Optimizations 101 PDFs. Read [go101.org](https://go101.org/article/101.html).

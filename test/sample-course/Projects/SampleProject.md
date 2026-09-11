@@ -28,8 +28,8 @@ Copy this table into your notes. Check a row only after you can show it.
 | -------- | ----------- | :-: |
 | **Go** | Module path set; `go test ./...` passes | |
 | **Go** | A `main` that does one useful job (count, filter, or format stdin/args) | |
-| **SAMPLE** | README still says this is not a live ACS offering if you forked the syllabus | |
-| **Preview** | Course site still serves ACS 9999 from `test/sample-course` | |
+| **SAMPLE** | README still says this is not a live offering if you forked the syllabus | |
+| **Preview** | Course site still serves SAMPLE 9999 from `test/sample-course` | |
 | **Cite** | Reading list points at go101.org, not a PDF in git | |
 
 ## Challenges
@@ -52,7 +52,7 @@ _All SAMPLE submissions are due **Wednesday, April 15, 2026 at 11:59pm** unless 
 
 1. **Repository** — Go module + tests
 2. **Three-minute demo** — run it, show the test, name the allocation
-3. **Gradescope submit** — demo link only; there is no live ACS 9999 roster
+3. **Gradescope submit** — demo link only; there is no live SAMPLE 9999 roster
 
 ## Rubric
 

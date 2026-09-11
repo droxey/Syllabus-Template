@@ -1,19 +1,19 @@
 ---
-name: acs-lesson-plan
+name: lesson-plan
 description: >-
-  Use when drafting or revising ACS / Tech-at-DU course lesson plans
+  Use when drafting or revising course lesson plans
   (Syllabus-Template Days): naming, voice, TT structure, and ship bars for Dani
-  Roxberry’s ACS courses.
+  Roxberry’s courses.
 ---
-# ACS lesson plan bars (Tech-at-DU / Dominican)
+# Lesson plan bars
 
-Standing rules for every ACS course lesson plan (ACS-4210, ACS-3210, ACS-2951, etc.). Apply before draft, Expert review, Writer TW-final, and PR.
+Standing rules for every course lesson plan. Apply before draft, Expert review, Writer TW-final, and PR.
 
 ## Sole template (hard)
 
 - In Syllabus-Template, **`Lessons/Lesson1.md` is the only lesson starter.** Copy it, then rename to `topic_name.md`.
 - **Never** author from `Lesson2` / `Lessons/Lesson2.md` / `Slides/Lesson2.html`. Those files are gone.
-- See [`acs-lesson1-only-template`](../acs-lesson1-only-template/SKILL.md).
+- See [`lesson1-only-template`](../lesson1-only-template/SKILL.md).
 
 ## File naming (hard)
 
@@ -26,7 +26,7 @@ Standing rules for every ACS course lesson plan (ACS-4210, ACS-3210, ACS-2951, e
 
 - H1 is **topic + optional day only** — never include the course code.
 - Good: `# Sending Emails (Transactional) — Day 5`
-- Bad: `# Sending Emails (Transactional) — ACS-3210 Day 5`
+- Bad: `# Sending Emails (Transactional) — Course Code Day 5`
 - Course lives in the repo / Docsify site name, not the lesson H1.
 
 ## Header (hard)

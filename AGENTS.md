@@ -2,7 +2,7 @@
 
 This repo is Dani Roxberry's course-ops template. Clone it to start a new course. Agents following this file are the **Course Clerk**.
 
-Student-facing pages live in Docsify. The layout comes from [Tech-at-DU/ACS-3220-Docker-DevOps-Deployments](https://github.com/Tech-at-DU/ACS-3220-Docker-DevOps-Deployments), with placeholders and dark/light theme from [droxey/docsify-course](https://github.com/droxey/docsify-course).
+Student-facing pages live in Docsify, with placeholders and dark/light theme from [droxey/docsify-course](https://github.com/droxey/docsify-course).
 
 ## Next action
 
@@ -30,7 +30,7 @@ ADHD-friendly replies stay in the agent conversation. They do not leak into stud
 1. Clone or use this repo as the template.
 2. Replace every `ALL_CAPS` placeholder. Search for `COURSE_`, `REPO_NAME`, `GITHUB_ORG`, `INSTRUCTOR_EMAIL`.
 3. Set `index.html` title, description, author, `repo`, `name`, `search.namespace`, and OG URLs.
-4. Rewrite `README.md` as this course's syllabus. Keep the ACS-3220 section order.
+4. Rewrite `README.md` as this course's syllabus. Keep the existing section order.
 5. Create each session as `Lessons/<topic_name.md>` (kebab or TopicCase as used in the repo). Copy-from-and-rename **`Lessons/Lesson1.md` only** — it is the sole lesson template. Never author from `Lesson2`. Update `_sidebar.md` so every published lesson is linked (search only sees sidebar links).
 6. Add course-specific Prism languages in `index.html` if you need them (`prism-docker`, `prism-go`, …).
 7. Run `npm install` and `npm run serve`. Open `http://localhost:3000`.
@@ -38,7 +38,7 @@ ADHD-friendly replies stay in the agent conversation. They do not leak into stud
 
 ### 2. Refresh an existing course (research)
 
-Research current-year practice for this course's topics. Update curriculum and code materials. Sources: official docs, ACS-3220-style labs, and the Tech Trends scan in job 6.
+Research current-year practice for this course's topics. Update curriculum and code materials. Sources: official docs, project-style labs, and the Tech Trends scan in job 6.
 
 ### 3. Bump runtimes and audit materials
 
@@ -55,7 +55,7 @@ If a command, API, or flag died, fix it. If a snippet still runs, leave it.
 
 Use "how to build a course" patterns. Design Activities that are easy to explain, memorable, and fun — Zoom needs variety.
 
-Patterns that work (from ACS-3220 and Dani's classroom):
+Patterns that work in Dani's classroom:
 
 - Short warm-up: scavenger hunt, comic, think-pair-share, 3-question recap
 - I do → we do → you do, then a lab with a clear done state
@@ -101,7 +101,7 @@ Put instructor, facilitator, and curriculum-author directives after Additional R
 
 `### In Class` is not at the top after the agenda. Author notes stay in that bottom `<details>` block. The student-facing body stays student-facing.
 
-`Lessons/Lesson1.md` is the **only** starter. Copy it, rename to `topic_name.md`, and never author from `Lesson2`. Follow this section, [`agents/skills/acs-lesson1-only-template/SKILL.md`](agents/skills/acs-lesson1-only-template/SKILL.md), and [`agents/skills/acs-lesson-plan/SKILL.md`](agents/skills/acs-lesson-plan/SKILL.md) when writing new lessons.
+`Lessons/Lesson1.md` is the **only** starter. Copy it, rename to `topic_name.md`, and never author from `Lesson2`. Follow this section, [`agents/skills/lesson1-only-template/SKILL.md`](agents/skills/lesson1-only-template/SKILL.md), and [`agents/skills/lesson-plan/SKILL.md`](agents/skills/lesson-plan/SKILL.md) when writing new lessons.
 
 ### 6. Tech Trends → `updates.md`
 
@@ -142,29 +142,28 @@ How to create this process in another repo:
 
 | Token | Where | Example |
 | ----- | ----- | ------- |
-| `COURSE_TITLE` | `index.html` title + OG, `README.md` H1 | `ACS 3220: Docker, DevOps, & Deployments` |
-| `COURSE_NAME` | Docsify sidebar name | `ACS 3220` |
+| `COURSE_TITLE` | `index.html` title + OG, `README.md` H1 | `Docker, DevOps, & Deployments` |
+| `COURSE_NAME` | Docsify sidebar name | `DevOps` |
 | `COURSE_DESCRIPTION` | meta description, syllabus pitch | one paragraph |
 | `COURSE_INSTRUCTOR` | author meta | `Dani Roxberry` |
 | `INSTRUCTOR_EMAIL` | author meta | `dani@musexmachine.com` |
 | `COURSE_KEYWORDS` | meta keywords | `docker, devops, deployment` |
 | `GITHUB_ORG` | OG URLs, `repo` | `droxey` or `Tech-at-DU` |
-| `REPO_NAME` | OG URLs, `repo`, search namespace | `ACS-3220-Docker-DevOps-Deployments` |
+| `REPO_NAME` | OG URLs, `repo`, search namespace | `docker-devops-deployments` |
 
 After you add `Web/logo-icononly.svg`, set `logo: 'Web/logo-icononly.svg'`.
 
 ## Docsify config review
 
-Reviewed against ACS-3220 and docsify-course. Changes baked into `index.html`:
+Reviewed against the baseline course shell and docsify-course. Changes baked into `index.html`:
 
 - **Fixed duplicate `maxLevel`.** Both source repos set `maxLevel: 6` then `maxLevel: 3`. The second wins; the first is dead. This template sets `maxLevel: 3` and `subMaxLevel: 2` once.
-- **Pagination script is actually loaded.** The old template configured `pagination` and never included `docsify-pagination`. ACS-3220 does.
-- **GIF hover control from ACS-3220.** `docsify-gifcontrol` is in the dependency list for lesson GIFs.
-- **Theme is ACS-3220 `vue.css` + pinned `docsify-themeable@0.9.0`.** Do not also load `docsify-darklight-theme` — the two stacks fight on CSS variables.
+- **Pagination script is actually loaded.** The old template configured `pagination` and never included `docsify-pagination`.
+- **GIF hover control is included.** `docsify-gifcontrol` is in the dependency list for lesson GIFs.
+- **Theme uses `vue.css` + pinned `docsify-themeable@0.9.0`.** Do not also load `docsify-darklight-theme` — the two stacks fight on CSS variables.
 - **`cache-control: max-age=600`** matches GitHub Pages, not 180s.
-- **No Make School chrome.** Favicons and `makeschool.com` service-worker entries are gone. SW whitelist includes `cdn.jsdelivr.net`.
-- **Logo starts empty.** ACS-3220 points at a missing `Web/logo-icononly.svg`. Empty `logo` avoids a broken image.
-- **Prism starter set:** bash, javascript, json, markdown, python, yaml. Add packs per course. ACS-3220 adds docker, nginx, python, yaml for that class.
+- **Logo starts empty.** Empty `logo` avoids a broken image before you add `Web/logo-icononly.svg`.
+- **Prism starter set:** bash, javascript, json, markdown, python, yaml. Add packs per course as needed.
 
 Local preview:
 
@@ -181,7 +180,7 @@ npm run check-links
 
 ## Lesson template
 
-Copy the starter shape from `Lessons/Lesson1.md` only, then rename to `topic_name.md`. There is no Lesson2 template. For naming, header, Author directives, Activity labels (`Activity 1` / `Activity 2`), and GOAL bars, follow [`agents/skills/acs-lesson1-only-template/SKILL.md`](agents/skills/acs-lesson1-only-template/SKILL.md) and [`agents/skills/acs-lesson-plan/SKILL.md`](agents/skills/acs-lesson-plan/SKILL.md). Structure matches ACS-3220:
+Copy the starter shape from `Lessons/Lesson1.md` only, then rename to `topic_name.md`. There is no Lesson2 template. For naming, header, Author directives, Activity labels (`Activity 1` / `Activity 2`), and GOAL bars, follow [`agents/skills/lesson1-only-template/SKILL.md`](agents/skills/lesson1-only-template/SKILL.md) and [`agents/skills/lesson-plan/SKILL.md`](agents/skills/lesson-plan/SKILL.md). Structure matches the baseline course shell:
 
 - Title + one-line **GOAL**
 - Timed **Agenda** with jump links
@@ -205,8 +204,8 @@ Copy the starter shape from `Lessons/Lesson1.md` only, then rename to `topic_nam
 | `updates.md` | Tech Trends + Add to Course |
 | `Web/` | Theme + service worker |
 | `AGENTS.md` | This file |
-| `agents/skills/acs-lesson1-only-template/` | Lesson1-only starter pin |
-| `agents/skills/acs-lesson-plan/` | Standing lesson-plan bars |
+| `agents/skills/lesson1-only-template/` | Lesson1-only starter pin |
+| `agents/skills/lesson-plan/` | Standing lesson-plan bars |
 
 ## Technical Writer gate
 
@@ -220,9 +219,9 @@ Before you call student-facing markdown done:
 6. You changed the fewest lines that finish the job.
 
 
-## ACS lesson plan bars
+## Lesson plan bars
 
-Standing bars for lesson Markdown live in [`agents/skills/acs-lesson-plan/SKILL.md`](agents/skills/acs-lesson-plan/SKILL.md):
+Standing bars for lesson Markdown live in [`agents/skills/lesson-plan/SKILL.md`](agents/skills/lesson-plan/SKILL.md):
 
 - Sole template: copy `Lessons/Lesson1.md` only — never author from Lesson2
 - File naming: `topic_name.md` (never `LessonNN.md` as canonical content)

@@ -1,7 +1,7 @@
 {
   "name": "sample-course",
   "private": true,
-  "description": "Filled SAMPLE course proving Syllabus-Template customization. Not a live ACS offering.",
+  "description": "Filled SAMPLE course proving Syllabus-Template customization. Not a live offering.",
   "scripts": {
     "start": "docsify serve .",
     "serve": "docsify serve ."
