@@ -9,11 +9,11 @@ _This syllabus is a living document. Hold down `SHIFT` and press Refresh to get 
 > <details>
 > <summary>Instructor setup (not student-facing)</summary>
 >
-> Replace every `COURSE_*`, `GITHUB_ORG`, and `REPO_NAME` placeholder in `index.html`, this file, `_sidebar.md`, and `package.json` before you publish.
+> Course-level setup lives in [SETUP.md](SETUP.md). Do not leave setup sentences in the syllabus body.
 >
-> Fill `COURSE_DESCRIPTION` and `COURSE_WHY` with student-facing copy. Do not leave setup sentences in the body.
+> Fill `COURSE_DESCRIPTION` and `COURSE_WHY` with published course copy.
 >
-> Pick one delivery format, credit line, and schedule table. Delete unused rows. Do not leave instructor direction in the student-facing body.
+> Pick one delivery format, credit line, and schedule table. Delete unused rows. Do not leave instructor direction in the published body.
 >
 > **Delivery examples:** online or in-person | 7 or 9 weeks | 12–18 sessions
 >
