@@ -1,0 +1,24 @@
+schema_version: 1
+slug: COURSE_SLUG
+profile: adult
+language: en
+# ElevenLabs Professional Voice Clone id — placeholder only; never commit API keys here
+pvc_voice_id: COURSE_PVC_VOICE_ID
+fps: 30
+width: 1920
+height: 1080
+music:
+  enabled: true
+  # Instrumental only; no vocals or lyrics — pipeline rejects vocal beds for educational mix
+  prompt: "Instrumental only, restrained modern technology documentary bed"
+  duration_seconds: 30
+sfx:
+  enabled: true
+  preset: restrained-educational
+approval:
+  require_final_confirmation: true
+soup:
+  validation_enabled: true
+  # Segments below min_confidence are rejected; borderline_threshold flags human review
+  min_confidence: 0.75
+  borderline_threshold: 0.55
