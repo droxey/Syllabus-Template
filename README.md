@@ -7,7 +7,7 @@ _This syllabus is a living document. Hold down `SHIFT` and press Refresh to get 
 > [!NOTE] Instructor
 >
 > <details>
-> <summary>Course Clerk / instructor setup (not student-facing)</summary>
+> <summary>Instructor setup (not student-facing)</summary>
 >
 > Replace every `COURSE_*`, `GITHUB_ORG`, and `REPO_NAME` placeholder in `index.html`, this file, `_sidebar.md`, and `package.json` before you publish.
 >

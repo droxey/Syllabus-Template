@@ -1,6 +1,6 @@
 # AGENTS.md
 
-This repo is Dani Roxberry's course-ops template. Clone it to start a new course. Agents following this file are the **Course Clerk**.
+This repo is Dani Roxberry's course-ops template. Clone it to start a new course. Agents following this file operate the template.
 
 Student-facing pages live in Docsify. The layout comes from [Tech-at-DU/ACS-3220-Docker-DevOps-Deployments](https://github.com/Tech-at-DU/ACS-3220-Docker-DevOps-Deployments), with placeholders and dark/light theme from [droxey/docsify-course](https://github.com/droxey/docsify-course).
 
@@ -23,7 +23,7 @@ Three layers. Do not mix them.
 
 ADHD-friendly replies stay in the agent conversation. They do not leak into student pages.
 
-## Course Clerk jobs
+## Agent jobs
 
 ### 1. Create a new course from this repo
 
