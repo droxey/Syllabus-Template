@@ -240,7 +240,7 @@ Standing bars for lesson Markdown live in [`agents/skills/acs-lesson-plan/SKILL.
 - Author directives: `## For curriculum authors` at the bottom after Additional Resources, contents in `<details>` (`### In Class` / facilitator / Expert follow-ups — never header or mid-body)
 - Activity labels: `Activity 1` / `Activity 2` (never Hands-on); labs stay `Lab 1` / `Lab 2` — never Roman (`Lab I`)
 - TT pulses: `> **ASK AUDIENCE:** <question ≤60s>` plus `<details><summary>Answer</summary>` — never open-body Question/Expected paragraphs
-- Voice: job-sim; `GOAL:`; rookie/beginner on-the-job tips (never hire-bar in the plan)
+- Voice: on-the-job / builder; `GOAL:`; rookie/beginner on-the-job tips (never hire-bar in the plan)
 - TT: 30–40m with 3–4 mid-talk pulse checks
 - Never put the word ADHD (or other diagnosis labels) in a lesson file
 - Course-level ops → SETUP.md; lesson-level instructor notes → Lesson1 author details only; never put skill names in `Lessons/*.md`

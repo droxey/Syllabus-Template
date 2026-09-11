@@ -76,10 +76,10 @@ Never rename them. Never add parentheticals. Official-first is list order under 
 
 ## Voice and labels
 
-- **Job-simulation voice only** — never students / classroom / academic framing in the plan body.
+- **On-the-job / builder voice only** — never students / classroom / academic framing in the plan body.
 - Use **`GOAL:`** — never “destination for today” / destination-first section labels.
 - Tips language: **rookie** or **beginner tips for on-the-job success** — **never** “hire-bar” in the plan (Experts may use a hiring lens in *internal* review notes only).
-- Topic content only — no classroom-management directives, no roster / student-identifying info, no entrance/exit ticket wording (standup / check-in / wrap OK if job-sim phrased).
+- Topic content only — no classroom-management directives, no roster / student-identifying info, no entrance/exit ticket wording (standup / check-in / wrap OK if on-the-job / builder phrased).
 
 ## Structure
 

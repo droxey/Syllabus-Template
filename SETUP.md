@@ -51,7 +51,7 @@ Do not put instructor prep in the learner-facing mid-body (warm-up, TT, activity
 
 ## Learner-facing voice
 
-Lessons in `Lessons/*.md` must read as **job-sim**: I/you/we on the work. No students / classroom / academic framing. Never cite skill names or generation techniques in `Lessons/*.md`.
+Lessons in `Lessons/*.md` must read as **on-the-job / builder**: I/you/we on the work. No students / classroom / academic framing. Never cite skill names or generation techniques in `Lessons/*.md`.
 
 ## Agent jobs
 
