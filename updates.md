@@ -1,6 +1,6 @@
 # Course updates
 
-Course Clerk fills this file. Do not put this content in lesson bodies.
+Agents fill this file. Do not put this content in lesson bodies.
 
 Scan X, GitHub, Hacker News, and Dev.to for language, framework, and implementation trends **since the last commit on this repo**. Write findings under Tech Trends. After you read every student-facing markdown file, list gaps under Add to Course.
 

@@ -6,7 +6,7 @@
 
 > [!WARNING] SAMPLE COURSE
 >
-> This folder is the **filled sample** that proves [Syllabus-Template](https://github.com/droxey/Syllabus-Template) customization. Course Clerk tokens (`COURSE_*`, `REPO_NAME`, `GITHUB_ORG`) are replaced with concrete SAMPLE values.
+> This folder is the **filled sample** that proves [Syllabus-Template](https://github.com/droxey/Syllabus-Template) customization. Placeholder tokens (`COURSE_*`, `REPO_NAME`, `GITHUB_ORG`) are replaced with concrete SAMPLE values.
 >
 > **This is not a live ACS offering.** Do not enroll, advertise, or treat ACS 9999 as a real Dominican / Tech-at-DU class. The blank starter stays at the **repo root**. Serve *this* folder to preview the filled site.
 >
@@ -15,7 +15,7 @@
 > [!NOTE] Instructor
 >
 > <details>
-> <summary>Course Clerk / instructor setup (not student-facing)</summary>
+> <summary>Instructor setup (not student-facing)</summary>
 >
 > - Instructor: Dani Roxberry (`danielle.roxberry@dominican.edu`)
 > - Org / repo convention: `droxey` / `sample-course`
