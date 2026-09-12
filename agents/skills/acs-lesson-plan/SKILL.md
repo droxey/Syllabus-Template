@@ -12,27 +12,27 @@ Standing rules for every ACS course lesson plan (ACS-4210, ACS-3210, ACS-2951, e
 ## Consumer
 
 - Instructors and agents drafting or revising ACS lesson plans.
-- Authoring ops only. Do not cite this skill (or any skill name) in `Lessons/*.md`.
+- Authoring ops only. Do not cite this skill (or any skill name) in `lessons/*.md`.
 
 ## SETUP (hard)
 
-Follow [`SETUP.md`](../../../SETUP.md) for course-level ops (clone, placeholders, Docsify serve / GitHub Pages). Agent jobs live in [`AGENTS.md`](../../../AGENTS.md). This skill does not own those ops.
+Follow [`setup.md`](../../../setup.md) for course-level ops (clone, placeholders, Docsify serve / GitHub Pages). Agent jobs live in [`agents.md`](../../../agents.md). This skill does not own those ops.
 
 - **Lesson-level instructor notes** live only under `## For curriculum authors` in a bottom `<details>` after `## Additional Resources`.
-- Never put skill names or generation techniques in `Lessons/*.md`.
+- Never put skill names or generation techniques in `lessons/*.md`.
 - Do not put SETUP / clone / Pages instructions in a lesson file.
 
 ## Sole template (hard)
 
-- In Syllabus-Template, **`Lessons/Lesson1.md` is the only lesson starter.** Copy it, then rename to `topic_name.md`.
-- **Never** author from `Lesson2` / `Lessons/Lesson2.md` / `Slides/Lesson2.html`. Those files are gone.
+- In Syllabus-Template, **`templates/LESSON_TEMPLATE.md` is the only lesson starter.** Copy it to `lessons/<topic_name>.md`.
+- **Never** author from `Lesson2` / `lessons/lesson2.md` / `slides/lesson2.html`. Those files are gone.
 - See [`acs-lesson1-only-template`](../acs-lesson1-only-template/SKILL.md).
 
 ## File naming (hard)
 
 - Always name lesson files **`topic_name.md`** (kebab or short TopicCase as used in the repo — e.g. `middleware.md`, `Emails.md`, `3rdPartyLibs.md`).
 - **Never** use `LessonNN.md` / `Lesson05.md` as the canonical content file.
-- If an old `LessonNN.md` exists, turn it into a short **pointer** to `topic_name.md`, or update README/schedule Day `NN` to link `Lessons/topic_name.md`.
+- If an old `LessonNN.md` exists, turn it into a short **pointer** to `topic_name.md`, or update README/schedule Day `NN` to link `lessons/topic_name.md`.
 - Vault / box drafts: `YYYY-MM-DD-<topic>.md` or pack-flattened `topic_name.md` — still topic-named, not LessonNN.
 
 ## Lesson titles (hard)
@@ -93,7 +93,7 @@ Never write `jobsim`, `JOBSIM`, or `job simulator` in a lesson file. Use on-the-
 
 ## Structure
 
-- Copy **`Lessons/Lesson1.md` only** (never Lesson2). Shape: Elapsed / Time / Activity table, Why, Learning Objectives, Overview/TT, Activities, BREAK, Lab/Wrap, then exactly `## Additional Resources` (topic sources only; official first), then **For curriculum authors** (bottom only, `<details>`-wrapped).
+- Copy **`templates/LESSON_TEMPLATE.md` only** (never Lesson2) to `lessons/<topic_name>.md`. Shape: Elapsed / Time / Activity table, Why, Learning Objectives, Overview/TT, Activities, BREAK, Lab/Wrap, then exactly `## Additional Resources` (topic sources only; official first), then **For curriculum authors** (bottom only, `<details>`-wrapped).
 - Teacher talk **30–40m** with **3–4 mid-TT ASK AUDIENCE pulse checks** (≤60s). Use this shape only — never open-body `**ASK AUDIENCE**` plus Question/Expected paragraphs:
 
 ```markdown

@@ -1,4 +1,4 @@
-<!-- Run as a slideshow: reveal-md Lessons/Module5-Optimizations.md -w -->
+<!-- Run as a slideshow: reveal-md lessons/Module5-Optimizations.md -w -->
 # Module 5 — Optimizations
 
 ⭐️ **GOAL**: Give a three-minute demo of your tool and name one allocation you would change — or keep.
@@ -88,7 +88,7 @@ Demo beats:
 
 1. `go test`
 2. One run of the tool
-3. One allocation sentence ([Challenge 3](Projects/SampleProject.md#challenge-3-one-allocation))
+3. One allocation sentence ([Challenge 3](../projects/sample_project.md#challenge-3-one-allocation))
 
 Done means you hit the three beats and stopped talking.
 
@@ -103,5 +103,5 @@ Done means you hit the three beats and stopped talking.
 
 ## 📚 Additional Resources
 
-1. [SAMPLE Project](Projects/SampleProject.md)
+1. [SAMPLE Project](../projects/sample_project.md)
 2. [About Go Optimizations 101](https://go101.org/optimizations/0.1-introduction.html)

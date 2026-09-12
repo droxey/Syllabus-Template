@@ -6,13 +6,13 @@ Replace `COURSE_SLUG` (kebab-case course id) and `COURSE_PVC_VOICE_ID` (ElevenLa
 
 ## Lesson plans
 
-Session content lives in `Lessons/*.md` at the repo root. Those files are already reveal-md compatible: slide breaks use `<!-- > -->`, and you can preview one lesson with:
+Session content lives in `lessons/*.md` at the repo root. Copy from `templates/LESSON_TEMPLATE.md` when you add a session. Those files are already reveal-md compatible: slide breaks use `<!-- > -->`, and you can preview one lesson with:
 
 ```bash
-reveal-md Lessons/Lesson1.md
+reveal-md lessons/<topic_name>.md
 ```
 
-The existing `reveal-md Lessons/` → `Slides/` flow in this template stays the source of truth for live class decks.
+The existing `reveal-md lessons/` → `slides/` flow in this template stays the source of truth for live class decks.
 
 ## Future pipeline inputs
 

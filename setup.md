@@ -2,7 +2,7 @@
 
 Course-level setup and instructor/agent ops live **here**. Not in lesson bodies. Not as skill-name dumps.
 
-This file is for instructors and agents standing up a course repo. It is not a published syllabus. Agent jobs are in [AGENTS.md](AGENTS.md).
+This file is for instructors and agents standing up a course repo. It is not a published syllabus. Agent jobs are in [agents.md](agents.md).
 
 ## Clone and placeholders
 
@@ -10,7 +10,7 @@ This file is for instructors and agents standing up a course repo. It is not a p
 2. Replace every `ALL_CAPS` token. Search for `COURSE_`, `REPO_NAME`, `GITHUB_ORG`, `INSTRUCTOR_EMAIL`.
 3. Set `index.html` title, description, author, `repo`, `name`, `search.namespace`, and OG URLs.
 4. Rewrite `README.md` as this course's syllabus. Keep the ACS-3220 section order.
-5. After you add `Web/logo-icononly.svg`, set `logo: 'Web/logo-icononly.svg'` in `index.html`.
+5. After you add `web/logo-icononly.svg`, set `logo: 'web/logo-icononly.svg'` in `index.html`.
 
 | Token | Where | Example |
 | ----- | ---- | ------- |
@@ -42,15 +42,15 @@ Add course-specific Prism languages in `index.html` if you need them (`prism-doc
 
 Do not link this file from `_sidebar.md`. Search only sees sidebar links; keep setup off the published nav.
 
-## New lessons (Lesson1 only)
+## New lessons (LESSON_TEMPLATE only)
 
-Copy `Lessons/Lesson1.md` → `Lessons/topic_name.md` (kebab or short TopicCase). That file is the only starter. Never author from `Lesson2`.
+Copy `templates/LESSON_TEMPLATE.md` → `lessons/<topic_name>.md` (kebab or short TopicCase). That file is the only starter. Never author from `Lesson2`.
 
 Link every published lesson from `_sidebar.md`.
 
 ## Lesson instructor notes
 
-Lesson-level instructor notes go **only** in the Lesson1 author block at the bottom of the lesson:
+Lesson-level instructor notes go **only** in the lesson template author block at the bottom of the lesson:
 
 1. After `## Additional Resources`
 2. Inside `<details>` wrapping `## For curriculum authors`
@@ -78,4 +78,4 @@ Never cite skill names in published course Markdown.
 
 ## Agent jobs
 
-Refresh, runtime bumps, tech trends, missing curriculum, and the rest of the agent job list live in [AGENTS.md](AGENTS.md). Read that file after this one.
+Refresh, runtime bumps, tech trends, missing curriculum, and the rest of the agent job list live in [agents.md](agents.md). Read that file after this one.

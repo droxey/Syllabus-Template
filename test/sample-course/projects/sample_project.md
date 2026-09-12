@@ -44,7 +44,7 @@ On paper or in the README, draw the header (`ptr`, `len`, `cap`) and the backing
 
 ### Challenge 3: One allocation
 
-After [Module 5](Lessons/Module5-Optimizations.md), write three sentences: what allocated, whether you would change it, and why *not* to optimize the rest. Link [Go Optimizations 101](https://go101.org/optimizations/101.html) — do not quote pages of it.
+After [Module 5](../lessons/Module5-Optimizations.md), write three sentences: what allocated, whether you would change it, and why *not* to optimize the rest. Link [Go Optimizations 101](https://go101.org/optimizations/101.html) — do not quote pages of it.
 
 ## Deliverables
 
@@ -56,4 +56,4 @@ _All SAMPLE submissions are due **Wednesday, April 15, 2026 at 11:59pm** unless 
 
 ## Rubric
 
-[SAMPLE Project Rubric](Projects/SampleRubric.md)
+[SAMPLE Project Rubric](./sample_rubric.md)

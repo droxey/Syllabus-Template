@@ -1,4 +1,4 @@
-<!-- Run as a slideshow: reveal-md Lessons/Module4-Concurrency.md -w -->
+<!-- Run as a slideshow: reveal-md lessons/Module4-Concurrency.md -w -->
 # Module 4 — Concurrency
 
 ⭐️ **GOAL**: Leave with one working channel pipeline — and one failure mode you already unblocked.
@@ -62,7 +62,7 @@ Work the repo. Done means:
 2. You can explain who closes the channel
 3. You tried `go test -race` or wrote why the lab has no shared memory
 
-If you finish early, score a teammate's pipeline against the [SAMPLE rubric](Projects/SampleRubric.md).
+If you finish early, score a teammate's pipeline against the [SAMPLE rubric](../projects/sample_rubric.md).
 
 <!-- > -->
 
@@ -74,5 +74,5 @@ Bring one unchecked row and the next action to Module 5.
 
 ## 📚 Additional Resources
 
-1. [SAMPLE Project](Projects/SampleProject.md)
+1. [SAMPLE Project](../projects/sample_project.md)
 2. [Common concurrent mistakes](https://go101.org/article/concurrent-common-mistakes.html)

@@ -1,2 +1,2 @@
 * [Schedule](README.md#schedule)
-* [Preview this sample](Guides/PreviewThisSite.md)
+* [Preview this sample](guides/PreviewThisSite.md)
