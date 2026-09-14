@@ -10,8 +10,7 @@
     <meta property="og:description" content="COURSE_DESCRIPTION">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="COURSE_KEYWORDS">
     <meta property="og:type" content="website">
     <!-- UPDATE: Replace GITHUB_ORG and REPO_NAME. -->
@@ -38,7 +37,8 @@
         repo: 'GITHUB_ORG/REPO_NAME',
         themeColor: '#126893',
         formatUpdated: '{MM}/{DD} {HH}:{mm}',
-        executeScript: true,
+        // Off: a <script> in any published .md would run as first-party JS.
+        executeScript: false,
         auto2top: true,
         autoHeader: false,
         loadSidebar: true,
@@ -116,11 +116,11 @@
         }
       }
     </script>
+    <!-- Pinned jsDelivr URLs, no SRI. Cloning this template accepts that CDN trust. -->
     <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0.9.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsify@4.13.1/lib/docsify.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsify@4.13.1/lib/plugins/search.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsify@4.13.1/lib/plugins/emoji.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/docsify@4.13.1/lib/plugins/external-script.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2.1.1"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1.6.3"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsify-plugin-flexible-alerts@1.3.0"></script>
@@ -135,6 +135,7 @@
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/components/prism-yaml.min.js"></script>
     <script>
       if (typeof navigator.serviceWorker !== 'undefined') {
+        // Default scope is /web/ (this file's directory). Do not pass { scope: '/' }.
         navigator.serviceWorker.register('web/sw.js')
       }
     </script>

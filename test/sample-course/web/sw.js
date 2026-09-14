@@ -7,11 +7,11 @@
  * ========================================================== */
 
 const RUNTIME = 'docsify'
+// Registered as web/sw.js so max scope is /web/ — it does not control the Docsify app.
 const HOSTNAME_WHITELIST = [
   self.location.hostname,
   'fonts.gstatic.com',
   'fonts.googleapis.com',
-  'unpkg.com',
   'cdn.jsdelivr.net',
   'github.com',
   'github.io'

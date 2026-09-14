@@ -36,7 +36,7 @@ Course-level ops for this job live in [setup.md](setup.md).
 2. Replace every `ALL_CAPS` placeholder. Search for `COURSE_`, `REPO_NAME`, `GITHUB_ORG`, `INSTRUCTOR_EMAIL`. If you use Nebula, also fill `grain/course.yaml` (`COURSE_SLUG`, `COURSE_PVC_VOICE_ID`).
 3. Set `index.html` title, description, author, `repo`, `name`, `search.namespace`, and OG URLs.
 4. Rewrite `README.md` as this course's syllabus. Keep the ACS-3220 section order.
-5. Create each session as `lessons/<topic_name.md>` (kebab or TopicCase as used in the repo). Copy **`templates/LESSON_TEMPLATE.md`** → `lessons/<topic_name.md>` — it is the sole lesson template. Never author from `Lesson2`. Update `_sidebar.md` so every published lesson is linked (search only sees sidebar links).
+5. Create each session as `lessons/<topic_name>.md` (kebab or TopicCase as used in the repo). Copy **`templates/LESSON_TEMPLATE.md`** → `lessons/<topic_name>.md` — it is the sole lesson template. Never author from `Lesson2`. Update `_sidebar.md` so every published lesson is linked (search only sees sidebar links).
 6. Add course-specific Prism languages in `index.html` if you need them (`prism-docker`, `prism-go`, …).
 7. Run `npm install` and `npm run serve`. Open `http://localhost:3000`.
 8. Enable GitHub Pages from the default branch.
@@ -156,7 +156,10 @@ Reviewed against ACS-3220 and docsify-course. Changes baked into `index.html`:
 - **GIF hover control from ACS-3220.** `docsify-gifcontrol` is in the dependency list for lesson GIFs.
 - **Theme is ACS-3220 `vue.css` + pinned `docsify-themeable@0.9.0`.** Do not also load `docsify-darklight-theme` — the two stacks fight on CSS variables.
 - **`cache-control: max-age=600`** matches GitHub Pages, not 180s.
-- **No Make School chrome.** Favicons and `makeschool.com` service-worker entries are gone. SW whitelist includes `cdn.jsdelivr.net`.
+- **No Make School chrome.** Favicons, `makeschool.com` SW entries, and `reveal/makeschool.css` are gone. `reveal-md.json` uses the default Reveal theme. Do not restore Make School CSS.
+- **`executeScript` is off.** Do not turn it on — a `<script>` in published markdown would run as first-party JS. The `external-script` plugin is not loaded for the same reason.
+- **CDN scripts are pinned jsDelivr URLs without SRI.** Cloning this template accepts that CDN trust. Do not add a second theme or unpinned `latest` URLs.
+- **Service worker scope is `/web/`.** `index.html` registers `web/sw.js` with the default scope (the script directory). Do not pass `{ scope: '/' }` — that would let the worker cache CDN JS for the whole app.
 - **Logo starts empty.** ACS-3220 points at a missing `web/logo-icononly.svg`. Empty `logo` avoids a broken image.
 - **Prism starter set:** bash, javascript, json, markdown, python, yaml. Add packs per course. ACS-3220 adds docker, nginx, python, yaml for that class.
 
@@ -186,13 +189,15 @@ Copy the starter shape from `templates/LESSON_TEMPLATE.md` only, then save as `l
 - `<!-- > -->` / `<!-- v -->` for `reveal-md` slides
 - `## Additional Resources` (exact heading), then `## For curriculum authors` in a `<details>` wrap at the bottom (`### In Class`)
 
-`reveal-md lessons/` still builds `slides/` if you want a deck. See `reveal/README.md`.
+`npx reveal-md lessons/<topic_name>.md --static slides` still builds `slides/` if you want a deck. See `slides/README.md` and `reveal/README.md`. Do not commit leftover decks from another course.
 
 ## File map
 
 | Path | Role |
 | ---- | ---- |
 | `index.html` | Docsify config and CDN dependencies |
+| `package.json` | `serve`, `check-links`, `test` — no `COURSE_*` tokens |
+| `scripts/check-links.js` | Local link check (`npm run check-links`) |
 | `README.md` | Student syllabus (Docsify home) |
 | `_sidebar.md` | Searchable nav — link every published lesson |
 | `_navbar.md` | Top nav |
@@ -200,12 +205,16 @@ Copy the starter shape from `templates/LESSON_TEMPLATE.md` only, then save as `l
 | `templates/` | Canonical lesson starter (`LESSON_TEMPLATE.md`) |
 | `assignments/` | Project specs |
 | `updates.md` | Tech Trends + Add to Course |
-| `web/` | Theme + service worker |
+| `web/` | Theme + service worker (scope `/web/` only) |
 | `setup.md` | Course-level setup + instructor/agent ops |
 | `agents.md` | Agent jobs (this file) |
 | `agents/skills/acs-lesson1-only-template/` | LESSON_TEMPLATE starter pin |
 | `agents/skills/acs-lesson-plan/` | Standing lesson-plan bars |
 | `grain/` | video-pipeline `CourseConfig` template (`course.yaml`) — see `grain/README.md` |
+| `reveal/` | reveal-md notes (`README.md`) — no Make School theme |
+| `slides/` | Optional reveal-md output. Generate; do not keep leftover decks |
+| `test/sample-course/` | Filled proof of token replacement. Historical lesson bars — do not author from it |
+| `LICENSE` | MIT (Make School 2019 + Dani Roxberry 2026) |
 
 ## Technical Writer gate
 

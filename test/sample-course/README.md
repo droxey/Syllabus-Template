@@ -8,6 +8,8 @@
 >
 > This folder is the **filled sample** that proves [Syllabus-Template](https://github.com/droxey/Syllabus-Template) customization. Placeholder tokens (`COURSE_*`, `REPO_NAME`, `GITHUB_ORG`) are replaced with concrete SAMPLE values.
 >
+> Lesson bodies here are a historical filled proof. They do **not** match today's lesson bars. For a new course, copy [`templates/LESSON_TEMPLATE.md`](../../templates/LESSON_TEMPLATE.md) — do not author from these modules.
+>
 > **This is not a live ACS offering.** Do not enroll, advertise, or treat ACS 9999 as a real Dominican / Tech-at-DU class. The blank starter stays at the **repo root**. Serve *this* folder to preview the filled site.
 >
 > **Reading spine:** [Go 101](https://go101.org/article/101.html) and [Go Optimizations 101](https://go101.org/optimizations/101.html) on go101.org (Tapir Liu). We link the public site. We do **not** ship book PDFs in this repo.
@@ -145,7 +147,7 @@ Class recordings will be available at [Dani's SAMPLE recordings index](https://b
 - [SAMPLE glossary](resources/SampleGlossary.md)
 - [Preview / serve guide](guides/PreviewThisSite.md)
 - [Go 101](https://go101.org/article/101.html) and [Go Optimizations 101](https://go101.org/optimizations/101.html) — official site, Tapir Liu
-- Root template clerk process: [`agents.md`](https://github.com/droxey/Syllabus-Template/blob/master/agents.md) in Syllabus-Template (not student-facing)
+- Root agent jobs: [`agents.md`](https://github.com/droxey/Syllabus-Template/blob/master/agents.md) in Syllabus-Template (not student-facing)
 
 ## Interview Topics
 
