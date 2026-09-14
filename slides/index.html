@@ -2,20 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Directory Listing</title>
-    <link rel="stylesheet" href="/css/theme/white.css" id="theme" />
-    <style type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Slides</title>
+    <style>
       body {
-        margin: 1em;
+        font-family: Source Sans Pro, Helvetica Neue, Arial, sans-serif;
+        margin: 2rem;
+        color: #222;
+        line-height: 1.5;
       }
       a {
-        color: white;
-        display: block;
+        color: #126893;
+      }
+      pre {
+        background: #f4f4f4;
+        padding: 0.75rem 1rem;
+        overflow: auto;
       }
     </style>
   </head>
-
   <body>
-    <a href="lesson1.html">lesson1.html</a>
+    <h1>Slides</h1>
+    <p>This directory is reveal-md output. Generate a deck from a lesson:</p>
+    <pre>npx reveal-md lessons/&lt;topic_name&gt;.md --static slides</pre>
+    <p>See <a href="../reveal/README.md">reveal/README.md</a>.</p>
   </body>
 </html>

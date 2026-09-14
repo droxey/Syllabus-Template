@@ -1,5 +1,5 @@
 <!-- Run as a slideshow: reveal-md lessons/<topic_name>.md -w -->
-# Lesson 1 — LESSON_TITLE
+# LESSON_TITLE
 
 ⭐️ **GOAL:** One sentence. What will you walk out able to do?
 
@@ -33,12 +33,11 @@
 
 ## [**15m**] ☀️ Warm Up
 
-Prime the room. Pick one easy-to-explain activity that is fun on Zoom:
+Do one short drill that uses today's topic:
 
-- Think and jot, then think-pair-share
-- A tiny scavenger hunt in public docs or a product page
-- A comic or current event tied to today's topic
-- A 3-question recap of last class
+- Skim a public doc or product page and jot the one term you do not own yet
+- Recap the last session in three bullets
+- Open the official page for CONCEPT_1 and find the first warning or gotcha
 
 <!-- > -->
 
@@ -55,7 +54,7 @@ Name the failure mode, not a definition recap.
 
 </details>
 
-Walk the smallest path that works. Narrate the failure you expect the room to hit.
+Walk the smallest path that works. Call out the failure you expect to hit.
 
 > **ASK AUDIENCE:** Which command or API call proves CONCEPT_2 is actually in play?
 
@@ -103,8 +102,6 @@ I do → we do. Smallest path. Done when:
 1. The command or check in this block runs
 1. You can name what each step did
 
-If you finish early, help someone in your breakout who is stuck.
-
 <!-- > -->
 
 ## [**15m**] 💻 Activity 2
@@ -118,7 +115,7 @@ You do. Same topic, less scaffolding. Done when:
 
 ## [**5m**] Wrap Up
 
-- What to finish before next class
+- What to finish before the next session
 - Where to submit
 - One thing to try if you get stuck
 
@@ -137,13 +134,14 @@ You do. Same topic, less scaffolding. Done when:
 ### In Class
 
 - Open any demo repo and slides before class.
-- Warm-up is a Zoom variety beat: keep it short, memorable, and easy to explain.
-- Breakouts of 3–4. Visit rooms; do not dump extra instructor direction into the body above.
+- Warm-up is a Zoom variety beat: keep it short, memorable, and easy to explain. Pick one: think-pair-share, a tiny scavenger hunt, a comic, or a 3-question recap.
+- Breakouts of 3–4. Visit rooms; do not dump extra instructor direction into the body above. Early finishers help a stuck room.
 - After Activity 1, debrief one failure mode in the main room.
 
 ### Facilitator notes
 
 - Live-code the first five minutes only. Then get out of the way.
+- Narrate the failure you expect the room to hit during TT.
 - Have one extension ready for rooms that finish Activity 2 early.
 
 ### Expert follow-ups

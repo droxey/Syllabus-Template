@@ -12,16 +12,36 @@ This file is for instructors and agents standing up a course repo. It is not a p
 4. Rewrite `README.md` as this course's syllabus. Keep the ACS-3220 section order.
 5. After you add `web/logo-icononly.svg`, set `logo: 'web/logo-icononly.svg'` in `index.html`.
 
+`_sidebar.md` and `package.json` have no tokens. Link new lessons in `_sidebar.md` after the files exist on disk.
+
 | Token | Where | Example |
 | ----- | ---- | ------- |
 | `COURSE_TITLE` | `index.html` title + OG, `README.md` H1 | `ACS 3220: Docker, DevOps, & Deployments` |
 | `COURSE_NAME` | Docsify sidebar name | `ACS 3220` |
 | `COURSE_DESCRIPTION` | meta description, syllabus pitch | one paragraph |
+| `COURSE_WHY` | `README.md` why block | one paragraph |
 | `COURSE_INSTRUCTOR` | author meta | `Dani Roxberry` |
 | `INSTRUCTOR_EMAIL` | author meta | `dani@musexmachine.com` |
 | `COURSE_KEYWORDS` | meta keywords | `docker, devops, deployment` |
+| `COURSE_DELIVERY` | `README.md` specifics | `online` or `in-person` |
+| `COURSE_WEEKS` | `README.md` specifics | `7` |
+| `COURSE_SESSIONS` | `README.md` specifics | `12` |
+| `COURSE_CREDITS` | `README.md` specifics | `3 units` |
+| `COURSE_OUTCOME_1` … `_4` | `README.md` outcomes | action-verb outcome |
+| `COURSE_START` / `COURSE_END` | `README.md` schedule | term dates |
+| `COURSE_MEETING_DAYS` / `COURSE_MEETING_TIME` | `README.md` schedule | `Mon/Wed` / `4:00pm–5:30pm PT` |
 | `GITHUB_ORG` | OG URLs, `repo` | `droxey` or `Tech-at-DU` |
 | `REPO_NAME` | OG URLs, `repo`, search namespace | `ACS-3220-Docker-DevOps-Deployments` |
+| `LESSON_TITLE` | `templates/LESSON_TEMPLATE.md` H1, syllabus schedule | topic name, not `Lesson 1` |
+| `CONCEPT_1` … `_3` | lesson starter objectives / TT | topic terms |
+| `DATE_*` / `HOLIDAY_NAME` | syllabus schedule | session dates |
+| `PREREQUISITE_1` / `_2` | syllabus prereq link text | course or skill name |
+| `TUTORIAL_NAME` / `TUTORIAL_URL` | syllabus tutorials | name + URL |
+| `CHALLENGE_NAME` | syllabus challenges | challenge title |
+| `GRADESCOPE_URL` | syllabus submit link | Gradescope assignment URL |
+| `RECORDINGS_URL` | syllabus recordings | recordings index URL |
+| `COURSE_SLUG` | `grain/course.yaml` | kebab-case course id |
+| `COURSE_PVC_VOICE_ID` | `grain/course.yaml` | ElevenLabs PVC id (not an API key) |
 
 ## Docsify preview and GitHub Pages
 
@@ -30,7 +50,9 @@ npm install
 npm run serve
 ```
 
-Open `http://localhost:3000`. Enable GitHub Pages from the default branch.
+Open `http://localhost:3000`. Enable GitHub Pages from the default branch. `.nojekyll` is already in the repo so Jekyll does not drop `_sidebar.md` / `_navbar.md`.
+
+CDN scripts in `index.html` are pinned jsDelivr URLs without SRI. That is accepted CDN trust for this template. Keep `executeScript` off and do not load `external-script`.
 
 Link check (local targets only; leftover placeholders are listed, not failed):
 
@@ -46,7 +68,9 @@ Do not link this file from `_sidebar.md`. Search only sees sidebar links; keep s
 
 Copy `templates/LESSON_TEMPLATE.md` → `lessons/<topic_name>.md` (kebab or short TopicCase). That file is the only starter. Never author from `Lesson2`.
 
-Link every published lesson from `_sidebar.md`.
+Link every published lesson from `_sidebar.md` after the file exists. Do not add a syllabus link to a path that is not on disk yet.
+
+`test/sample-course/` is a filled proof that tokens can be replaced. Its lesson bodies are historical — they do not match today's bars. Do not author a new course from those modules.
 
 ## Lesson instructor notes
 

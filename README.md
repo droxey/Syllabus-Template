@@ -1,4 +1,4 @@
-<!-- Optional centered logo: add Images/logo.svg yourself, then uncomment an <img> pointing at it. Path is manual — not a COURSE_* token. -->
+<!-- Optional centered logo: add web/logo-icononly.svg yourself, then uncomment an <img> pointing at it. Path is manual — not a COURSE_* token. -->
 
 # COURSE_TITLE
 
@@ -9,9 +9,11 @@ _This syllabus is a living document. Hold down `SHIFT` and press Refresh to get 
 > <details>
 > <summary>Instructor setup (not student-facing)</summary>
 >
-> Replace every `COURSE_*`, `GITHUB_ORG`, and `REPO_NAME` placeholder in `index.html`, this file, `_sidebar.md`, and `package.json` before you publish.
+> Replace every `COURSE_*`, `GITHUB_ORG`, and `REPO_NAME` placeholder in `index.html` and this file before you publish. `_sidebar.md` and `package.json` have no tokens — link new lessons in `_sidebar.md` after you copy them in. Token table: [setup.md](setup.md).
 >
 > Fill `COURSE_DESCRIPTION` and `COURSE_WHY` with student-facing copy. Do not leave setup sentences in the body.
+>
+> Copy `templates/LESSON_TEMPLATE.md` → `lessons/<topic_name>.md`, then link that file here and in `_sidebar.md`. Do not link a file that is not on disk yet.
 >
 > Pick one delivery format, credit line, and schedule table. Delete unused rows. Do not leave instructor direction in the student-facing body.
 >
@@ -75,9 +77,9 @@ _By the end of this course, you will be able to&hellip;_
 
 | Class | Date | Topic |
 |:-----:|:----:|-------|
-| 1 | DATE_1 | [Lesson 1] |
-| 2 | DATE_2 | Next session — copy `templates/LESSON_TEMPLATE.md` to `lessons/topic_name.md` and link it here |
-| 3 | DATE_3 | Later session — copy `templates/LESSON_TEMPLATE.md` to `lessons/topic_name.md` and link it here |
+| 1 | DATE_1 | LESSON_TITLE |
+| 2 | DATE_2 | Next session |
+| 3 | DATE_3 | Later session |
 | — | DATE_HOLIDAY | **No Class — HOLIDAY_NAME** |
 | n | DATE_FINAL | Final exam / presentations |
 
@@ -128,5 +130,3 @@ Any extra books, docs, or tools you need can live here.
 ## Interview Topics
 
 List topics from this course that show up in technical interviews.
-
-[Lesson 1]: lessons/topic_name.md
