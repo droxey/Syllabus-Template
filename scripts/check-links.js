@@ -94,7 +94,10 @@ function run(root = ROOT) {
       }
       const local = stripHashAndQuery(target);
       if (!local) continue;
-      const resolved = path.resolve(dir, safeDecode(local));
+      const decoded = safeDecode(local);
+      const resolved = decoded.startsWith("/")
+        ? path.join(root, decoded.slice(1))
+        : path.resolve(dir, decoded);
       if (!fs.existsSync(resolved)) {
         missing.push({ file: rel, target });
       }

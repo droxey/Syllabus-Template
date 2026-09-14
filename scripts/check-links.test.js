@@ -9,6 +9,10 @@ test("treats sand-workflow and other schemes as external", () => {
   assert.equal(isExternal("lessons/topic_name.md"), false);
 });
 
+test("treats root-absolute local paths as repo-relative", () => {
+  assert.equal(isExternal("/assignments/sample_rubric.md"), false);
+});
+
 test("parses inline and reference-style markdown links", () => {
   const text = [
     "See [Lesson 1] and [docs](https://example.com/a).",
