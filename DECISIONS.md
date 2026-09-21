@@ -130,7 +130,7 @@ Instructor/agent decision log for ACS course ops. Not a published syllabus page.
 
 ### Restore LESSON_TEMPLATE sole starter name
 
-- **Decision:** Canonical lesson starter filename is `templates/LESSON_TEMPLATE.md`. `lessons/Lesson1.md` is a pointer only.
-- **Reason:** Dani 2026-09-21 — wants it called LESSON_TEMPLATE.
+- **Decision:** Canonical lesson starter filename is `templates/LESSON_TEMPLATE.md`. `lessons/Lesson1.md` is a pointer only. Template content keeps **baseline bar fixes** (Activity topic titles, DONE WHEN callouts, Title Case author headings, no beat, session wording).
+- **Reason:** Dani 2026-09-21 — wants it called LESSON_TEMPLATE; bar fixes are baseline for the starter, not Lesson1-specific.
 - **Canon:** templates/LESSON_TEMPLATE.md; agents.md; acs-lesson1-only-template; acs-lesson-plan.
 
