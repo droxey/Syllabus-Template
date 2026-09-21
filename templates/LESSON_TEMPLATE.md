@@ -1,4 +1,4 @@
-<!-- Run as a slideshow: reveal-md lessons/<topic_name>.md -w -->
+<!-- Sole ACS lesson starter (baseline bars). Copy templates/LESSON_TEMPLATE.md → lessons/<topic_name>.md. Never author from Lesson2. -->
 # LESSON_TITLE
 
 ⭐️ **GOAL:** One sentence. What will you walk out able to do?
