@@ -2,12 +2,14 @@
 
 Instructor/agent decision log for ACS course ops. Not a published syllabus page. Do not link from `_sidebar.md`.
 
-**Agents:** after any planning interview or standing lock, append a dated entry here (decision + reason). Do not leave locks only in chat. Related: [TERM.md](TERM.md) · [CALENDAR.md](CALENDAR.md) · [SLACK.md](SLACK.md).
+**Agents:** after any planning interview or standing lock, first update the relevant canonical document or skill, then append a dated entry here with **Decision**, **Reason**, and **Canon**. Do not leave locks only in chat. Related: [TERM.md](TERM.md) · [CALENDAR.md](CALENDAR.md) · [SLACK.md](SLACK.md).
 
 ## Entry Format
 
 ```markdown
-### YYYY-MM-DD — Short title
+## YYYY-MM-DD — Session or theme title
+
+### Short decision title
 
 - **Decision:** …
 - **Reason:** …
