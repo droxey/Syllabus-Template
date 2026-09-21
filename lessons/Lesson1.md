@@ -20,7 +20,7 @@
 <!-- omit in toc -->
 ## 🏆 Objectives
 
-*By the end of this class, you'll be able to&hellip;*
+*By the end of this session, you'll be able to&hellip;*
 
 1. Identify and describe CONCEPT_1
 1. Explain CONCEPT_2
