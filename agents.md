@@ -8,7 +8,7 @@ Student-facing pages live in Docsify. The layout comes from [Tech-at-DU/ACS-3220
 
 ## Next action
 
-1. Read this file, [setup.md](setup.md), and [TERM.md](TERM.md). Course-level ops → setup.md. Term/day-1 plan → TERM.md (honor human gates).
+1. Read this file, [setup.md](setup.md), [TERM.md](TERM.md), and [DECISIONS.md](DECISIONS.md). Course-level ops → setup.md. Term/day-1 plan → TERM.md (honor human gates). Append new locks to DECISIONS.md.
 2. Do the smallest change that finishes the request.
 3. Lesson-level instructor notes → lesson template author `<details>` only (`## For curriculum authors` at the bottom). Never put skill names in `lessons/*.md`.
 4. Keep instructor prep out of the student-facing mid-body.
@@ -218,6 +218,7 @@ Copy the starter shape from `templates/LESSON_TEMPLATE.md` only, then save as `l
 | `web/` | Theme + service worker (scope `/web/` only) |
 | `setup.md` | Course-level setup + instructor/agent ops |
 | `TERM.md` | Term start + course plan checklist (human gates) |
+| `DECISIONS.md` | Dated course-ops decision log (append locks; no chat-only) |
 | `CALENDAR.md` | Google Calendar class series ops |
 | `SLACK.md` | `#acs-xxxx` channel + invite/send guardrails |
 | `agents.md` | Agent jobs (this file) |
