@@ -100,6 +100,12 @@ Never write `jobsim`, `JOBSIM`, or `job simulator`.
 
 Never cite skill names in published course Markdown.
 
+## Google Calendar Class Series
+
+Class recurrence / Zoom invite rules live in [CALENDAR.md](CALENDAR.md) (instructor/agent ops only — do not link from `_sidebar.md`).
+
+Slack day-1 channel pattern: `#acs-xxxx` where `xxxx` is the 4-digit course code from the repo prefix (`ACS-3220-...` → `#acs-3220`).
+
 ## Agent jobs
 
 Refresh, runtime bumps, tech trends, missing curriculum, and the rest of the agent job list live in [agents.md](agents.md). Read that file after this one.
