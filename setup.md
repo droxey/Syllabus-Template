@@ -104,7 +104,9 @@ Never cite skill names in published course Markdown.
 
 Class recurrence / Zoom invite rules live in [CALENDAR.md](CALENDAR.md) (instructor/agent ops only — do not link from `_sidebar.md`).
 
-Slack day-1 channel pattern: `#acs-xxxx` where `xxxx` is the 4-digit course code from the repo prefix (`ACS-3220-...` → `#acs-3220`).
+## Slack Course Channels
+
+Channel naming (`#acs-xxxx`), invites, and send guardrails live in [SLACK.md](SLACK.md) (instructor/agent ops only — do not link from `_sidebar.md`).
 
 ## Agent jobs
 
