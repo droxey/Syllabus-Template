@@ -3,7 +3,7 @@ name: acs-lesson-plan
 description: >-
   Use when drafting or revising ACS lesson plans: in-session consumable only,
   SETUP.md for course ops, on-the-job voice (never jobsim label), engineer
-  language (section not beat; no theater slang), topic-only resources, Lesson1
+  language (section not beat; no theater slang), topic-only resources, LESSON_TEMPLATE baseline
   shape.
 ---
 # ACS lesson plan bars (Tech-at-DU / Dominican)
@@ -35,7 +35,7 @@ Applies to all ACS course/lesson Markdown: **Lessons/**, course **README**s, and
 ## Course vs lesson ops (hard)
 
 - **Course-level** setup / instructor / agent ops → **`SETUP.md`** at the course repo root (Syllabus-Template and each ACS course). Not in lesson bodies.
-- **Lesson-level** instructor / facilitator notes → only under `## For Curriculum Authors` inside the bottom `<details>` after `## Additional Resources` (Lesson1 template). Never header, never mid-body.
+- **Lesson-level** instructor / facilitator notes → only under `## For Curriculum Authors` inside the bottom `<details>` after `## Additional Resources` (LESSON_TEMPLATE baseline). Never header, never mid-body.
 
 ## Additional Resources (hard)
 
@@ -61,7 +61,7 @@ Applies to all ACS course/lesson Markdown: **Lessons/**, course **README**s, and
 
 ## Header (hard)
 
-Never open with Author / Session / Bars / Accuracy / MVP meta. Open with `# Title`, then `⭐️ **GOAL:**`, then Lesson1 agenda.
+Never open with Author / Session / Bars / Accuracy / MVP meta. Open with `# Title`, then `⭐️ **GOAL:**`, then the LESSON_TEMPLATE agenda.
 
 ## Heading names (hard)
 
@@ -75,7 +75,7 @@ Exact: `## Additional Resources`, `## For Curriculum Authors`, `### In Class`, `
 
 ## Structure
 
-- Sole template: Syllabus-Template `lessons/Lesson1.md` — [acs-lesson1-only-template](sand-workflow:acs-lesson1-only-template).
+- Sole template: Syllabus-Template `templates/LESSON_TEMPLATE.md` — [acs-lesson1-only-template](sand-workflow:acs-lesson1-only-template).
 - TT 30–40m with 3–4 ASK AUDIENCE pulses (blockquote + answer `<details>`).
 - No ADHD / diagnosis labels — use `### In Class`.
 
@@ -123,7 +123,7 @@ Bottom after Additional Resources, wrapped in `<details><summary>For Curriculum 
 
 
 
-## TT / Activity variety (hard — keep Lesson1 shell)
+## TT / Activity variety (hard — keep LESSON_TEMPLATE / baseline shell)
 
 Keep Title → GOAL → Agenda → timed H2s → ASK AUDIENCE wrapper → Activity 1/2 titles → Additional Resources → author footer fixed. Vary *inside* TT and Activities:
 
