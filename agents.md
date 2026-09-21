@@ -8,7 +8,7 @@ Student-facing pages live in Docsify. The layout comes from [Tech-at-DU/ACS-3220
 
 ## Next action
 
-1. Read this file and [setup.md](setup.md). Course-level ops → setup.md.
+1. Read this file, [setup.md](setup.md), and [TERM.md](TERM.md). Course-level ops → setup.md. Term/day-1 plan → TERM.md (honor human gates).
 2. Do the smallest change that finishes the request.
 3. Lesson-level instructor notes → lesson template author `<details>` only (`## For curriculum authors` at the bottom). Never put skill names in `lessons/*.md`.
 4. Keep instructor prep out of the student-facing mid-body.
@@ -40,6 +40,16 @@ Course-level ops for this job live in [setup.md](setup.md).
 6. Add course-specific Prism languages in `index.html` if you need them (`prism-docker`, `prism-go`, …).
 7. Run `npm install` and `npm run serve`. Open `http://localhost:3000`.
 8. Enable GitHub Pages from the default branch.
+
+
+### 1b. Term start / course plan (TERM.md)
+
+Before planning a term or day-1 launch, read [TERM.md](TERM.md) and follow it.
+
+- Content order: outcomes → week topics → README `## Schedule` (one pass for Dani review) → `Lessons/OUTLINE.md` → full lessons → sidebar.
+- Keep existing Schedule / OUTLINE / lessons intact when present (no prior-term redraft).
+- Day-1: Slack invites only after Ellucian CSV handoff; calendar draft then ask before create; verify Docsify live.
+- Human gates in TERM.md are mandatory.
 
 ### 2. Refresh an existing course (research)
 
@@ -207,6 +217,9 @@ Copy the starter shape from `templates/LESSON_TEMPLATE.md` only, then save as `l
 | `updates.md` | Tech Trends + Add to Course |
 | `web/` | Theme + service worker (scope `/web/` only) |
 | `setup.md` | Course-level setup + instructor/agent ops |
+| `TERM.md` | Term start + course plan checklist (human gates) |
+| `CALENDAR.md` | Google Calendar class series ops |
+| `SLACK.md` | `#acs-xxxx` channel + invite/send guardrails |
 | `agents.md` | Agent jobs (this file) |
 | `agents/skills/acs-lesson1-only-template/` | LESSON_TEMPLATE starter pin |
 | `agents/skills/acs-lesson-plan/` | Standing lesson-plan bars |
