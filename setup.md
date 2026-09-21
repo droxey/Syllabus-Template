@@ -102,7 +102,7 @@ Never cite skill names in published course Markdown.
 
 ## Term Start And Course Plan
 
-Full content + day-1 checklist (with human gates) lives in [TERM.md](TERM.md). Agents read TERM.md before course-plan or day-1 work.
+Full content + day-1 checklist (with human gates) lives in [TERM.md](TERM.md). Decision log: [DECISIONS.md](DECISIONS.md). Agents read TERM.md before course-plan or day-1 work.
 
 Calendar: [CALENDAR.md](CALENDAR.md). Slack: [SLACK.md](SLACK.md).
 
