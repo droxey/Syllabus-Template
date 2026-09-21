@@ -213,6 +213,7 @@ Copy the starter shape from `lessons/Lesson1.md` only, then save as `lessons/<to
 | `_navbar.md` | Top nav |
 | `lessons/` | Published session pages only — copy from `lessons/Lesson1.md` |
 | `lessons/Lesson1.md` | Sole lesson starter (copy → `lessons/<topic>.md`) |
+| `templates/LESSON_TEMPLATE.md` | Deprecated pointer → `lessons/Lesson1.md` |
 | `assignments/` | Project specs |
 | `updates.md` | Tech Trends + Add to Course |
 | `web/` | Theme + service worker (scope `/web/` only) |
