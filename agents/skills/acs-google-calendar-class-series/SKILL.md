@@ -24,12 +24,7 @@ Instructor ops for ACS class recurrence on the teaching/work calendar. Repo cano
 
 ## Slack channel (day-1)
 
-Repo canon: `droxey/Syllabus-Template/SLACK.md`.
-
-- Pattern: `#acs-xxxx` where `xxxx` is the **4-digit course code**.
-- Derive from the repo name prefix: `ACS-3220-...` → `#acs-3220`.
-- Invite students to that channel before day 1.
-- Confirm with Dani before any Slack send; never grades/scores or private feedback in channels.
+Slack ops live in [acs-slack](sand-workflow:acs-slack) and `SLACK.md`. Summary: `#acs-xxxx` (4-digit code); invites only when Dani hands Ellucian CSV; confirm before sends.
 
 ## Do not
 
