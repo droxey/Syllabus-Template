@@ -223,6 +223,9 @@ Copy the starter shape from `templates/LESSON_TEMPLATE.md` only, then save as `l
 | `agents.md` | Agent jobs (this file) |
 | `agents/skills/acs-lesson1-only-template/` | LESSON_TEMPLATE starter pin |
 | `agents/skills/acs-lesson-plan/` | Standing lesson-plan bars |
+| `agents/skills/acs-term-start/` | Term start + course plan (read TERM.md; human gates) |
+| `agents/skills/acs-google-calendar-class-series/` | Calendar class series invite ops |
+| `agents/skills/acs-slack/` | `#acs-xxxx` channel naming, invites, send guardrails |
 | `grain/` | video-pipeline `CourseConfig` template (`course.yaml`) — see `grain/README.md` |
 | `reveal/` | reveal-md notes (`README.md`) — no Make School theme |
 | `slides/` | Optional reveal-md output. Generate; do not keep leftover decks |
