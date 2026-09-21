@@ -1,0 +1,109 @@
+# Course Ops Decisions
+
+Instructor/agent decision log for ACS course ops. Not a published syllabus page. Do not link from `_sidebar.md`.
+
+**Agents:** after any planning interview or standing lock, append a dated entry here (decision + reason). Do not leave locks only in chat. Related: [TERM.md](TERM.md) · [CALENDAR.md](CALENDAR.md) · [SLACK.md](SLACK.md).
+
+## Entry Format
+
+```markdown
+### YYYY-MM-DD — Short title
+
+- **Decision:** …
+- **Reason:** …
+- **Canon:** path or skill updated
+```
+
+---
+
+## 2026-09-21 — Term plan + day-1 interview
+
+### Audit scope (Tech-at-DU nightly)
+
+- **Decision:** Locked order 4210 → 3210 → 2951 → Make-Chat → Proud-Petes → 4996 → 3220 → 1100 → 4220. Drop `makescraper`. Include ACS-3220 for next-term prep. 4220 last.
+- **Reason:** Dani teaching load + next-term 3220; makescraper out of scope; 4220 lower priority.
+- **Canon:** Nightly Audit Engineer target list (fleet); not learner-facing.
+
+### AI-writing gate
+
+- **Decision:** Keep on Writer — mandatory, stricter pass-gate. No dedicated detection bot.
+- **Reason:** Dani chose Writer ownership over a new bot.
+- **Canon:** TERM.md human/autonomous tables; Writer standing.
+
+### Course content order
+
+- **Decision:** outcomes → week topics → README `## Schedule` (one pass for Dani review) → `Lessons/OUTLINE.md` → full lessons → sidebar.
+- **Reason:** Dani’s preferred plan sequence before day-1 launch.
+- **Canon:** TERM.md; [acs-term-start](agents/skills/acs-term-start/SKILL.md).
+
+### Keep intact / no prior-term redraft
+
+- **Decision:** If outcomes / week topics / schedule / OUTLINE / plans already exist, do not redraft from a prior term; section-only updates only.
+- **Reason:** Preserve live curriculum; avoid churn.
+- **Canon:** TERM.md.
+
+### Who drafts when missing
+
+- **Decision:** Assistant drafts first outcomes + week topics when missing; Dani edits.
+- **Reason:** Dani answered “you” (assistant).
+- **Canon:** TERM.md.
+
+### One-pass review
+
+- **Decision:** Outcomes + week topics + `## Schedule` go to Dani in one pass (not separate approvals between each).
+- **Reason:** Dani chose one pass.
+- **Canon:** TERM.md.
+
+### OUTLINE.md
+
+- **Decision:** Create `Lessons/OUTLINE.md` with `## Day X - Topic` and outline under each header for every lesson before full lesson files. Instructor-only — no `_sidebar.md` link.
+- **Reason:** Thin outline layer before full plans; keep off Docsify nav like setup.
+- **Canon:** TERM.md; path `Lessons/OUTLINE.md` (or `lessons/OUTLINE.md` per repo casing).
+
+### Always update Schedule
+
+- **Decision:** When updating a course, always update README `## Schedule`.
+- **Reason:** Dani standing during course-update interview.
+- **Canon:** TERM.md; setup/course ops.
+
+### Day-1 launch set (full)
+
+- **Decision:** Slack invites → calendar series live → Docsify verify. That is the full set (no extra Grain/Form/email required in this lock).
+- **Reason:** Dani confirmed full set.
+- **Canon:** TERM.md.
+
+### Slack
+
+- **Decision:** Channel pattern `#acs-xxxx` (4-digit code from repo prefix). Channels usually already created — invites only. Roster from Ellucian CSV. When Dani hands the list, add people (handoff = OK for invites). Confirm before Slack *sends*; no grades/scores; no private feedback in channels.
+- **Reason:** Dani interview + existing faculty guardrails.
+- **Canon:** SLACK.md; [acs-slack](agents/skills/acs-slack/SKILL.md).
+
+### Calendar
+
+- **Decision:** Once dates are set, draft full term series (Zoom bits + EXDATEs) and **ask approval before creating**. Rules: America/Los_Angeles; invite danielle.roxberry@dominican.edu; title `ACS 4210` space form; Zoom only (bit.ly zoom + meet in description); EXDATE holidays; no Fri/weekend class meetings; teaching/work calendar.
+- **Reason:** Dani interview + prior standing calendar rules.
+- **Canon:** CALENDAR.md; [acs-google-calendar-class-series](agents/skills/acs-google-calendar-class-series/SKILL.md).
+
+### Docsify
+
+- **Decision:** Usually already live — verify before day 1; fix only if broken.
+- **Reason:** Dani.
+- **Canon:** TERM.md.
+
+### Agent autonomy wiring
+
+- **Decision:** Wire TERM.md + skills + Sunday/weekday routines to read TERM.md and execute autonomous steps. Keep human gates: content review, calendar approval, CSV handoff, send confirm.
+- **Reason:** Dani chose docs+skill+routines without widening calendar autonomy.
+- **Canon:** TERM.md; acs-term-start; Daily ACS lesson plan refresh + Sunday ACS week kick routines.
+
+### Capture everything
+
+- **Decision:** All planning locks must be filed (docs + skills + this log). No exceptions for chat-only decisions.
+- **Reason:** Dani: “Everything has to be captured, no exceptions.”
+- **Canon:** This file; end-of-planning-chat gap check.
+
+### Skills shipped to template
+
+- **Decision:** Ship `acs-term-start`, `acs-google-calendar-class-series`, `acs-slack` under `agents/skills/` (PR #32). Prefer **guardrails** wording over “do not” headings.
+- **Reason:** Dani asked skills saved to Syllabus-Template; fleet wording.
+- **Canon:** agents/skills/*; agents.md file map.
