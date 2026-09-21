@@ -26,7 +26,7 @@ Instructor ops for ACS class recurrence on the teaching/work calendar. Repo cano
 
 Slack ops live in [acs-slack](sand-workflow:acs-slack) and `SLACK.md`. Summary: `#acs-xxxx` (4-digit code); invites only when Dani hands Ellucian CSV; confirm before sends.
 
-## Do not
+## Guardrails
 
 - Put Google Meet conference data on class events
 - Skip the dominican.edu invite
