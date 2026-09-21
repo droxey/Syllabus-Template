@@ -219,7 +219,7 @@ Do not invent labels outside the table. Do not drop the emoji. `FINISHED EARLY?`
 Do **not** end every Activity with the full set of 📈 tip + ‼️ trap (+ extra 📈). Mix it up.
 
 - Per Activity: usually **0–2** of {📈 tip-family, ‼️ trap-family} — not all three stacked every time.
-- Place most tip/trap callouts in **relevant spots** across the plan (Warm Up, after a TT beat, beside an example, Wrap) — not only at Activity footers.
+- Place most tip/trap callouts in **relevant spots** across the plan (Warm Up, after a TT section, beside an example, Wrap) — not only at Activity footers.
 - Still use ✅ done-state on Activities; 💬 pulses mid-TT; ⭐️ goal once at top.
 - Rotate allowed ALL-CAPS labels (see Callout emoji + label variations).
 
