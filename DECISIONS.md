@@ -109,3 +109,16 @@ Instructor/agent decision log for ACS course ops. Not a published syllabus page.
 - **Decision:** Ship `acs-term-start`, `acs-google-calendar-class-series`, `acs-slack` under `agents/skills/` (PR #32). Prefer **guardrails** wording over “do not” headings.
 - **Reason:** Dani asked skills saved to Syllabus-Template; fleet wording.
 - **Canon:** agents/skills/*; agents.md file map.
+
+### Code snippet review gate
+
+- **Decision:** Before any ACS lesson plan or tutorial is ready-to-PR or used as teach-from, code snippets must be handed to Code Review to verify they run. Fail closed until pass or Dani waives.
+- **Reason:** Dani 2026-09-21 — snippets in tutorials and lesson plans must be checked for correctness.
+- **Canon:** TERM.md; agents/TEACHING-FLEET.md; Teacher → Code Review handoff.
+
+### Teaching fleet docs in template
+
+- **Decision:** Document Writer AI-writing gate, Code Review snippet gate, and CodeRabbit cleanup routine in `agents/TEACHING-FLEET.md`. Sync live `acs-lesson-plan` bars into Syllabus-Template.
+- **Reason:** Dani asked to save Grok Bot teaching platform hooks into the syllabus template; lesson-plan bars were behind on remote.
+- **Canon:** agents/TEACHING-FLEET.md; agents/skills/acs-lesson-plan/SKILL.md.
+
