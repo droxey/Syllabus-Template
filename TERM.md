@@ -4,7 +4,7 @@ Instructor/agent checklist for standing up an ACS course and opening day 1. Not 
 
 **Agents:** read this file before any course-plan or day-1 work. Execute autonomous steps; stop and ask Dani for approval gates listed below.
 
-Related ops: [CALENDAR.md](CALENDAR.md) · [SLACK.md](SLACK.md) · [setup.md](setup.md)
+Related ops: [CALENDAR.md](CALENDAR.md) · [SLACK.md](SLACK.md) · [setup.md](setup.md) · [DECISIONS.md](DECISIONS.md)
 
 ## Human Gates (Do Not Skip)
 
@@ -45,3 +45,7 @@ That is the full day-1 launch set.
 | Draft calendar series | Yes | Before create |
 | Slack invites | After CSV handoff | CSV handoff is the OK |
 | Slack/email sends | Draft only | Before send |
+
+## Capture
+
+After any planning interview or standing lock, append to [DECISIONS.md](DECISIONS.md) (decision + reason). Do not leave locks only in chat.
