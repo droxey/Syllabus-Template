@@ -100,6 +100,12 @@ Never write `jobsim`, `JOBSIM`, or `job simulator`.
 
 Never cite skill names in published course Markdown.
 
+## Term Start And Course Plan
+
+Full content + day-1 checklist (with human gates) lives in [TERM.md](TERM.md). Agents read TERM.md before course-plan or day-1 work.
+
+Calendar: [CALENDAR.md](CALENDAR.md). Slack: [SLACK.md](SLACK.md).
+
 ## Google Calendar Class Series
 
 Class recurrence / Zoom invite rules live in [CALENDAR.md](CALENDAR.md) (instructor/agent ops only — do not link from `_sidebar.md`).
