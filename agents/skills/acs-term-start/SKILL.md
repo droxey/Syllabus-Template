@@ -9,7 +9,7 @@ description: >-
 
 ## Required first step
 
-1. Read canon: `https://github.com/droxey/Syllabus-Template/blob/master/TERM.md` (or `TERM.md` in the course repo if present).
+1. Read canon: `https://github.com/droxey/Syllabus-Template/blob/master/TERM.md` (or `TERM.md` in the course repo if present). Append new locks to `DECISIONS.md`.
 2. Also use [CALENDAR.md](https://github.com/droxey/Syllabus-Template/blob/master/CALENDAR.md) and [SLACK.md](https://github.com/droxey/Syllabus-Template/blob/master/SLACK.md) for those surfaces.
 3. Follow [acs-lesson-plan](sand-workflow:acs-lesson-plan) for lesson Markdown bars.
 
@@ -31,3 +31,11 @@ description: >-
 ## Order
 
 outcomes → week topics → `## Schedule` (one pass) → `Lessons/OUTLINE.md` (`## Day X - Topic`) → full lessons → sidebar → day-1 launch checks.
+
+## Capture
+
+After any planning interview or standing lock, append to DECISIONS.md (decision + reason). Do not leave locks only in chat.
+
+## Code snippets
+
+Before ready-to-PR or teach-from for any lesson or tutorial: extract code fences/commands and hand them to Code Review to verify they run. Do not ship until pass or Dani waives.

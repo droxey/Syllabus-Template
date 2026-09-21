@@ -1,100 +1,85 @@
 ---
 name: acs-lesson-plan
 description: >-
-  Use when drafting or revising ACS / Tech-at-DU course lesson plans
-  (Syllabus-Template Days): naming, voice, TT structure, and ship bars for Dani
-  Roxberry’s ACS courses.
+  Use when drafting or revising ACS lesson plans: in-session consumable only,
+  SETUP.md for course ops, on-the-job voice (never jobsim label), engineer
+  language (section not beat; no theater slang), topic-only resources, Lesson1
+  shape.
 ---
 # ACS lesson plan bars (Tech-at-DU / Dominican)
 
-Standing rules for every ACS course lesson plan (ACS-4210, ACS-3210, ACS-2951, etc.). Apply before draft, Expert review, Writer TW-final, and PR.
+Standing rules for every ACS course lesson plan (ACS-4210, ACS-3210, ACS-2951, etc.). Apply before draft, Expert review, Writer TW-final, and PR. 
 
-## Consumer
+ACS repositories are located at https://github.com/orgs/Tech-at-DU/repositories. Course repositories are prefixed with `ACS-` + a four digit integer.
 
-- Instructors and agents drafting or revising ACS lesson plans.
-- Authoring ops only. Do not cite this skill (or any skill name) in `lessons/*.md`.
+## Consumer (hard)
 
-## SETUP (hard)
+- Shipped lesson Markdown is **consumable in-session** — topic, GOAL, agenda, TT, activities, resources.
+- **Never** put skill names, sand-workflow links, pipeline labels, or generation-technique names in any lesson file (body or author notes).
+- **Never** write **jobsim**, **JOBSIM**, **job-sim**, or **job simulator** in lesson or course Markdown.
+- Authors may use internal drafting habits; do not cite them in the repo.
 
-Follow [`setup.md`](../../../setup.md) for course-level ops (clone, placeholders, Docsify serve / GitHub Pages). Agent jobs live in [`agents.md`](../../../agents.md). This skill does not own those ops.
 
-- **Lesson-level instructor notes** live only under `## For curriculum authors` in a bottom `<details>` after `## Additional Resources`.
-- Never put skill names or generation techniques in `lessons/*.md`.
-- Do not put SETUP / clone / Pages instructions in a lesson file.
+## AI-writing gate (hard — Writer, Dani 2026-09-21)
 
-## Sole template (hard)
+AI-writing detection stays on **Writer** (no separate detection bot).
 
-- In Syllabus-Template, **`templates/LESSON_TEMPLATE.md` is the only lesson starter.** Copy it to `lessons/<topic_name>.md`.
-- **Never** author from `Lesson2` / `lessons/lesson2.md` / `slides/lesson2.html`. Those files are gone.
-- See [`acs-lesson1-only-template`](../acs-lesson1-only-template/SKILL.md).
+Applies to all ACS course/lesson Markdown: **Lessons/**, course **README**s, and learner-facing **SETUP** prose.
 
-## File naming (hard)
+1. After TW-final or any humanize/polish, run [ai-writing-detection](sand-workflow:ai-writing-detection) **before** calling the draft done.
+2. **Fail closed:** do not hand back ready-to-PR / ship until detection passes, **or** explicitly flag structured-template false-positive risk and list what was checked.
+3. If flags are real, rewrite and re-run until pass — never ship known high-signal AI tells.
+4. Teacher routes ACS lesson/course prose through Writer for this gate before droxey PRs.
 
-- Always name lesson files **`topic_name.md`** (kebab or short TopicCase as used in the repo — e.g. `middleware.md`, `Emails.md`, `3rdPartyLibs.md`).
-- **Never** use `LessonNN.md` / `Lesson05.md` as the canonical content file.
-- If an old `LessonNN.md` exists, turn it into a short **pointer** to `topic_name.md`, or update README/schedule Day `NN` to link `lessons/topic_name.md`.
-- Vault / box drafts: `YYYY-MM-DD-<topic>.md` or pack-flattened `topic_name.md` — still topic-named, not LessonNN.
 
-## Lesson titles (hard)
+## Course vs lesson ops (hard)
 
-- H1 is **topic + optional day only** — never include the course code.
-- Good: `# Sending Emails (Transactional) — Day 5`
-- Bad: `# Sending Emails (Transactional) — ACS-3210 Day 5`
-- Course lives in the repo / Docsify site name, not the lesson H1.
-
-## Header (hard)
-
-**Never** put this meta summary at the top of a lesson plan:
-
-- Author / Authorship
-- Session block / Session window / date-time
-- Topic / Mode / Bars
-- Accuracy check
-- MVP (≤15m) as a header field
-
-Open with `# Title`, then `⭐️ **GOAL:**`, then the elapsed agenda table. Put MVP into Why/Objectives or activity “Done when” — not a top meta stack.
-
-**Never** put instructor / facilitator / curriculum-author directives near the top or mid-body. See **Author directives (hard)** below.
+- **Course-level** setup / instructor / agent ops → **`SETUP.md`** at the course repo root (Syllabus-Template and each ACS course). Not in lesson bodies.
+- **Lesson-level** instructor / facilitator notes → only under `## For Curriculum Authors` inside the bottom `<details>` after `## Additional Resources` (Lesson1 template). Never header, never mid-body.
 
 ## Additional Resources (hard)
 
-The section title is always exactly `## Additional Resources`.
+- Heading always exactly `## Additional Resources`.
+- Link **topic sources only** (official stack docs, APIs, short topic videos).
+- **Never** link pedagogy / how-to-teach materials (e.g. “how to build a course,” classroom technique write-ups).
 
-Never rename it. Never add parentheticals in the heading (no `## Additional Resources (official first)`).
 
-“Official first” is link-ordering guidance **inside** the section only.
+## Lesson title + ship filename (hard)
 
-This section is **topic sources only**: official docs, APIs, specs, and short topic references. Do **not** put pedagogy or how-to-teach links here. Teaching notes belong under `## For curriculum authors`.
+- **H1 = topic only** — no date, version, or course code in the heading.
+
+- **H1:** topic title (+ optional day) only — never date, never version, no stack tags.
+  - Example: `# Intro to WebSockets — Day 6`
+- **Local draft filename:** include **date and version** with the topic slug — e.g. `2026-09-17-WebSocketsIntro-v2.md`. Date and version live in the **filename**, not the H1.
+- **When pushing to GitHub:** ship as the **original topic filename** (`Lessons/WebSocketsIntro.md`) — strip date/version from the path. Keep `topic_name.md` as the repo canonical name.
+
+
+## File naming (hard)
+
+- Always name lesson files **`topic_name.md`**. Never use `LessonNN.md` as canonical content (pointer OK).
+
+
+## Header (hard)
+
+Never open with Author / Session / Bars / Accuracy / MVP meta. Open with `# Title`, then `⭐️ **GOAL:**`, then Lesson1 agenda.
 
 ## Heading names (hard)
 
-Use these headings exactly:
-
-- `## Additional Resources`
-- `## For curriculum authors`
-- `### In Class`
-- `### Facilitator notes`
-- `### Expert follow-ups`
-
-Never rename them. Never add parentheticals. Official-first is list order under Additional Resources only. Topic sources only — no pedagogy / how-to-teach links.
+Exact: `## Additional Resources`, `## For Curriculum Authors`, `### In Class`, `### Facilitator Notes`, `### Expert Follow-Ups`. All lesson headings use **Title Case** (small words a/an/the/and/or/but/for/of/in/on/to stay lowercase unless first/last).
 
 ## Voice and labels
 
-- **On-the-job / builder voice only** — never students / classroom / academic framing in the plan body.
-- Use **`GOAL:`** — never “destination for today” / destination-first section labels.
-- Tips language: **rookie** or **beginner tips for on-the-job success** — **never** “hire-bar” in the plan (Experts may use a hiring lens in *internal* review notes only).
-- Topic content only — no classroom-management directives, no roster / identifying info, no entrance/exit ticket wording (standup / check-in / wrap OK if on-the-job phrased).
-- Never write `jobsim`, `JOBSIM`, or `job simulator` in a lesson file.
-- Never cite skill names in the lesson Markdown.
-
-## Never those labels (hard)
-
-Never write `jobsim`, `JOBSIM`, or `job simulator` in a lesson file. Use on-the-job / builder voice instead. Never cite skill names in published course Markdown.
+- **On-the-job / builder voice only** — never students, classroom, or academic framing. Prefer the room, the team, this session, on-the-job tips.
+- Use **`GOAL:`**. Callouts: **`PROTIP:`** (do this) and **`BE AWARE:`** (trap). Never hire-bar. Never “rookie tip/trap”.
+- No roster / identifying info; no entrance/exit ticket wording.
 
 ## Structure
 
-- Copy **`templates/LESSON_TEMPLATE.md` only** (never Lesson2) to `lessons/<topic_name>.md`. Shape: Elapsed / Time / Activity table, Why, Learning Objectives, Overview/TT, Activities, BREAK, Lab/Wrap, then exactly `## Additional Resources` (topic sources only; official first), then **For curriculum authors** (bottom only, `<details>`-wrapped).
-- Teacher talk **30–40m** with **3–4 mid-TT ASK AUDIENCE pulse checks** (≤60s). Use this shape only — never open-body `**ASK AUDIENCE**` plus Question/Expected paragraphs:
+- Sole template: Syllabus-Template `lessons/Lesson1.md` — [acs-lesson1-only-template](sand-workflow:acs-lesson1-only-template).
+- TT 30–40m with 3–4 ASK AUDIENCE pulses (blockquote + answer `<details>`).
+- No ADHD / diagnosis labels — use `### In Class`.
+
+## Pulse checks (hard)
 
 ```markdown
 > **ASK AUDIENCE:** <question ≤60s>
@@ -106,59 +91,178 @@ Never write `jobsim`, `JOBSIM`, or `job simulator` in a lesson file. Use on-the-
 
 </details>
 ```
-- Scannable structure on the overall plan and each activity block: next action, numbered steps, done state, time, ≤2m next — **without naming ADHD or any diagnosis in the lesson file**.
-- Skills (for authors drafting — do **not** cite these skill names in the lesson Markdown): [dani-roxberrys-teaching-voice](sand-workflow:dani-roxberrys-teaching-voice), [write-like-you-talk](sand-workflow:write-like-you-talk), [dani-roxberry-s-social-learning](sand-workflow:dani-roxberry-s-social-learning).
-
-
 
 ## Activity labels (hard)
 
-- Use **`Activity 1` / `Activity 2`** for primary practice blocks — **never** `Hands-on` / `Hands-on I`.
-- Number labs with **Arabic numerals**: `Lab 1`, `Lab 2` — **never** Roman (`Lab I`, `Lab II`).
-- Keep the same numeral style in the agenda table, headings, and in-body cross-references.
+`Activity 1` / `Activity 2`; `Lab 1` / `Lab 2` Arabic only — never Hands-on, never Roman.
 
+Every Activity/Lab header **must include a topic title** after the number:
 
-## No diagnosis labels in the plan (hard)
+```markdown
+## [**25m**] 💻 Activity 1: Analyze Hacker News High Ranking Posts
+```
 
-- **Never** put the word **ADHD** (or other diagnosis/neurotype labels) in a lesson plan — not in headings, body, facilitator notes, or resources.
-- Prefer neutral labels: `### In Class`, next-action / done-when blocks, pulse checks.
-- Authors may still *use* scannable / write-like-you-talk habits when drafting; just don’t name the habit or diagnosis in the shipped Markdown.
+Never bare `Activity 1` / `Activity 2` / `Lab 1` / `Lab 2`. Agenda links must match.
 
 ## Author directives (hard)
 
-Any directive for **instructors**, **facilitators**, or **curriculum authors** belongs at the **bottom** of the lesson — after Additional Resources — under:
+Bottom after Additional Resources, wrapped in `<details><summary>For Curriculum Authors</summary>…</details>` with `### In Class` / Facilitator notes / Expert follow-ups. Still no skill names, no jobsim labels, no pedagogy resource links.
+
+
+## Engineer language (hard)
+
+- Narrative outline parts are **sections** — never **beat** / **beats** / four-beat / “spine.”
+- Callouts: **`PROTIP:`** and **`BE AWARE:`** only — never rookie tip/trap.
+- No workshop or theater slang (vibe dump, plot/props, skateboard write-up).
+- No coach-buzz in learner body: high-signal, spine, receipt(s), steal/stealing, travels/lands, foggy, stranger-as-reader, ship/shipped (metaphor), PR review energy, HN points, busy engineer’s time, Future-you, demos wobble, stack dump, problem statement (as slogan), thin write-up, shareable/not yet status labels, kill (as metaphor), handoff across time. Prefer plain eng words (outline, evidence, reuse, unclear, reader, publish, short draft, ready to link).
+- No classroom leaks: prefer **session** / **team** / **teammate** over block / cohort / partner sticky. Wrap notes are optional notes, not stickies.
+- Never **sharable** (typo). Prefer “draft you can link” / README / doc over “shareable.”
+- Soft careers framing: prefer **final project / demo** over production cut when that metaphor reads off.
+- Avoid em-dash negations like `X — not Y` in GOAL/objectives; state the positive target.
+- Still never skill names, jobsim labels, or pedagogy links (see Consumer / Additional Resources).
+
+
+
+## TT / Activity variety (hard — keep Lesson1 shell)
+
+Keep Title → GOAL → Agenda → timed H2s → ASK AUDIENCE wrapper → Activity 1/2 titles → Additional Resources → author footer fixed. Vary *inside* TT and Activities:
+
+1. **Rotate openers** — failure autopsy, bad paragraph, live demo, wrong-tool contrast, etc.
+2. **Mix evidence types** — ticket, log, PR comment, broken UI, rough vs smoothed draft, etc.
+3. **Change Activity artifact surface** — doc, issue body, terminal paste, 20s demo, etc.
+4. **Pulse job variety** — A/B, spot-bug, predict, what’s missing (same ASK AUDIENCE + details shape).
+5. **Asymmetric TT section lengths** — short punchy section next to a longer worked example.
+6. **Example domain rotation across days** — chat, tickets, e-commerce, auth email, JSON, etc.
+7. **Activity body texture** — checklist, bad→good rewrite, constraint box, demo prompt.
+8. **One speakable imperfect line in TT** — hedge or “we skip this tonight” so talk track isn’t brochure-smooth.
+
+Do not vary the hard scaffold listed under Structure / Pulse checks / Activity labels / Author directives.
+
+
+## Activity callouts + list fences (hard)
+
+Applies to **Activity 1 / Activity 2 / Lab 1 / Lab 2 only** — not Warm Up, not TT.
+
+Order inside an Activity:
+1. Header with topic title
+2. `> **✅ DONE WHEN:** … (or other allowed ✅ labels)`
+3. Numbered steps (`1.` each step)
+4. Optional `> **📈 PROTIP:** …` and/or `> **‼️ BE AWARE:** …` (or other allowed labels) (blockquotes)
+5. Optional `> **FINISHED EARLY?** …`
+
+Rules:
+- **DONE WHEN** is a blockquote callout under the header (`> **DONE WHEN:**`), not bare bold body text.
+- Fenced code nested under a list item: blank line, then fence indented **4 spaces**.
+- Fill-in cards / feedback maps use ` ```text ` fences.
+- **PROTIP** / **BE AWARE** / **FINISHED EARLY?** are blockquotes in Activities: `> **PROTIP:** …`, `> **BE AWARE:** …`, `> **FINISHED EARLY?** …`
+- Do **not** convert Warm Up or TT tip lines to this Activity callout layout.
+
+## No ≤2m notes (hard)
+
+Never write `≤2m`, `<=2m`, or “2m next/wrap/sticky/note” scaffolding in ACS lesson Markdown (learner body or author notes). Use plain next-step language only when needed, without the ≤2m label.
+
+
+## Title Case headings (hard)
+
+All Markdown headings (`#`–`###`) in ACS lesson plans use **Title Case**. Keep short words lowercase unless first or last (`a`, `an`, `the`, `and`, `or`, `but`, `for`, `of`, `in`, `on`, `to`, `from`, `by`, `with`). Hyphenated words capitalize each part (`Write-Up`, `Follow-Ups`). Timed/emoji prefixes stay as-is; title-case the topic words. Canonical author headings: `## For Curriculum Authors`, `### Facilitator Notes`, `### Expert Follow-Ups`.
+
+
+## Section-only edits (hard)
+
+Never fully rewrite ACS lesson plans, course READMEs, `SETUP.md`, sidebars, or other course Markdown. **Patch the relevant section(s) only** — keep untouched headings, activities, resources, and author notes intact unless the ask names them. New file only when Dani explicitly asks for a new draft / new topic file.
+
+
+## Learner-facing resource (hard)
+
+Lesson Markdown is a **topic resource for learners**, not a facilitator script.
+
+- Stay on topic. No pedagogy / how-to-teach / classroom-management coaching in the learner body.
+- **Never** tell the instructor what to say (`Say:`, scripted quotes for the teacher, “tell the room…”). Speakable lines for *learners* are OK when they are content (e.g. ASK AUDIENCE questions).
+- Instructor / facilitator directions only under `## For Curriculum Authors` inside the bottom `<details>` — never outside it.
+- Prefer plain eng words. Define any acronym on first use (or avoid it). No undefined jargon.
+
+
+## Presenting lesson plans (hard)
+
+Whenever you present, deliver, or announce a lesson plan to Dani, **always attach the Markdown file for download** (`SendToUser` attachment / file://). Path alone is not enough.
+
+
+## Callout emoji + label variations (hard)
+
+Always prefix callouts with the fixed emoji. Rotate the **ALL-CAPS** label from the allowed set (variation across a lesson / over days). Keep blockquote form in Activities for done/tip/aware/early; GOAL stays on the `⭐️ **LABEL:**` line; pulses stay `> **💬 LABEL:**`.
+
+| Emoji | Role | Allowed ALL-CAPS labels (rotate) |
+| --- | --- | --- |
+| ✅ | Done state | `DONE WHEN`, `DONE`, `SHIP WHEN`, `COMPLETE WHEN`, `READY WHEN` |
+| ‼️ | Trap / caution | `BE AWARE`, `WATCH OUT`, `TRAP`, `CAUTION`, `DON’T`, `PITFALL` |
+| 💬 | Pulse / check | `ASK QUESTION`, `ASK AUDIENCE`, `QUICK CHECK`, `YOUR TURN` |
+| 📈 | Tip | `PROTIP`, `TIP`, `SHORTCUT`, `DO THIS` |
+| ⭐️ | Session goal | `GOAL`, `TARGET`, `OUTCOME`, `TODAY` |
+
+Examples:
 
 ```markdown
-## Additional Resources
+⭐️ **GOAL:** …
 
-- Official docs first…
+> **💬 ASK QUESTION:** …
 
-<details>
-<summary>For curriculum authors</summary>
+> **✅ DONE WHEN:** …
 
-## For curriculum authors
+> **📈 PROTIP:** …
 
-### In Class
-### Facilitator notes
-### Expert follow-ups
-
-</details>
+> **‼️ BE AWARE:** …
 ```
 
-- Wrap `## For curriculum authors` and its subsections in a `<details>` block after Additional Resources.
-- Do **not** put these in the header, in a top callout, or mid-body.
-- Learner-facing body stays topic-only (GOAL, agenda, Why, TT, activities, wrap, resources).
-- Internal Expert accuracy notes may live under Reviews/ instead of the lesson body; if they must ship in-file, nest them under **For curriculum authors**.
+Do not invent labels outside the table. Do not drop the emoji. `FINISHED EARLY?` stays its own Activity stretch callout (unchanged by this table).
+
+
+## Tip / trap callout placement (hard)
+
+Do **not** end every Activity with the full set of 📈 tip + ‼️ trap (+ extra 📈). Mix it up.
+
+- Per Activity: usually **0–2** of {📈 tip-family, ‼️ trap-family} — not all three stacked every time.
+- Place most tip/trap callouts in **relevant spots** across the plan (Warm Up, after a TT section, beside an example, Wrap) — not only at Activity footers.
+- Still use ✅ done-state on Activities; 💬 pulses mid-TT; ⭐️ goal once at top.
+- Rotate allowed ALL-CAPS labels (see Callout emoji + label variations).
+
+
+## Adjacent blockquotes (hard)
+
+When two or more callout blockquotes sit back-to-back, **do not leave a blank line between them**. Stack them on consecutive lines:
+
+```markdown
+> **✅ DONE WHEN:** …
+> **📈 SHORTCUT:** …
+> **FINISHED EARLY?** …
+```
+
+Blank lines still separate a blockquote from non-blockquote prose or code fences.
+
+
+## Gradescope (hard)
+
+Do **not** put Gradescope links, drill names, or “submit on Gradescope” language in ACS **lesson plans** or course **README**s unless that assignment still exists as a real artifact in the course repo (and Dani confirmed it is live). Prefer in-repo deliverables (GitHub, Gradescope-free rubrics, project paths). During cleanup, remove the reference entirely — do not leave “INSERT LINK HERE” stubs.
+
+
+## Sample instructions (hard)
+
+When telling learners to copy a code sample from the plan into their editor, use **paste** — never **port**.
+
+- Yes: `Paste the basic-types example.`
+- No: `Port the basic-types example.`
+
+Do not change unrelated “port” words (TCP port, `localhost:3000`, airport, etc.).
+
+
+## Wording: cleanup not scrub (hard)
+
+In user-facing ACS course work (chat, PR titles/bodies, commit messages, lesson notes), say **cleanup** — never **scrub**.
 
 ## Accuracy and ship
 
-1. Calendar order when updating multiple courses (soonest class first).
-2. 2026 stack accuracy + Expert technical review (Go → Go Engineer, Node/JS → Node Engineer, etc.).
-3. Always create a **NEW** draft file — never overwrite prior drafts in place.
-4. Writer [technical-writer-pipeline](sand-workflow:technical-writer-pipeline) before anything is final.
-5. Ship via droxey PR (`dani@musexmachine.com` authorship) → Curricula Docsify/sidebar after merge.
-6. Dead links: [broken-link-recovery](sand-workflow:broken-link-recovery) + Google Drive copies / additional materials.
+1. Calendar order. 2. Expert stack review. 3. NEW draft files. 4. Writer pipeline before final. 5. droxey authorship. 6. Dead-link recovery. 7. After writing any lesson/course `.md`, run [ai-writing-detection](sand-workflow:ai-writing-detection); fix high-signal AI tells (or note structured-template false-positive risk) before handoff/PR.
+
 
 ## Do not invent
 
-Never invent framework APIs — verify with Context7 / official docs (Echo, Nodemailer, Docsify, etc.).
+Verify APIs with Context7 / official docs.

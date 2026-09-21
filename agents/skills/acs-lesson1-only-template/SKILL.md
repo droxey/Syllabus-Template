@@ -1,35 +1,35 @@
 ---
 name: acs-lesson1-only-template
 description: >-
-  Use when drafting or copying a Syllabus-Template lesson. templates/LESSON_TEMPLATE.md
+  Use when drafting or copying a Syllabus-Template lesson. lessons/Lesson1.md
   is the only starter. Never author from Lesson2.
 ---
-# LESSON_TEMPLATE is the sole Syllabus-Template starter
+# lessons/Lesson1.md is the sole Syllabus-Template starter
 
-Syllabus-Template ships **one** lesson file to copy-from-and-rename: [`templates/LESSON_TEMPLATE.md`](../../../templates/LESSON_TEMPLATE.md).
+Syllabus-Template ships **one** lesson file to copy-from-and-rename: [`lessons/Lesson1.md`](../../../lessons/Lesson1.md).
 
 ## Hard rules
 
-- **Copy `templates/LESSON_TEMPLATE.md` only.** Save the copy as `lessons/<topic_name>.md` (kebab or short TopicCase).
+- **Copy `lessons/Lesson1.md` only.** Save the copy as `lessons/<topic_name>.md` (kebab or short TopicCase).
 - **Never** author from `Lesson2`, `lessons/lesson2.md`, or `slides/lesson2.html`. Those files are removed.
-- **Never** treat `LessonNN.md` as published canonical content. `LESSON_TEMPLATE.md` is a starter, not a Day 1 filename you keep after you fill the course.
+- **Never** treat `LessonNN.md` as published canonical content. `templates/LESSON_TEMPLATE.md` is a pointer only, not a Day 1 filename you keep after you fill the course.
 - Ship bars for naming, voice, TT, and labels live in [`acs-lesson-plan`](../acs-lesson-plan/SKILL.md). This skill only pins the starter file.
 
 ## How to start a session
 
-1. Copy `templates/LESSON_TEMPLATE.md` → `lessons/<topic_name>.md`.
+1. Copy `lessons/Lesson1.md` → `lessons/<topic_name>.md`.
 2. Replace `LESSON_TITLE` and the placeholder CONCEPT / activity copy.
 3. Link the new file from `_sidebar.md` and the syllabus schedule. Search only sees sidebar links.
 4. Keep the locked bars below. Do not invent a second starter.
 
 ## Locked bars (do not drop)
 
-These must appear in every lesson copied from `LESSON_TEMPLATE.md`:
+These must appear in every lesson copied from `lessons/Lesson1.md`:
 
 | Bar | Required shape |
 | --- | -------------- |
 | Resources heading | Exactly `## Additional Resources` |
-| Author notes | After Additional Resources, `<details>` wrapping `## For curriculum authors` |
+| Author notes | After Additional Resources, `<details>` wrapping `## For Curriculum Authors` |
 | In-class prep | `### In Class` inside that `<details>` (not a header LESSON PREP toggle) |
 | TT pulses | Blockquote `> **ASK AUDIENCE:** <question ≤60s>` plus `<details><summary>Answer</summary>` — 3–4 mid-talk. Never open-body Question/Expected paragraphs. |
 | Practice labels | `Activity 1` / `Activity 2` (labs: `Lab 1`, `Lab 2`) — never Roman, never `Hands-on` |
@@ -57,9 +57,9 @@ Author-notes shape:
 - Official docs first…
 
 <details>
-<summary>For curriculum authors</summary>
+<summary>For Curriculum Authors</summary>
 
-## For curriculum authors
+## For Curriculum Authors
 
 ### In Class
 ### Facilitator notes
@@ -71,4 +71,4 @@ Author-notes shape:
 ## Out of scope
 
 - Do not rewrite other ACS course repos from this skill. This pin is Syllabus-Template only.
-- Do not restore Lesson2 as a "lab day" twin. Lab-heavy days still start from `LESSON_TEMPLATE.md` and keep Activity 1 / Activity 2.
+- Do not restore Lesson2 as a "lab day" twin. Lab-heavy days still start from `lessons/Lesson1.md` and keep Activity 1 / Activity 2.
