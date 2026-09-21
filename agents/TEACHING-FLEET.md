@@ -37,7 +37,7 @@ Related: [TERM.md](../TERM.md) · [DECISIONS.md](../DECISIONS.md) · [agents.md]
 | Skill | Role |
 | ----- | ---- |
 | `acs-lesson-plan` | Lesson Markdown bars |
-| `acs-lesson1-only-template` | Sole Lesson1/LESSON_TEMPLATE starter |
+| `acs-lesson1-only-template` | Sole LESSON_TEMPLATE starter (baseline bars) |
 | `acs-term-start` | TERM.md course/day-1 checklist |
 | `acs-google-calendar-class-series` | Calendar invite ops |
 | `acs-slack` | `#acs-xxxx` + send guardrails |
