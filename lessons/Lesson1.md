@@ -11,8 +11,8 @@
 - [[**15m**] ☀️ Warm Up](#15m-️-warm-up)
 - [[**35m**] 📚 TT: Overview](#35m--tt-overview)
 - [[**10m**] 🌴 Break](#10m--break)
-- [[**15m**] 💻 Activity 1](#15m--activity-1)
-- [[**15m**] 💻 Activity 2](#15m--activity-2)
+- [[**15m**] 💻 Activity 1: Topic One](#15m--activity-1)
+- [[**15m**] 💻 Activity 2: Topic Two](#15m--activity-2)
 - [[**5m**] Wrap Up](#5m-wrap-up)
 
 <!-- > -->
@@ -46,7 +46,7 @@ Do one short drill that uses today's topic:
 
 Why this matters. One industry example. The few terms you must own today.
 
-> **ASK AUDIENCE:** What breaks first if CONCEPT_1 is wrong?
+> **💬 ASK AUDIENCE:** What breaks first if CONCEPT_1 is wrong?
 
 <details>
 <summary>Answer</summary>
@@ -57,7 +57,7 @@ Name the failure mode, not a definition recap.
 
 Walk the smallest path that works. Call out the failure you expect to hit.
 
-> **ASK AUDIENCE:** Which command or API call proves CONCEPT_2 is actually in play?
+> **💬 ASK AUDIENCE:** Which command or API call proves CONCEPT_2 is actually in play?
 
 <details>
 <summary>Answer</summary>
@@ -68,7 +68,7 @@ A concrete check, not "it works."
 
 Show the tradeoff. What you gain. What you give up.
 
-> **ASK AUDIENCE:** When would you *not* use CONCEPT_3?
+> **💬 ASK AUDIENCE:** When would you *not* use CONCEPT_3?
 
 <details>
 <summary>Answer</summary>
@@ -77,7 +77,7 @@ One constraint (cost, latency, ownership, or failure mode).
 
 </details>
 
-> **ASK AUDIENCE:** What is the done-state for Activity 1?
+> **💬 ASK AUDIENCE:** What is the done-state for Activity 1?
 
 <details>
 <summary>Answer</summary>
@@ -96,21 +96,25 @@ Speaker notes belong here. They show on GitHub Pages and stay off the slides.
 
 <!-- > -->
 
-## [**15m**] 💻 Activity 1
+## [**15m**] 💻 Activity 1: Topic One
 
-I do → we do. Smallest path. Done when:
+I do → we do. Smallest path.
 
-1. The command or check in this block runs
-1. You can name what each step did
+> **✅ DONE WHEN:**
+>
+> 1. The command or check in this block runs
+> 1. You can name what each step did
 
 <!-- > -->
 
-## [**15m**] 💻 Activity 2
+## [**15m**] 💻 Activity 2: Topic Two
 
-You do. Same topic, less scaffolding. Done when:
+You do. Same topic, less scaffolding.
 
-1. You have the artifact
-1. You can explain one failure you hit and how you unblocked
+> **✅ DONE WHEN:**
+>
+> 1. You have the artifact
+> 1. You can explain one failure you hit and how you unblocked
 
 <!-- > -->
 
@@ -128,24 +132,24 @@ You do. Same topic, less scaffolding. Done when:
 1. Link to a short video
 
 <details>
-<summary>For curriculum authors</summary>
+<summary>For Curriculum Authors</summary>
 
-## For curriculum authors
+## For Curriculum Authors
 
 ### In Class
 
 - Open any demo repo and slides before class.
-- Warm-up is a Zoom variety beat: keep it short, memorable, and easy to explain. Pick one: think-pair-share, a tiny scavenger hunt, a comic, or a 3-question recap.
+- Warm-up is a Zoom variety section: keep it short, memorable, and easy to explain. Pick one: think-pair-share, a tiny scavenger hunt, a comic, or a 3-question recap.
 - Breakouts of 3–4. Visit rooms; do not dump extra instructor direction into the body above. Early finishers help a stuck room.
 - After Activity 1, debrief one failure mode in the main room.
 
-### Facilitator notes
+### Facilitator Notes
 
 - Live-code the first five minutes only. Then get out of the way.
 - Narrate the failure you expect the room to hit during TT.
 - Have one extension ready for rooms that finish Activity 2 early.
 
-### Expert follow-ups
+### Expert Follow-Ups
 
 - Optional stretch after Activity 2.
 
