@@ -254,9 +254,9 @@ When telling learners to copy a code sample from the plan into their editor, use
 Do not change unrelated “port” words (TCP port, `localhost:3000`, airport, etc.).
 
 
-## Wording: cleanup not cleanup (hard)
+## Wording: cleanup not scrub (hard) (hard)
 
-In user-facing ACS course work (chat, PR titles/bodies, commit messages, lesson notes), say **cleanup** — never **cleanup**.
+In user-facing ACS course work (chat, PR titles/bodies, commit messages, lesson notes), say **cleanup** — never **scrub**.
 
 ## Accuracy and ship
 
