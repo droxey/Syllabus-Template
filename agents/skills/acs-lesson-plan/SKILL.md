@@ -241,7 +241,7 @@ Blank lines still separate a blockquote from non-blockquote prose or code fences
 
 ## Gradescope (hard)
 
-Do **not** put Gradescope links, drill names, or “submit on Gradescope” language in ACS **lesson plans** or course **README**s unless that assignment still exists as a real artifact in the course repo (and Dani confirmed it is live). Prefer in-repo deliverables (GitHub, Gradescope-free rubrics, project paths). When cleanup, remove the reference entirely — do not leave “INSERT LINK HERE” stubs.
+Do **not** put Gradescope links, drill names, or “submit on Gradescope” language in ACS **lesson plans** or course **README**s unless that assignment still exists as a real artifact in the course repo (and Dani confirmed it is live). Prefer in-repo deliverables (GitHub, Gradescope-free rubrics, project paths). During cleanup, remove the reference entirely — do not leave “INSERT LINK HERE” stubs.
 
 
 ## Sample instructions (hard)
