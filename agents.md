@@ -212,7 +212,7 @@ Copy the starter shape from `Lessons/Lesson1.md` only, then save as `lessons/<to
 | `_sidebar.md` | Searchable nav — link every published lesson |
 | `_navbar.md` | Top nav |
 | `lessons/` | Published session pages only — copy from `Lessons/Lesson1.md` |
-| `templates/` | Canonical lesson starter (`LESSON_TEMPLATE.md`) |
+| `Lessons/Lesson1.md` | Sole lesson starter (copy → `lessons/<topic>.md`) |
 | `assignments/` | Project specs |
 | `updates.md` | Tech Trends + Add to Course |
 | `web/` | Theme + service worker (scope `/web/` only) |
@@ -223,7 +223,7 @@ Copy the starter shape from `Lessons/Lesson1.md` only, then save as `lessons/<to
 | `SLACK.md` | `#acs-xxxx` channel + invite/send guardrails |
 | `agents.md` | Agent jobs (this file) |
 | `agents/TEACHING-FLEET.md` | Writer / Code Review / CodeRabbit / Teacher routine hooks |
-| `agents/skills/acs-lesson1-only-template/` | LESSON_TEMPLATE starter pin |
+| `agents/skills/acs-lesson1-only-template/` | Lesson1-only starter pin |
 | `agents/skills/acs-lesson-plan/` | Standing lesson-plan bars |
 | `agents/skills/acs-term-start/` | Term start + course plan (read TERM.md; human gates) |
 | `agents/skills/acs-google-calendar-class-series/` | Calendar class series invite ops |
@@ -258,9 +258,9 @@ Standing bars for lesson Markdown live in [`agents/skills/acs-lesson-plan/SKILL.
 - Author directives: `## For curriculum authors` at the bottom after Additional Resources, contents in `<details>` (`### In Class` / facilitator / Expert follow-ups — never header or mid-body)
 - Activity labels: `Activity 1` / `Activity 2` (never Hands-on); labs stay `Lab 1` / `Lab 2` — never Roman (`Lab I`)
 - TT pulses: `> **ASK AUDIENCE:** <question ≤60s>` plus `<details><summary>Answer</summary>` — never open-body Question/Expected paragraphs
-- Voice: on-the-job / builder; `GOAL:`; rookie/beginner on-the-job tips (never hire-bar in the plan)
+- Voice: on-the-job / builder; `GOAL:`; `PROTIP:` / `BE AWARE:` callouts (never hire-bar; never “rookie tip/trap”)
 - Never write `jobsim`, `JOBSIM`, or `job simulator`
 - Never cite skill names in lesson Markdown
-- TT: 30–40m with 3–4 mid-talk pulse checks
+- TT: 30–40m with 3–4 mid-talk 💬 ASK AUDIENCE pulse checks
 - Never put the word ADHD (or other diagnosis labels) in a lesson file
 - Course-level ops → setup.md; lesson-level instructor notes → lesson template author details only; never put skill names in `lessons/*.md`
