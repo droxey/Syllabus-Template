@@ -48,4 +48,4 @@ That is the full day-1 launch set.
 
 ## Capture
 
-After any planning interview or standing lock, append to [DECISIONS.md](DECISIONS.md) (decision + reason). Do not leave locks only in chat.
+After any planning interview or standing lock: first update the relevant canonical document or skill, then append a dated entry to [DECISIONS.md](DECISIONS.md) with **Decision**, **Reason**, and **Canon**. Do not leave locks only in chat.
