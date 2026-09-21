@@ -46,6 +46,8 @@ Applies to all ACS course/lesson Markdown: **Lessons/**, course **README**s, and
 
 ## Lesson title + ship filename (hard)
 
+- **H1 = topic only** — no date, version, or course code in the heading.
+
 - **H1:** topic title (+ optional day) only — never date, never version, no stack tags.
   - Example: `# Intro to WebSockets — Day 6`
 - **Local draft filename:** include **date and version** with the topic slug — e.g. `2026-09-17-WebSocketsIntro-v2.md`. Date and version live in the **filename**, not the H1.
@@ -104,7 +106,7 @@ Never bare `Activity 1` / `Activity 2` / `Lab 1` / `Lab 2`. Agenda links must ma
 
 ## Author directives (hard)
 
-Bottom after Additional Resources, wrapped in `<details><summary>For curriculum authors</summary>…</details>` with `### In Class` / Facilitator notes / Expert follow-ups. Still no skill names, no jobsim labels, no pedagogy resource links.
+Bottom after Additional Resources, wrapped in `<details><summary>For Curriculum Authors</summary>…</details>` with `### In Class` / Facilitator notes / Expert follow-ups. Still no skill names, no jobsim labels, no pedagogy resource links.
 
 
 ## Engineer language (hard)
@@ -239,7 +241,7 @@ Blank lines still separate a blockquote from non-blockquote prose or code fences
 
 ## Gradescope (hard)
 
-Do **not** put Gradescope links, drill names, or “submit on Gradescope” language in ACS **lesson plans** or course **README**s unless that assignment still exists as a real artifact in the course repo (and Dani confirmed it is live). Prefer in-repo deliverables (GitHub, Gradescope-free rubrics, project paths). When scrubbing, remove the reference entirely — do not leave “INSERT LINK HERE” stubs.
+Do **not** put Gradescope links, drill names, or “submit on Gradescope” language in ACS **lesson plans** or course **README**s unless that assignment still exists as a real artifact in the course repo (and Dani confirmed it is live). Prefer in-repo deliverables (GitHub, Gradescope-free rubrics, project paths). When cleanup, remove the reference entirely — do not leave “INSERT LINK HERE” stubs.
 
 
 ## Sample instructions (hard)
@@ -252,9 +254,9 @@ When telling learners to copy a code sample from the plan into their editor, use
 Do not change unrelated “port” words (TCP port, `localhost:3000`, airport, etc.).
 
 
-## Wording: cleanup not scrub (hard)
+## Wording: cleanup not cleanup (hard)
 
-In user-facing ACS course work (chat, PR titles/bodies, commit messages, lesson notes), say **cleanup** — never **scrub**.
+In user-facing ACS course work (chat, PR titles/bodies, commit messages, lesson notes), say **cleanup** — never **cleanup**.
 
 ## Accuracy and ship
 
