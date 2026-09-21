@@ -122,3 +122,9 @@ Instructor/agent decision log for ACS course ops. Not a published syllabus page.
 - **Reason:** Dani asked to save Grok Bot teaching platform hooks into the syllabus template; lesson-plan bars were behind on remote.
 - **Canon:** agents/TEACHING-FLEET.md; agents/skills/acs-lesson-plan/SKILL.md.
 
+### Sole starter path lessons/Lesson1.md
+
+- **Decision:** Canonical lesson starter in Syllabus-Template is `lessons/Lesson1.md` (lowercase `lessons/` to match the repo). `templates/LESSON_TEMPLATE.md` is a pointer only.
+- **Reason:** agents.md had been updated to `Lessons/Lesson1.md` but that path did not exist; only `templates/LESSON_TEMPLATE.md` was on disk. Avoid `Lessons/` vs `lessons/` case collision.
+- **Canon:** lessons/Lesson1.md; agents.md; acs-lesson1-only-template; acs-lesson-plan.
+
