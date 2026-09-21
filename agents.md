@@ -36,7 +36,7 @@ Course-level ops for this job live in [setup.md](setup.md).
 2. Replace every `ALL_CAPS` placeholder. Search for `COURSE_`, `REPO_NAME`, `GITHUB_ORG`, `INSTRUCTOR_EMAIL`. If you use Nebula, also fill `grain/course.yaml` (`COURSE_SLUG`, `COURSE_PVC_VOICE_ID`).
 3. Set `index.html` title, description, author, `repo`, `name`, `search.namespace`, and OG URLs.
 4. Rewrite `README.md` as this course's syllabus. Keep the ACS-3220 section order.
-5. Create each session as `lessons/<topic_name>.md` (kebab or TopicCase as used in the repo). Copy **`Lessons/Lesson1.md`** → `lessons/<topic_name>.md` — it is the sole lesson template. Never author from `Lesson2`. Update `_sidebar.md` so every published lesson is linked (search only sees sidebar links).
+5. Create each session as `lessons/<topic_name>.md` (kebab or TopicCase as used in the repo). Copy **`lessons/Lesson1.md`** → `lessons/<topic_name>.md` — it is the sole lesson template. Never author from `Lesson2`. Update `_sidebar.md` so every published lesson is linked (search only sees sidebar links).
 6. Add course-specific Prism languages in `index.html` if you need them (`prism-docker`, `prism-go`, …).
 7. Run `npm install` and `npm run serve`. Open `http://localhost:3000`.
 8. Enable GitHub Pages from the default branch.
@@ -116,7 +116,7 @@ Put instructor, facilitator, and curriculum-author directives after Additional R
 
 `### In Class` is not at the top after the agenda. Author notes stay in that bottom `<details>` block. The student-facing body stays student-facing.
 
-`Lessons/Lesson1.md` is the **only** starter. Copy it to `lessons/<topic_name>.md`, and never author from `Lesson2`. Follow this section, [`agents/skills/acs-lesson1-only-template/SKILL.md`](agents/skills/acs-lesson1-only-template/SKILL.md), and [`agents/skills/acs-lesson-plan/SKILL.md`](agents/skills/acs-lesson-plan/SKILL.md) when writing new lessons.
+`lessons/Lesson1.md` is the **only** starter. Copy it to `lessons/<topic_name>.md`, and never author from `Lesson2`. Follow this section, [`agents/skills/acs-lesson1-only-template/SKILL.md`](agents/skills/acs-lesson1-only-template/SKILL.md), and [`agents/skills/acs-lesson-plan/SKILL.md`](agents/skills/acs-lesson-plan/SKILL.md) when writing new lessons.
 
 ### 6. Tech Trends → `updates.md`
 
@@ -190,7 +190,7 @@ npm run check-links
 
 Course-level ops → [setup.md](setup.md). Lesson-level instructor notes → lesson template author `<details>` only (`## For Curriculum Authors` at the bottom). Never put skill names in `lessons/*.md`.
 
-Copy the starter shape from `Lessons/Lesson1.md` only, then save as `lessons/<topic_name>.md`. There is no Lesson2 template. For naming, header, Author directives, Activity labels (`Activity 1` / `Activity 2`), and GOAL bars, follow [`agents/skills/acs-lesson1-only-template/SKILL.md`](agents/skills/acs-lesson1-only-template/SKILL.md) and [`agents/skills/acs-lesson-plan/SKILL.md`](agents/skills/acs-lesson-plan/SKILL.md). Structure matches ACS-3220:
+Copy the starter shape from `lessons/Lesson1.md` only, then save as `lessons/<topic_name>.md`. There is no Lesson2 template. For naming, header, Author directives, Activity labels (`Activity 1` / `Activity 2`), and GOAL bars, follow [`agents/skills/acs-lesson1-only-template/SKILL.md`](agents/skills/acs-lesson1-only-template/SKILL.md) and [`agents/skills/acs-lesson-plan/SKILL.md`](agents/skills/acs-lesson-plan/SKILL.md). Structure matches ACS-3220:
 
 - Title + one-line **GOAL**
 - Timed **Agenda** with jump links
@@ -211,8 +211,8 @@ Copy the starter shape from `Lessons/Lesson1.md` only, then save as `lessons/<to
 | `README.md` | Student syllabus (Docsify home) |
 | `_sidebar.md` | Searchable nav — link every published lesson |
 | `_navbar.md` | Top nav |
-| `lessons/` | Published session pages only — copy from `Lessons/Lesson1.md` |
-| `Lessons/Lesson1.md` | Sole lesson starter (copy → `lessons/<topic>.md`) |
+| `lessons/` | Published session pages only — copy from `lessons/Lesson1.md` |
+| `lessons/Lesson1.md` | Sole lesson starter (copy → `lessons/<topic>.md`) |
 | `assignments/` | Project specs |
 | `updates.md` | Tech Trends + Add to Course |
 | `web/` | Theme + service worker (scope `/web/` only) |
@@ -250,7 +250,7 @@ Before you call student-facing markdown done:
 
 Standing bars for lesson Markdown live in [`agents/skills/acs-lesson-plan/SKILL.md`](agents/skills/acs-lesson-plan/SKILL.md):
 
-- Sole template: copy `Lessons/Lesson1.md` → `lessons/<topic>.md` — never author from Lesson2
+- Sole template: copy `lessons/Lesson1.md` → `lessons/<topic>.md` — never author from Lesson2
 - File naming: `topic_name.md` (never `LessonNN.md` as canonical content)
 - Header: no Author / Session / Bars / Accuracy / MVP meta stack — open with `# Title` → `GOAL:` → agenda
 - H1 is topic + optional day only — never a course code
