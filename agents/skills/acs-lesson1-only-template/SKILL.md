@@ -29,7 +29,7 @@ These must appear in every lesson copied from `lessons/Lesson1.md`:
 | Bar | Required shape |
 | --- | -------------- |
 | Resources heading | Exactly `## Additional Resources` |
-| Author notes | After Additional Resources, `<details>` wrapping `## For curriculum authors` |
+| Author notes | After Additional Resources, `<details>` wrapping `## For Curriculum Authors` |
 | In-class prep | `### In Class` inside that `<details>` (not a header LESSON PREP toggle) |
 | TT pulses | Blockquote `> **ASK AUDIENCE:** <question ≤60s>` plus `<details><summary>Answer</summary>` — 3–4 mid-talk. Never open-body Question/Expected paragraphs. |
 | Practice labels | `Activity 1` / `Activity 2` (labs: `Lab 1`, `Lab 2`) — never Roman, never `Hands-on` |
@@ -57,9 +57,9 @@ Author-notes shape:
 - Official docs first…
 
 <details>
-<summary>For curriculum authors</summary>
+<summary>For Curriculum Authors</summary>
 
-## For curriculum authors
+## For Curriculum Authors
 
 ### In Class
 ### Facilitator notes
