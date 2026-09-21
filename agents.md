@@ -10,7 +10,7 @@ Student-facing pages live in Docsify. The layout comes from [Tech-at-DU/ACS-3220
 
 1. Read this file, [setup.md](setup.md), [TERM.md](TERM.md), and [DECISIONS.md](DECISIONS.md). Course-level ops → setup.md. Term/day-1 plan → TERM.md (honor human gates). After any planning lock: update the relevant canon doc or skill first, then append Decision / Reason / Canon to DECISIONS.md.
 2. Do the smallest change that finishes the request.
-3. Lesson-level instructor notes → lesson template author `<details>` only (`## For curriculum authors` at the bottom). Never put skill names in `lessons/*.md`.
+3. Lesson-level instructor notes → lesson template author `<details>` only (`## For Curriculum Authors` at the bottom). Never put skill names in `lessons/*.md`.
 4. Keep instructor prep out of the student-facing mid-body.
 5. Gate finished student-facing markdown through the Technical Writer pass.
 
@@ -86,7 +86,7 @@ Never put instructor prep or direction in the student-facing mid-body (warm-up, 
 
 The resources heading is always exactly `## Additional Resources` — never rename it, and never add parentheticals in the heading. “Official first” is link-ordering guidance inside the section only. That section is **topic sources only** — no pedagogy or how-to-teach links. See [`setup.md`](setup.md).
 
-Put instructor, facilitator, and curriculum-author directives after Additional Resources. Wrap `## For curriculum authors` and its subsections in a `<details>` block so students can ignore it:
+Put instructor, facilitator, and curriculum-author directives after Additional Resources. Wrap `## For Curriculum Authors` and its subsections in a `<details>` block so students can ignore it:
 
 ```markdown
 ## Additional Resources
@@ -94,9 +94,9 @@ Put instructor, facilitator, and curriculum-author directives after Additional R
 - Official docs first…
 
 <details>
-<summary>For curriculum authors</summary>
+<summary>For Curriculum Authors</summary>
 
-## For curriculum authors
+## For Curriculum Authors
 
 ### In Class
 
@@ -188,7 +188,7 @@ npm run check-links
 
 ## Lesson template
 
-Course-level ops → [setup.md](setup.md). Lesson-level instructor notes → lesson template author `<details>` only (`## For curriculum authors` at the bottom). Never put skill names in `lessons/*.md`.
+Course-level ops → [setup.md](setup.md). Lesson-level instructor notes → lesson template author `<details>` only (`## For Curriculum Authors` at the bottom). Never put skill names in `lessons/*.md`.
 
 Copy the starter shape from `Lessons/Lesson1.md` only, then save as `lessons/<topic_name>.md`. There is no Lesson2 template. For naming, header, Author directives, Activity labels (`Activity 1` / `Activity 2`), and GOAL bars, follow [`agents/skills/acs-lesson1-only-template/SKILL.md`](agents/skills/acs-lesson1-only-template/SKILL.md) and [`agents/skills/acs-lesson-plan/SKILL.md`](agents/skills/acs-lesson-plan/SKILL.md). Structure matches ACS-3220:
 
@@ -197,7 +197,7 @@ Copy the starter shape from `Lessons/Lesson1.md` only, then save as `lessons/<to
 - **Objectives** with action verbs
 - Timed blocks: warm-up, TT, break, activity or lab, wrap up
 - `<!-- > -->` / `<!-- v -->` for `reveal-md` slides
-- `## Additional Resources` (exact heading), then `## For curriculum authors` in a `<details>` wrap at the bottom (`### In Class`)
+- `## Additional Resources` (exact heading), then `## For Curriculum Authors` in a `<details>` wrap at the bottom (`### In Class`)
 
 `npx reveal-md lessons/<topic_name>.md --static slides` still builds `slides/` if you want a deck. See `slides/README.md` and `reveal/README.md`. Do not commit leftover decks from another course.
 
@@ -239,7 +239,7 @@ Copy the starter shape from `Lessons/Lesson1.md` only, then save as `lessons/<to
 Before you call student-facing markdown done:
 
 1. Headings match the template. Objectives use action verbs.
-2. Instructor direction is only under `## For curriculum authors` at the bottom (after `## Additional Resources`) — wrap it in `<details>`, never in the header or mid-body.
+2. Instructor direction is only under `## For Curriculum Authors` at the bottom (after `## Additional Resources`) — wrap it in `<details>`, never in the header or mid-body.
 3. Placeholders that should have been replaced are gone.
 4. Local links resolve (`npm run check-links`).
 5. Prose sounds like Dani teaching, not like a template.
@@ -255,9 +255,9 @@ Standing bars for lesson Markdown live in [`agents/skills/acs-lesson-plan/SKILL.
 - Header: no Author / Session / Bars / Accuracy / MVP meta stack — open with `# Title` → `GOAL:` → agenda
 - H1 is topic + optional day only — never a course code
 - Additional Resources: heading is exactly `## Additional Resources` — topic sources only; never pedagogy / how-to-teach links; never rename or add parentheticals (“official first” is link order inside the section)
-- Author directives: `## For curriculum authors` at the bottom after Additional Resources, contents in `<details>` (`### In Class` / facilitator / Expert follow-ups — never header or mid-body)
+- Author directives: `## For Curriculum Authors` at the bottom after Additional Resources, contents in `<details>` (`### In Class` / facilitator / Expert follow-ups — never header or mid-body)
 - Activity labels: `Activity 1` / `Activity 2` (never Hands-on); labs stay `Lab 1` / `Lab 2` — never Roman (`Lab I`)
-- TT pulses: `> **ASK AUDIENCE:** <question ≤60s>` plus `<details><summary>Answer</summary>` — never open-body Question/Expected paragraphs
+- TT pulses: `> **💬 ASK AUDIENCE:** <question ≤60s>` plus `<details><summary>Answer</summary>` — never open-body Question/Expected paragraphs
 - Voice: on-the-job / builder; `GOAL:`; `PROTIP:` / `BE AWARE:` callouts (never hire-bar; never “rookie tip/trap”)
 - Never write `jobsim`, `JOBSIM`, or `job simulator`
 - Never cite skill names in lesson Markdown
