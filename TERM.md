@@ -4,7 +4,7 @@ Instructor/agent checklist for standing up an ACS course and opening day 1. Not 
 
 **Agents:** read this file before any course-plan or day-1 work. Execute autonomous steps; stop and ask Dani for approval gates listed below.
 
-Related ops: [CALENDAR.md](CALENDAR.md) · [SLACK.md](SLACK.md) · [setup.md](setup.md) · [DECISIONS.md](DECISIONS.md)
+Related ops: [CALENDAR.md](CALENDAR.md) · [SLACK.md](SLACK.md) · [setup.md](setup.md) · [DECISIONS.md](DECISIONS.md) · [agents/TEACHING-FLEET.md](agents/TEACHING-FLEET.md)
 
 ## Human Gates (Do Not Skip)
 
@@ -12,6 +12,7 @@ Related ops: [CALENDAR.md](CALENDAR.md) · [SLACK.md](SLACK.md) · [setup.md](se
 2. **Calendar create:** draft the series, then ask approval **before** creating events.
 3. **Slack invites:** only when Dani hands an Ellucian roster CSV/list (that handoff is the OK).
 4. **Slack messages / emails:** confirm with Dani before any send.
+5. **Lesson/tutorial code snippets:** hand to Code Review to verify they run before ready-to-PR or teach-from (unless Dani waives).
 
 ## Plan A Course (Content)
 
@@ -22,6 +23,7 @@ Related ops: [CALENDAR.md](CALENDAR.md) · [SLACK.md](SLACK.md) · [setup.md](se
    - Instructor-only — **no** `_sidebar.md` link (same lane as `setup.md`).
 5. Then full lesson plans (`Lessons/topic_name.md` or `lessons/<topic_name>.md`) → update `_sidebar.md`.
 6. Before ready-to-PR: Writer **AI-writing pass-gate** (mandatory, stricter). Fail closed until pass or an explicit template false-positive note.
+7. Before ready-to-PR / teach-from: pass **code snippets** in lessons and tutorials to **Code Review** to verify they run. Fail closed until pass or Dani waives.
 
 Always update README **`## Schedule`** when the session list or dates change.
 
