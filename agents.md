@@ -222,6 +222,7 @@ Copy the starter shape from `templates/LESSON_TEMPLATE.md` only, then save as `l
 | `CALENDAR.md` | Google Calendar class series ops |
 | `SLACK.md` | `#acs-xxxx` channel + invite/send guardrails |
 | `agents.md` | Agent jobs (this file) |
+| `agents/TEACHING-FLEET.md` | Writer / Code Review / CodeRabbit / Teacher routine hooks |
 | `agents/skills/acs-lesson1-only-template/` | LESSON_TEMPLATE starter pin |
 | `agents/skills/acs-lesson-plan/` | Standing lesson-plan bars |
 | `agents/skills/acs-term-start/` | Term start + course plan (read TERM.md; human gates) |
