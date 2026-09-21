@@ -134,3 +134,9 @@ Instructor/agent decision log for ACS course ops. Not a published syllabus page.
 - **Reason:** Dani 2026-09-21 — wants it called LESSON_TEMPLATE; bar fixes are baseline for the starter, not Lesson1-specific.
 - **Canon:** templates/LESSON_TEMPLATE.md; agents.md; acs-lesson1-only-template; acs-lesson-plan.
 
+### TypeSafe ACS pilot order
+
+- **Decision:** Pilot TypeSafe on ACS workflows in this order: (5) executor-done on one ACS-4210 section patch, then (4) bar compliance smoke on Interfaces/Protocols-class lessons. TypeSafe densifies Choice/Score/Noul judgments between TERM gates only — does not replace human content review, calendar approve, Slack confirm-before-send, snippet Code Review, or DECISIONS.md.
+- **Reason:** Dani 2026-09-21 approved TypeSafe’s proposed pilot order.
+- **Canon:** agents/TEACHING-FLEET.md; TERM.md human gates; Teacher ↔ TypeSafe handoff.
+
