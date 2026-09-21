@@ -15,12 +15,6 @@ Instructor/agent ops for ACS class recurrence on the teaching/work calendar. Not
 7. **Days:** No Friday or weekend student class meetings. If a target falls there, move to the closest Monday–Thursday.
 8. **Calendar:** Teaching/work calendar for ACS series — not the personal IRL calendar.
 
-## Slack Channel (Day-1)
-
-Pattern: `#acs-xxxx` where `xxxx` is the **4-digit course code**.
-
-Derive from the repo name prefix: `ACS-3220-...` → `#acs-3220`. Invite students to that channel before day 1.
-
 ## Do Not
 
 - Put Google Meet conference data on class events
@@ -28,8 +22,8 @@ Derive from the repo name prefix: `ACS-3220-...` → `#acs-3220`. Invite student
 - Leave holiday meetings on the series without EXDATE
 - Put these ops rules in learner-facing README or lesson bodies
 
-## Related Checklists
+## Related
 
-**Day-1 launch:** Slack student invites (`#acs-xxxx`) → calendar series live → Docsify live.
-
-**Course content plan order:** outcomes → week topics → schedule table (`## Schedule` in README) → lesson drafts → sidebar.
+- Slack course channels (`#acs-xxxx`): [SLACK.md](SLACK.md)
+- Day-1 launch: Slack invites → calendar series live → Docsify live
+- Course content plan order: outcomes → week topics → schedule table (`## Schedule` in README) → lesson drafts → sidebar
