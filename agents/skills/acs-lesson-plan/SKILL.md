@@ -75,7 +75,7 @@ Exact: `## Additional Resources`, `## For Curriculum Authors`, `### In Class`, `
 
 ## Structure
 
-- Sole template: Syllabus-Template `lessons/Lesson1.md` — [acs-lesson1-only-template](sand-workflow:acs-lesson1-only-template).
+- Sole template: Syllabus-Template `templates/LESSON_TEMPLATE.md` — [acs-lesson1-only-template](sand-workflow:acs-lesson1-only-template).
 - TT 30–40m with 3–4 ASK AUDIENCE pulses (blockquote + answer `<details>`).
 - No ADHD / diagnosis labels — use `### In Class`.
 
