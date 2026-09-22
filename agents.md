@@ -8,7 +8,7 @@ Student-facing pages live in Docsify. The layout comes from [Tech-at-DU/ACS-3220
 
 ## Next action
 
-1. Read this file, [setup.md](setup.md), [TERM.md](TERM.md), and [DECISIONS.md](DECISIONS.md). Course-level ops → setup.md. Term/day-1 plan → TERM.md (honor human gates). After any planning lock: update the relevant canon doc or skill first, then append Decision / Reason / Canon to DECISIONS.md.
+1. Read this file, [setup.md](setup.md), [TERM.md](TERM.md), and [DECISIONS.md](DECISIONS.md). Course-level ops → setup.md. Term/day-1 plan → TERM.md (honor human gates). After any planning interview or standing lock: update the relevant canonical document or skill first, then append a dated entry with Decision / Reason / Canon to DECISIONS.md.
 2. Do the smallest change that finishes the request.
 3. Lesson-level instructor notes → lesson template author `<details>` only (`## For Curriculum Authors` at the bottom). Never put skill names in `lessons/*.md`.
 4. Keep instructor prep out of the student-facing mid-body.

@@ -45,7 +45,8 @@ Related: [TERM.md](../TERM.md) · [DECISIONS.md](../DECISIONS.md) · [agents.md]
 ## TypeSafe — ACS judgment densifier
 
 - **Owner:** TypeSafe bot (Choice / Score / Noul + confidence)
-- **Does not replace:** human content review, calendar approve, Slack confirm, snippet Code Review, DECISIONS.md
+- **When:** Between TERM gates only
+- **Does not replace:** Writer, human content review, calendar approve, Slack confirm, snippet Code Review, DECISIONS.md
 - **Pilot (Dani 2026-09-21):** (5) executor-done on one ACS-4210 section patch → then (4) bar compliance smoke on Interfaces/Protocols-class lessons
 - **Later hooks:** week-topic fit, OUTLINE vs LESSON_TEMPLATE, section-only safety, Additional Resources relevance
 
